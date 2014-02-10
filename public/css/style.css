@@ -1380,6 +1380,9 @@ input:focus {
   position: relative;
   margin-bottom: 12px;
 }
+.registration_input_item:nth-child(2) {
+  margin-bottom: 25px;
+}
 .registration_input_item label {
   width: 80px;
   font-size: 14px;
@@ -1399,6 +1402,9 @@ input:focus {
   border-radius: 4px;
   padding: 0 20px;
   box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+}
+.registration_input_item input[name="fakePassword"] {
+  display: none;
 }
 .registration_input_item .icon-eye {
   background-image: url("../img/sprite.png");
@@ -1439,25 +1445,44 @@ input:focus {
 }
 .registration_bottom h1.h1 {
   display: block;
+  margin-bottom: 30px;
 }
 .registration_social_item {
   display: inline-block;
   text-align: center;
+  margin-right: 30px;
 }
 .registration_social_item .icon {
   display: block;
   margin: 0 auto;
+  transition: opacity 0.2s ease-in-out;
+}
+.registration_social_item .icon:hover {
+  opacity: 0.5;
 }
 .registration_social_item .title {
   text-align: center;
 }
 .registration_social_item a {
   display: block;
+  transition: color 0.2s ease-in-out;
 }
 .icon-login-vk {
   background-image: url("../img/sprite.png");
   background-position: -127px 0px;
   width: 48px;
+  height: 48px;
+}
+.icon-login-facebook {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -125px;
+  width: 48px;
+  height: 48px;
+}
+.icon-login-twitter {
+  background-image: url("../img/sprite.png");
+  background-position: -127px -49px;
+  width: 47px;
   height: 48px;
 }
 .page_footer {

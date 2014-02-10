@@ -172,12 +172,13 @@
               <form>
                 <div class="registration_top">
                   <div class="registration_input_item">
-                    <label>E-mail*</label>
+                    <label>E-mail <span class="text-red">*</span></label>
                     <input type="text" placeholder="Мы отправим письмо с инструкцией">
                   </div>
                   <div class="registration_input_item">
-                    <label>Пароль</label>
-                    <input type="text" placeholder="Придумайте пароль"><span class="icon-eye"></span>
+                    <label>Пароль <span class="text-red">*</span></label>
+                    <input type="password" name="realPassword" placeholder="Придумайте пароль">
+                    <input type="text" name="fakePassword" placeholder="Придумайте пароль"><span class="icon-eye"></span>
                   </div>
                   <div class="registration_submit"><a href="#">У меня есть логин</a>
                     <button type="submit">Зарегистрироваться</button>

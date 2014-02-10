@@ -223,6 +223,28 @@ $(document).ready(function() {
             $(this).css('max-width', '100%');
           }
       });
+
+      // Show pass
+      //
+      $('.icon-eye').one('click', showPass);
+
+      function showPass() {
+        var passVal = $('input[type=password]').val();
+        $('input[type=password]').hide();
+        $('input[name=fakePassword').show();
+        $('input[name=fakePassword').val(passVal);
+        $('input[name=fakePassword').focus();
+        $(this).one('click', hidePass);
+      }
+
+      function hidePass() {
+        var passVal = $('input[name=fakePassword').val();
+        $('input[name=fakePassword').hide();
+        $('input[type=password]').val(passVal);
+        $('input[type=password]').show();
+        $('input[type=password]').focus();
+        $(this).one('click', showPass);
+      }
 });
 
 /*! iCheck v1.0.1 by Damir Sultanov, http://git.io/arlzeA, MIT Licensed */
