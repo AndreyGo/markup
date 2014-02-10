@@ -1,0 +1,42 @@
+extends layout/main
+
+block content
+  div.page_registration
+    div.page_category
+      include blocks/sidebar_menu_dropdown
+    div.page_search-i
+      include blocks/search
+    include blocks/breadcrumbs
+    div.page_registration_header
+      h1.h1 Регистрация на сайте
+    div.page_reg_ball-left
+      img(src="img/green-ball.png")
+    div.page_reg_ball-right
+      img(src="img/blue-ball.png")
+    div.page_registration_block
+      form
+        div.registration_top
+          div.registration_input_item
+            label E-mail*
+            input(type="text", placeholder="Мы отправим письмо с инструкцией")
+          div.registration_input_item
+            label Пароль
+            input(type="text", placeholder="Придумайте пароль")
+            span.icon-eye
+          div.registration_submit
+            a(href="#") У меня есть логин
+            button(type="submit") Зарегистрироваться
+        div.registration_bottom
+          h1.h1 войти с помощью социальных сетей:
+          div.registration_social_item
+            a(href="#")
+              span.icon.icon-login-vk
+              span.title Вконтакте
+          div.registration_social_item
+            a(href="#")
+              span.icon.icon-login-facebook
+              span.title Facebook
+          div.registration_social_item
+            a(href="#")
+              span.icon.icon-login-twitter
+              span.title Twitter

@@ -1,0 +1,222 @@
+/* Fonts
+======================================= */
+
+kelson = 'kelson_sans_ruregular', sans-serif
+kelsonBold = 'kelson_sans_rubold', sans-serif
+robotoBold = 'roboto_slabbold', sans-serif
+roboto= 'roboto_slabregular', sans-serif
+arial = Arial, Helvetica, sans-serif
+
+
+/* Grid settings
+======================================= */
+
+grid = {
+    width: 950,
+    gutter: 32,
+    column: 50,
+    columns: 12
+}
+
+
+/* Base colors
+======================================= */
+
+blue = #1c60ab
+orange = #da4500
+green = #309c12
+
+
+/* Cleafix
+======================================= */
+
+cf()
+    &:before, &:after
+        content ''
+        display table
+    &:after
+        clear both
+
+
+/* Base settings
+======================================= */
+
+*, *:before, *:after
+    -moz-box-sizing border-box
+    box-sizing border-box
+
+html
+    height 100%
+    font-size 100%
+    -webkit-font-smoothing antialiased
+    text-rendering optimizeLegibility
+
+body
+    height 100%
+    background #fafafa
+    font 400 14px arial
+    line-height 27px
+
+container(w = grid.width)
+    width 100%
+    max-width w
+    margin auto
+    cf()
+
+.container
+    container(952px)
+
+.text-bold
+    font-weight 700
+
+.text-red
+  color #a21212
+
+input:focus
+    outline none
+
+.page
+
+    h1.h1
+        color #333
+
+    h2.h2
+        color orange
+
+    h1.h1,
+    h2.h2
+        font 400 21px robotoBold
+        margin 0
+        text-transform uppercase
+        display inline-block
+
+
+    ul
+        padding 0
+        margin 0
+        list-style none
+
+    input
+        width 100%
+        border none
+        background #fff
+
+    a
+        color blue
+        text-decoration none
+
+        &:hover
+            color orange
+
+    hr.hr
+        border none
+        border-bottom 1px solid #e5e5e5
+
+.page_main
+    padding 40px 0 80px 0
+
+.btn
+    background-color #e6e6e6
+    background-image linear-gradient(to top, #e6e6e6, #fff)
+    box-shadow 0 2px 4px rgba(#000, 0.2)
+    border none
+    border-radius 2px
+    text-align center
+
+    &:hover
+        background-image linear-gradient(to top, #eee, #fff)
+
+        span
+          border-bottom-color orange
+
+    &:active
+        background-image linear-gradient(to bottom, #eee, #fff)
+    &:focus
+        outline none
+
+    span
+        border-bottom 1px dotted blue
+
+
+
+/* Dropdown */
+.dropdown_block
+    position absolute
+    display none
+    font 400 14px arial
+    color #000
+    background #fff
+    box-shadow 0 5px 20px rgba(#000, 0.2)
+    z-index 100
+    width 220px
+    border-radius 4px
+    line-height 27px
+
+    li
+        position relative
+        display block
+
+        &:hover
+            background #e2e8ef
+
+        > a
+            width 100%
+            display inline-block
+            vertical-align middle
+            // line-height inherit
+            padding 0 20px
+
+            &:hover
+                background #e2e8ef
+.dropdown
+    position relative
+
+.dropdown_list
+  display inline-block
+  vertical-align middle
+  border 1px solid #d0d0d0
+  background linear-gradient(to top, #d9d9d9, #fff)
+  border-radius 3px
+  margin 0 0 0 5px
+  padding 2px 13px
+  color #555
+  position relative
+  cursor pointer
+
+  &.active
+      box-shadow 0 0 3px 3px #c2e9ff
+
+  &.active .page_filter_dropdown-i
+      display block
+
+  .page_filter_dropdown-i
+      display none
+      position absolute
+      min-width 100%
+      top 100%
+      padding-top 8px
+      left 0
+      z-index 100
+
+
+  ul
+    display block
+    position relative
+    background #fff
+    border-radius 4px
+    border 1px solid #d0d0d0
+
+    li
+        padding 5px 10px
+
+        a
+            display block
+
+    li:nth-child(2n)
+        background #f4f4f4
+
+  .icon-dropdown-list-arrow-down
+    sprite($dropdown-list-arrow-down)
+    display block
+    float right
+    margin 10px 0 0 0

@@ -1,0 +1,33 @@
+div.page_slider_wrapper
+  div.page_slider
+    ul
+      li
+          div.slider_discount
+            img(src="img/discount.png")
+          a(href="#")
+            img(src="img/slider_1.jpg")
+          a(href="#").slider_btn_more подробнее о предложении
+
+      li
+          div.slider_discount
+            img(src="img/discount.png")
+          a(href="#")
+            img(src="img/slider_2.jpg")
+          a(href="#").slider_btn_more подробнее о предложении
+
+      li
+          div.slider_discount
+            img(src="img/discount.png")
+          a(href="#")
+            img(src="img/slider_1.jpg")
+          a(href="#").slider_btn_more подробнее о предложении
+
+  div.page_slider_pagination
+    span.slider_pagination_text
+      span.slider_pagination_curent 1
+      |  из
+      span.slider_pagination_count  3
+    ul.slider_pagination_units
+      - for (var i = 0; i < 3; i++)
+        li
+          a(href="#", data-slide-index=i)

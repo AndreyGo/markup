@@ -1,0 +1,29 @@
+{
+  "name": "billiard",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.jade",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aleksandr Langolf",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-rename": "~0.2.2",
+    "gulp": "~3.5.0",
+    "gulp-stylus": "0.0.11",
+    "gulp-jade": "~0.4.0",
+    "browser-sync": "~0.5.2",
+    "gulp-uglify": "~0.2.0",
+    "gulp-autoprefixer": "0.0.4",
+    "gulp-concat": "~2.1.7",
+    "gulp-csso": "~0.2.2",
+    "gulp-grunt": "~0.4.1",
+    "grunt-spritesmith": "~1.21.2",
+    "gulp-util": "~2.2.12",
+    "gulp-imagemin": "~0.1.4",
+    "gulp-clean": "~0.2.4",
+    "grunt": "~0.4.2",
+    "grunt-grunticon": "~1.0.0-beta.1"
+  }
+}
