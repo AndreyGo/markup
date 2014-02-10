@@ -4,3 +4,6 @@
 /app
 # Output
 /build
+Gruntfile.js
+gulpfile.js
+package.json
