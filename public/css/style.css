@@ -1548,6 +1548,7 @@ input:focus {
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   padding: 22px 0;
   color: #555;
+  position: relative;
 }
 .page_header:before,
 .page_header:after {
@@ -1605,7 +1606,7 @@ input:focus {
   border-bottom: 1px dotted #1c60ab;
 }
 .header_company ul li.address a:hover {
-  border-bottom: 1px dotted #da4500;
+  border-bottom-color: #da4500;
 }
 .header_company ul li:hover .text-bold {
   color: #555;
@@ -1679,7 +1680,7 @@ input:focus {
 }
 .header_info .title a:hover,
 .header_callback .title a:hover {
-  border-bottom: 1px dotted #da4500;
+  border-bottom-color: #da4500;
 }
 .header_info .title .bold,
 .header_callback .title .bold {
@@ -1692,22 +1693,12 @@ input:focus {
   margin-right: 0;
   min-height: 1px;
   padding: 0 30px;
+  position: relative;
 }
 .header_login .enter-text {
   display: block;
   font: 400 14px Arial, Helvetica, sans-serif;
   margin: 0 0 10px 0;
-}
-.header_login a {
-  font-size: 12px;
-  border-bottom: 1px dotted #1c60ab;
-  display: inline-block;
-  line-height: 1;
-  vertical-align: middle;
-  margin: 0 5px 0 0;
-}
-.header_login a:hover {
-  border-bottom: 1px dotted #da4500;
 }
 .header_login .icon-user-arrow-down {
   background-image: url("../img/sprite.png");
@@ -1725,6 +1716,97 @@ input:focus {
   display: inline-block;
   vertical-align: text-bottom;
   margin: 0 10px 0 0;
+}
+.header_login_user {
+  font-size: 12px;
+  border-bottom: 1px dotted #1c60ab;
+}
+.header_login_user:hover {
+  border-bottom-color: #da4500;
+}
+.header_login_registration {
+  font-weight: 700;
+  border: none;
+  font-size: 14px;
+}
+.header_login_enter {
+  border-bottom: 1px dotted #1c60ab;
+  position: relative;
+}
+.header_login_enter:hover {
+  border-bottom-color: #da4500;
+}
+.header_login_enter.active {
+  color: #000 !important;
+  border: none;
+}
+.header_login_enter_block {
+  width: 225px;
+  display: none;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  z-index: 100;
+  background: #fff;
+}
+.header_login_enter_block input {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
+  height: 40px;
+  padding: 0 12px;
+  margin-bottom: 20px;
+}
+.header_login_enter_block input:nth-child(2) {
+  margin-bottom: 10px;
+}
+.header_login_enter_block button {
+  display: block;
+  clear: both;
+  width: 100%;
+  border: none;
+  height: 50px;
+  background-image: linear-gradient(to top, #164688, #1e6dbd);
+  box-shadow: inset 0 1px 2px rgba(255,255,255,0.6), 0 3px 8px rgba(0,0,0,0.3);
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+.header_login_enter_block button:hover {
+  background-image: linear-gradient(to bottom, #164688, #1e6dbd);
+}
+a.header_pass_forgot {
+  text-align: right;
+  display: inline-block;
+  float: right;
+  line-height: 1;
+  border-bottom: 1px dotted #1c60ab;
+  margin-bottom: 15px;
+}
+a.header_pass_forgot:hover {
+  border-bottom-color: #da4500;
+}
+#pass_block {
+  display: none;
+}
+#pass_block .title {
+  width: 80%;
+  display: block;
+  margin-bottom: 10px;
+}
+#pass_block input {
+  margin-bottom: 20px;
+}
+#pass_block button {
+  margin-bottom: 20px;
+}
+#pass_block .header_pass_forgot {
+  text-align: center;
+  margin: 0 auto;
 }
 .header_nav {
   background-color: #1c60ab;

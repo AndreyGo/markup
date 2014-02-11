@@ -225,7 +225,6 @@ $(document).ready(function() {
       });
 
       // Show pass
-      //
       $('.icon-eye').one('click', showPass);
 
       function showPass() {
@@ -245,6 +244,17 @@ $(document).ready(function() {
         $('input[type=password]').focus();
         $(this).one('click', showPass);
       }
+
+      // Header login
+      $('.header_login_enter').on('click', function(){
+        $(this).toggleClass('active');
+        $('.header_login_enter_block').toggle();
+      });
+
+      $('.header_pass_forgot').on('click', function(){
+        $('#login_block').toggle();
+        $('#pass_block').toggle();
+      })
 });
 
 /*! iCheck v1.0.1 by Damir Sultanov, http://git.io/arlzeA, MIT Licensed */

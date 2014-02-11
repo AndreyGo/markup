@@ -53,7 +53,19 @@
               <div class="header_info"><span class="title">8 (800) <span class="bold">123-45-67</span></span>Бесплатный звонок с территории России</div>
               <div class="header_info"><span class="title">8 (495) <span class="bold">685-77-20</span></span>мы ждем звонка с 10:00 до 22:00</div>
               <div class="header_callback"><span class="title"><a href="#recall" data-type="modal" data-target="#recall"><span class="bold">перезвоните мне</span></a></span>Оставьте телефон и наш менеджер перезвонит вам!</div>
-              <div class="header_login"><span class="enter-text">Вы вошли как</span><span class="icon-user"></span><a href="#user" title="user" class="header_login_user">Роман Абрамович</a><span class="icon-user-arrow-down"></span></div>
+              <div class="header_login"><a href="#" class="header_login_enter">Войти на сайт</a>
+                <div class="header_login_enter_block">
+                  <form id="login_block">
+                    <input type="text" placeholder="Логин">
+                    <input type="password" placeholder="Пароль"><a href="#" class="header_pass_forgot">Я забыл пароль</a>
+                    <button type="submit">Войти</button>
+                  </form>
+                  <form id="pass_block"><span class="title">Укажите ваш e-mail, куда мы отправим новый пароль</span>
+                    <input type="email" placeholder="E-mail">
+                    <button type="submit">Восстановить</button><a href="#" class="header_pass_forgot">Я вспомнил пароль</a>
+                  </form>
+                </div><a href="#user" class="header_login_registration">Зарегистрироваться</a>
+              </div>
             </div>
             <div class="header_row">
               <nav class="header_nav">
@@ -123,76 +135,6 @@
       </header>
       <main role="main" class="page_main">
         <div class="container">
-          <div class="page_registration">
-            <div class="page_category">
-              <div class="sidebar_menu dropdown"><span class="sidebar_menu_title">Каталог товаров<span class="icon"></span></span>
-                <div class="sidebar_menu_dropdown-i">
-                  <div class="sidebar_menu_dropdown dropdown_block">
-                    <div class="dropdown_title"><span>Эксклюзив:</span></div>
-                    <ul class="dropdown_menu">
-                      <li><a href="#">Эксклюзивные столы</a></li>
-                      <li><a href="#">Эксклюзивные кии</a></li>
-                      <li><a href="#">Бильярдные коллекции</a></li>
-                      <li><a href="#">Интерьерные проекты</a></li>
-                    </ul>
-                    <div class="dropdown_title"><span>Все для игры<br>в бильярд:</span></div>
-                    <ul class="dropdown_menu">
-                      <li><a href="#">Бильярдные столы</a></li>
-                      <li><a href="#">Бильярдные кии</a></li>
-                      <li><a href="#">Бильярдные шары</a></li>
-                      <li><a href="#">Аксессуары для бильярда</a></li>
-                      <li><a href="#">Аксессуары для киёв</a></li>
-                      <li><a href="#">Мебель для бильярдной</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="page_search-i">
-              <div class="page_search">
-                <form class="search_form">
-                  <input type="search" placeholder="Поиск среди более 100 000 товаров" autosave class="search_form_input">
-                  <button type="submit" class="search_form_btn btn">Найти</button>
-                </form>
-              </div>
-            </div>
-            <div class="page_breadcrumbs">
-              <ul>
-                <li><a href="#">Бильярд.ру</a></li>
-                <li><a href="#">Бильярдные столы</a></li>
-                <li>Английский снукер</li>
-              </ul>
-            </div>
-            <div class="page_registration_header">
-              <h1 class="h1">Регистрация на сайте</h1>
-            </div>
-            <div class="page_reg_ball-left"><img src="img/green-ball.png"></div>
-            <div class="page_reg_ball-right"><img src="img/blue-ball.png"></div>
-            <div class="page_registration_block">
-              <form>
-                <div class="registration_top">
-                  <div class="registration_input_item">
-                    <label>E-mail <span class="text-red">*</span></label>
-                    <input type="text" placeholder="Мы отправим письмо с инструкцией">
-                  </div>
-                  <div class="registration_input_item">
-                    <label>Пароль <span class="text-red">*</span></label>
-                    <input type="password" name="realPassword" placeholder="Придумайте пароль">
-                    <input type="text" name="fakePassword" placeholder="Придумайте пароль"><span class="icon-eye"></span>
-                  </div>
-                  <div class="registration_submit"><a href="#">У меня есть логин</a>
-                    <button type="submit">Зарегистрироваться</button>
-                  </div>
-                </div>
-                <div class="registration_bottom">
-                  <h1 class="h1">войти с помощью социальных сетей:</h1>
-                  <div class="registration_social_item"><a href="#"><span class="icon icon-login-vk"></span><span class="title">Вконтакте</span></a></div>
-                  <div class="registration_social_item"><a href="#"><span class="icon icon-login-facebook"></span><span class="title">Facebook</span></a></div>
-                  <div class="registration_social_item"><a href="#"><span class="icon icon-login-twitter"></span><span class="title">Twitter</span></a></div>
-                </div>
-              </form>
-            </div>
-          </div>
         </div>
       </main>
       <footer class="page_footer">
