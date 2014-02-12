@@ -1,0 +1,872 @@
+.page_content
+    col(9, r)
+
+/* Page search
+=================*/
+
+.page_search-i
+  col(9, r)
+  cf()
+
+.page_search
+  cf()
+  margin-bottom 32px
+
+.search_form
+
+  input
+    width relW(560, 9)
+    margin-right relW(10, 9)
+    height 50px
+    padding 0 20px
+    color #bbb
+    border-radius 2px
+    box-shadow inset 0 1px 4px rgba(#000, 0.2)
+    display block
+    float left
+    box-sizing border-box
+
+  button
+    float right
+    height 50px
+    display block
+    padding 0
+    width relW(125, 9)
+    color blue
+    font 700 15px arial
+
+
+/* Page Slider
+===================*/
+
+.page_slider_wrapper
+  position relative
+  cf()
+
+.page_slider
+  position relative
+  border-radius 4px
+  max-height 380px
+  li
+      max-height 380px
+      overflow hidden
+      border-radius 4px
+      position relative
+
+      .slider_btn_more
+        display block
+        position absolute
+        left 0
+        background rgba(#36221a, 0.7)
+        width 240px
+        height 40px
+        border-radius 2px
+        text-align center
+        line-height 40px
+        color #fff
+        bottom 90px
+        left 75px
+        transition background .2s ease-in-out
+
+        &:hover
+          background rgba(#36221A, 0.9)
+
+      a
+          display block
+
+  img
+      max-width 100%
+      display block
+
+  &:before
+    content ""
+    display block
+    position absolute
+    top 0
+    left 0
+    width 100%
+    margin 0 auto
+    height 100%
+    box-shadow 0 5px 20px rgba(#000, 0.6)
+    -webkit-transform scaleX(0.95)
+    -moz-transform scaleX(0.95)
+    -ms-transform scaleX(0.95)
+    -o-transform scaleX(0.95)
+    transform scaleX(0.95)
+
+  a.bx-next
+    sprite($slider-arrow-right)
+
+  a.bx-prev
+    sprite($slider-arrow-left)
+
+.slider_discount
+  position absolute
+  top 0
+  right 0
+
+.page_slider_pagination
+  position absolute
+  bottom 90px
+  left 75px
+
+.slider_pagination_text
+  display inline-block
+  vertical-align middle
+  margin-right 20px
+  font-size 14px
+  text-shadow 0 1px 0 #000
+  color #fff
+
+.slider_pagination_curent
+  font-weight 700
+  font-size 21px
+
+.slider_pagination_units
+  display inline-block
+  vertical-align middle
+  li
+    display block
+    float left
+    margin-right 10px
+
+    a
+      width 20px
+      height 20px
+      display block
+      border 3px solid rgba(#000, 0.6)
+      background-clip padding-box
+      border-radius 50%
+      background rgba(#888, 0.6)
+
+    a.active
+      border-color #fff
+/* Special Grid
+==========================*/
+
+.page_section_title
+  margin 0 0 30px 0
+
+.page_special
+  margin 0 0 40px 0
+
+.page_special_grid
+  margin-bottom 20px
+  cf()
+
+.product_item
+  col(3 9)
+  background #fff
+  border-radius 4px
+  border 1px solid #d9e1ea
+  padding 17px 20px
+  margin-bottom 30px
+  min-height 245px
+  cursor pointer
+  position relative
+  transition box-shadow .1s ease-in-out
+
+  &:hover
+    box-shadow 0 5px 10px rgba(#253d55, 0.5)
+
+  &:nth-child(3n)
+    margin-right 0
+    float right
+
+  .item_title
+    font-size 16px
+    margin 0 0 12px 0
+    line-height 20px
+
+
+  .item_image
+    max-width 180px
+    max-height 130px
+    margin 0 0 18px 0
+
+    a
+      display block
+
+      img
+        max-width 100%
+        display block
+
+  .item_price
+    font-size 14px
+    color #555
+
+    > .bold
+      font-weight 700
+      color #000
+      font-size 18px
+
+  .item_badge
+    position absolute
+    top 0
+    right -1px
+
+    .item_badge_box
+      width 30px
+      height 30px
+      border-radius 2px
+      z-index 2
+      position relative
+
+    .badge_name
+      position absolute
+      display block
+      opacity 1
+      z-index 1
+      background rgba(#000, 0.5)
+      border-radius 2px
+      height 100%
+      right 0
+      color #fff
+      font-size 12px
+      text-shadow 0 0 1px #000
+      padding 10px
+      line-height 1
+      white-space nowrap
+
+    .icon
+      display block
+      position absolute
+      top 0
+      bottom 0
+      left 0
+      right 0
+      z-index 2
+      margin auto
+
+  .badge_discount
+    .item_badge_box
+      background green
+
+    .icon
+        sprite($percent)
+
+
+  .badge_like
+    .item_badge_box
+      background #12639c
+
+    .icon
+        sprite($like)
+
+  .badge_exclamation
+    .item_badge_box
+      background #eec315
+
+    .icon
+        sprite($exclamation)
+
+
+/* Page About Block
+==============================*/
+
+.page_about_btn
+  height 50px
+  line-height 50px
+  float right
+  width relW(125, 9)
+
+  span
+    display inline-block
+    vertical-align middle
+    line-height 18px
+    border-bottom 1px dotted blue
+
+.page_about_text
+  margin 0 0 20px 0
+.page_about_bottom
+  cf()
+
+/* Page breadcrumbs
+==============================*/
+
+.page_breadcrumbs
+  cf()
+  clear both
+  margin 0 0 35px 0
+
+  ul
+    font-size 0
+
+  li
+    display inline-block
+    font-size 14px
+
+    &:after
+      content "—"
+      position relative
+      margin 0 4px
+      color #bbb
+
+    &:last-child
+      color #bbb
+
+      &:after
+        content ""
+
+    a
+      display inline-block
+
+/* Page filter
+==============================*/
+
+.page_filter
+  cf()
+  border-radius 4px
+  background #fff
+  border 1px solid #d9e1ea
+  margin 0 0 30px 0
+  padding 20px
+
+  h1.h1
+    margin 0 0 10px 0
+
+.page_filter_block
+  display inline-block
+  margin 0 0 0 30px
+
+  &:first-child
+    margin 0
+
+.page_filter_type
+  width 110px
+
+.page_filter_price
+  width 160px
+
+.page_filter_quan
+  width 62px
+
+/* Page pagination
+==============================*/
+
+.page_pagination
+  @extend .page_filter
+  margin-bottom 50px
+
+.page_pagination_list
+  display inline-block
+
+  li
+    display inline-block
+
+    &:first-child
+      margin-left 15px
+
+    &:last-child
+      margin-right 15px
+
+.page_pagination_item
+  display block
+  border-radius 50%
+  width 28px
+  height 28px
+  color blue
+  background #fff
+  text-align center
+  border 1px solid blue
+
+  &:hover
+    border-color orange
+
+  &.active
+    background blue
+    color #fff
+
+.page_pagination_pagecount
+  @extend .page_pagination_item
+  display inline-block
+  margin 0 15px
+
+
+/* Page article
+=================*/
+
+.page_article
+  border-radius 4px
+  background #fff
+  box-shadow 0 5px 20px rgba(#000, 0.3)
+  padding 40px 0
+  line-height 30px
+
+  h1.h1
+    display block
+    margin 0 0 30px 0
+
+  h3.h3
+    font 400 21px robotoBold
+    display block
+    color #000
+    margin 0 0 30px 0
+
+  p
+    margin 0
+    color #555
+    line-height 30px
+
+  .article_alert
+    margin 20px 0
+    border-radius 4px
+    padding 20px 60px
+    background #fff4c9
+    position relative
+    color #000
+
+    &:before
+      content ""
+      display block
+      position absolute
+      top 23px
+      left 23px
+      sprite($alert)
+
+.page_article-i
+  padding 0 40px
+
+.article_list_item
+  display block
+  margin 40px 0
+  color #555
+  cf()
+
+  .bold
+    font-weight 700
+    color #000
+
+.article_item_icon
+  span(2 9)
+  cf()
+
+  span, img
+    display block
+    margin 0 auto
+
+.article_item_desc
+  span(7 9)
+
+  .text-blue
+    font-weight 700
+    color blue
+
+  .text-red
+    font-weight 700
+    font-size 13px
+
+.article_text-bold
+  font-weight 700
+  color #000
+
+  &:before
+    content "•"
+    display inline-block
+    position relative
+    vertical-align middle
+    margin-right 3px
+
+.icon-wallet
+  sprite($wallet)
+
+.icon-card
+  sprite($card)
+
+.icon-postman
+  sprite($postman)
+
+.icon-delivery
+  sprite($delivery)
+
+.icon-truck
+  sprite($truck)
+
+.icon-post-phone
+  sprite($post-phone)
+
+.article_assist
+  border-top 1px solid #ddd
+  border-bottom 1px solid #ddd
+  color #555
+  font-size 13px
+  padding 40px 0
+  cf()
+
+
+/* Page news
+=================*/
+
+.page_category
+  col(3)
+  cf()
+
+
+.page_news_header
+  text-align center
+  margin-bottom 35px
+
+  h1.h1
+    font-size 24px
+
+.page_news_tags
+  margin-bottom 50px
+
+.news_tags_item
+  font 700 14px arial
+  color blue
+  padding 10px 15px
+  background #e2e8ef
+  border-radius 3px
+  position relative
+  margin-right 10px
+  display inline-block
+
+  &:before
+    content ","
+    position absolute
+    right -7px
+    color #000
+    z-index 2
+
+  &:last-child
+    &:before
+      content ""
+
+  &:nth-child(2)
+    margin-left 5px
+
+.news_tags_active
+  @extend .news_tags_item
+  margin 0 5px 0 5px
+  background #ebebeb
+  color #555 !important
+
+  &:before
+    content ""
+
+.page_news_item
+  border-radius 4px
+  background #fff
+  box-shadow 0 5px 20px rgba(#000, 0.2)
+  margin-bottom 30px
+
+.page_news_item-i
+  padding 30px
+  cf()
+
+.news_item_image
+  width 100%
+  height 214px
+  max-width 214px
+  border-radius 4px
+  overflow hidden
+  float left
+  margin-right 30px
+
+  a
+    display block
+
+  img
+    display block
+
+.news_item_desc
+  width 100%
+  max-width 640px
+  float right
+  color #555
+  max-height 214px
+  line-height 30px
+  overflow hidden
+  position relative
+
+  &:before
+    content ""
+    display block
+    position absolute
+    background linear-gradient(to top, #fff, rgba(#fff, 0))
+    width 100%
+    height 80px
+    bottom 0
+
+
+.news_item_header
+  margin-bottom 5px
+  > a
+    font 700 18px arial
+
+.news_item_date
+  color #555
+  display inline-block
+  vertical-align middle
+  margin-right 10px
+
+.icon-tags
+  sprite($tags)
+  display inline-block
+  vertical-align middle
+  margin-right 10px
+
+.news_item_subheader
+  margin-bottom 10px
+
+
+/* Page news opened
+=================*/
+
+.page_news_article_header
+  width 650px
+  cf()
+  margin 0 auto 25px auto
+
+.news_article_header_thumb
+  width 60px
+  height 60px
+  border-radius 4px
+  margin-right 20px
+  overflow hidden
+  float left
+
+  img
+    display block
+
+.page_news_article
+  position relative
+  h1.h1
+    display block
+    font-size 24px
+
+.news_article_date
+  display inline-block
+  vertical-align middle
+  margin-right 15px
+  color #555
+
+.news_article_tag
+  display inline-block
+  vertical-align middle
+
+.page_news_article_body
+  border-radius 4px
+  box-shadow 0 5px 20px rgba(#000, 0.2)
+  padding 50px
+
+
+  p
+    font 400 15px/32px arial
+    color #555
+
+
+/* Page news pagination
+=================*/
+
+.news_article_pagination
+  padding-top 30px
+  border-top 1px solid #ddd
+  margin-top 60px
+  cf()
+
+.news_article_pagination_left
+  width 50%
+  float left
+
+.news_article_pagination_right
+  width 50%
+  float right
+
+.news_article_pagination_left-i,
+.news_article_pagination_right-i
+  float left
+  line-height 1
+  cf()
+
+.news_article_pagination_right-i
+  float right
+
+.news_article_pagination_left_icon
+  float left
+  margin-right 20px
+  a
+    display block
+    sprite($news-pagination-arrow-left)
+
+.news_article_pagination_right_icon
+  float right
+  margin-left 20px
+  a
+    display block
+    sprite($news-pagination-arrow-right)
+
+.news_article_pagination_title
+  color #555
+  margin-bottom 15px
+  display block
+
+.news_article_pagination_link
+  display block
+  font-weight 700
+
+.page_pageup
+  width 25px
+  height 50px
+  border-radius 4px
+  background #ddd
+  left 256px
+  cursor pointer
+  position absolute
+  z-index 100
+  display none
+
+  .icon-arrow-up
+    sprite($arrow-up)
+    display block
+    position absolute
+    top 0
+    left 0
+    right 0
+    bottom 0
+    margin auto
+
+/* Page registration
+===========================*/
+
+.page_registration
+  position relative
+  cf()
+
+.page_registration_header
+  text-align center
+  margin-bottom 30px
+
+.page_reg_ball-left
+  position absolute
+  left 0
+  width 50%
+
+.page_reg_ball-right
+  position absolute
+  right 0
+  bottom 0
+  width 50%
+  text-align right
+
+.page_reg_ball-right,
+.page_reg_ball-left
+  img
+    max-width 100%
+
+.page_registration_block
+  position relative
+  z-index 2
+  width 630px
+  margin 0 auto
+  background #f4f7fb
+  border-radius 4px
+  left 0
+  right 0
+  box-shadow 0 1px 1px rgba(#000, 0.4)
+
+.registration_top
+  padding 35px 60px
+  cf()
+
+.registration_bottom
+  background #fff
+  padding 35px 60px
+
+.registration_input_item
+  position relative
+  margin-bottom 12px
+
+  &:nth-child(2)
+    margin-bottom 25px
+
+  label
+    width 80px
+    font-size 14px
+    display inline-block
+    line-height 45px
+    padding-right 20px
+    text-align right
+    vertical-align middle
+    color #555
+
+  input
+    display inline-block
+    height 45px
+    float right
+    vertical-align middle
+    width 420px
+    border-radius 4px
+    padding 0 20px
+    box-shadow inset 0 1px 3px rgba(#000, 0.3)
+
+  input[name="fakePassword"]
+    display none
+
+  .icon-eye
+    sprite($eye)
+    display block
+    position absolute
+    right 20px
+    top 17px
+
+.registration_submit
+  float right
+  > a
+    border-bottom 1px dotted blue
+
+    &:hover
+      border-bottom 1px dotted orange
+
+  button
+    background linear-gradient(to top, #1b5c00, #1b7f00)
+    border-radius 4px
+    margin-left 12px
+    color #fff
+    text-shadow 0 0 1px #000
+    width 280px
+    height 45px
+    line-height 1
+    border none
+    box-shadow inset 0 0 1px rgba(#fff, 0.4)
+
+    &:hover
+      background linear-gradient(to bottom, #1b5c00, #1b7f00)
+
+.registration_bottom
+  text-align center
+
+  h1.h1
+    display block
+    margin-bottom 30px
+
+.registration_social_item
+  display inline-block
+  text-align center
+  margin-right 30px
+
+  .icon
+    display block
+    margin 0 auto
+    transition opacity .2s ease-in-out
+
+    &:hover
+      opacity 0.5
+
+  .title
+    text-align center
+
+  a
+    display block
+    transition color .2s ease-in-out
+
+.icon-login-vk
+  sprite($login-vk)
+
+.icon-login-facebook
+  sprite($login-facebook)
+
+.icon-login-twitter
+  sprite($login-twitter)
+

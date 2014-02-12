@@ -1,0 +1,155 @@
+extends layout/main_product
+
+block content
+  div.page_pageup
+    span.icon-arrow-up
+  div.page_product
+    div.container
+      div.page_category
+        include blocks/sidebar_menu_dropdown
+      div.page_search-i
+        include blocks/search
+      include blocks/breadcrumbs
+
+      div.page_product_block
+
+        div.page_product_header
+          h1.h1 Бильярдный стол «Riley Aristocrat»
+          div.page_product_price
+            span.page_product_price-i от
+              span.price-bold 865 600.00
+              |руб.
+              span.icon-product-price-arrow-down
+
+        div.product_view_block
+          div.product_image
+            img(src="img/table_big.jpg")
+          div.product_slider
+            ul
+              - for (var i = 0; i < 8; i++)
+                li.product_slider_item
+                  a(href="#")
+                    img(src="img/table_big.jpg")
+            div.product_slider_pagination
+              a(href="#").next
+
+        div.product_summary_block
+          span.product_summary_title О товаре
+          div.product_summary_table
+            div.table_item
+              span.item_var Производитель:
+              span.item_value Riley
+            div.table_item
+              span.item_var Класс стола:
+              span.item_value Люкс
+            div.table_item
+              span.item_var Материал отделки:
+              span.item_value Красное дереро
+            div.table_item
+              span.item_var Резина:
+              span.item_value Nothern
+            div.table_item
+              span.item_var Сукно
+              span.item_value West of England
+            div.table_item
+              span.item_var Тип игры:
+              span.item_value Английский снукер
+            div.table_item
+              span.item_var Тонировка древесины
+              span.item_value Махагонф
+
+          div.product_summary_info
+            p Эксклюзивный английский бильярдный стол для снукера на котором проводятся все мировые чемпионаты по снукеру. Произодится в Англии. В основании игрового поля итальянская плита.
+            a(href="#").summary_info_more Подробное описание товара
+
+        div.product_sidebar_block
+          div.product_sidebar_top
+            button.product_sidebar_buy
+              span.icon-basket
+              |Купить
+            a(href="#").product_sidebar_favorite
+              span.icon-product-flag
+              span.link Добавить в закладки
+
+          div.product_sidebar_middle
+            div.product_sidebar_warranty
+              span.icon-product-warranty
+              |Гарантия 1 год
+            div.product_sidebar_stock
+              span.icon-product-instock
+              |Есть в наличии
+
+          div.product_sidebar_social
+            span.title Нравится товар?<br>Поделись им с друзьями!
+            div.yashare-auto-init(data-yashareL10n="ru",
+            data-yashareQuickServices="vkontakte,facebook,twitter", data-yashareTheme="counter")
+
+      div.page_size-table
+        div.size-table_header
+          h1.h1 Таблица размеров
+        div.size-table_block
+          table
+            tr
+              td
+                span.text-bold Размер стола
+              td Материал
+              td Диаметр шара
+              td Тонировка древесины
+              td Кол-во опор
+              td Толщина, тип плиты
+              td
+                span.text-bold Цена,
+                |руб.
+              td
+            tr
+              td 10 футов
+              td Красное<br>дерево
+              td 52,2 мм
+              td Серебристый
+              td 8
+              td 45 мм
+              td 865 000
+              td
+            tr
+              td 12 футов
+              td Красное<br>дерево
+              td 52,2 мм
+              td Серебристый
+              td 8
+              td 65 мм
+              td 865 000
+              td
+
+  div.page_similar-products
+    div.container
+      h1.h1 С этим товаром так же покупают:
+      div.similar_slider
+        ul
+          - for (var i = 0; i < 4; i++)
+            li.similar_slider_item
+              a(href='#')
+                div.similar_slider_item_title Сукно "Казино"
+                div.similar_slider_item_image
+                  img(src="img/similar-product-"+i+".jpg")
+                div.similar_slider_item_price
+                  span.text-bold 750
+                  |  руб.
+      div.similar_slider_pagination
+
+  div.page_product-about
+    div.container
+      div.page_product-about-left
+        div.product-about_title Акция:
+        div.sidebar_discount_block
+          div.sidebar_discount-i
+            div.sidebar_discount_title Скидка 20%
+            div.sidebar_discount_text На бильярдные столы «Русская пирамида» только до конца 2013 года! Успей купить!
+            div.sidebar_discount_button
+              a(href="#") подробнее
+      div.page_product-about-right
+        div.product-about_title Описание товара:
+        h1.h1 Бильярдный стол «Riley Aristocrat»
+        div.product-about_info Эксклюзивный английский бильярдный стол для снукера на котором проводятся все мировые чемпионаты по снукеру. Произодится в Англии. В основании игрового поля итальянская плита. Он отворотился и пошел от нее к окну. Она постояла, посмотрела на него беспокойно и вышла в тревоге.  Петр Петрович хихикал слушая, но без особого увлечения.  Он даже мало и слушал. Он действительно что-то обдумывал другое, и даже Лебезятников наконец это заметил. . В основании игрового поля итальянская плита. Он отворотился и пошел от нее к окну. В основании игрового поля итальянская плита. Он отворотился и пошел от нее к окну. Она постояла, посмотрела на него беспокойно и вышла в тревоге.  Петр Петрович хихикал слушая, но без особого увлечения.
+        div.page_about_bottom
+          a(href="about.html").page_about_btn.btn
+            span Подробнее
