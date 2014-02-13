@@ -1732,7 +1732,6 @@ input:focus {
   display: none;
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-  padding: 20px;
   position: absolute;
   left: 0;
   top: 100%;
@@ -1766,15 +1765,35 @@ input:focus {
 .header_login_enter_block button:hover {
   background-image: linear-gradient(to bottom, #164688, #1e6dbd);
 }
+.login_block_top {
+  padding: 20px;
+}
+.login_social_block {
+  background: #f4f7fb;
+  padding: 15px;
+  text-align: center;
+  border-radius: 0 0 4px 4px;
+}
+.login_social_block_title {
+  margin-bottom: 10px;
+}
+.login_social_block > a {
+  display: inline-block;
+  margin-right: 20px;
+}
+.login_social_block > a:last-child {
+  margin-right: 0;
+}
 a.header_pass_forgot {
   text-align: right;
-  display: inline-block;
-  float: right;
+  display: block;
   line-height: 1;
-  border-bottom: 1px dotted #1c60ab;
   margin-bottom: 15px;
 }
-a.header_pass_forgot:hover {
+a.header_pass_forgot > span {
+  border-bottom: 1px dotted #1c60ab;
+}
+a.header_pass_forgot > span:hover {
   border-bottom-color: #da4500;
 }
 #pass_block {
@@ -2168,6 +2187,7 @@ a.header_pass_forgot:hover {
   margin-bottom: 20px;
 }
 .product_image img {
+  display: block;
   max-width: 100%;
 }
 .product_slider {
@@ -2952,6 +2972,30 @@ a.header_pass_forgot:hover {
   src: url("../fonts/robotoslab-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/robotoslab-regular-webfont.woff") format('woff'), url("../fonts/robotoslab-regular-webfont.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+.icon-contacts-geo {
+  background-image: url("../img/sprite2.png");
+  background-position: -32px -31px;
+  width: 16px;
+  height: 25px;
+}
+.icon-header-login-fb {
+  background-image: url("../img/sprite2.png");
+  background-position: 0px 0px;
+  width: 31px;
+  height: 30px;
+}
+.icon-header-login-tw {
+  background-image: url("../img/sprite2.png");
+  background-position: -32px 0px;
+  width: 32px;
+  height: 30px;
+}
+.icon-header-login-vk {
+  background-image: url("../img/sprite2.png");
+  background-position: 0px -31px;
+  width: 31px;
+  height: 30px;
 }
 .page_contacts {
   background: #f00;

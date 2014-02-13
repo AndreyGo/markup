@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     sprite: {
       all: {
         src: ['app/img/icons/*.png'],
-        imgPath: '../img/sprite.png',
+        imgPath: '../img/sprite2.png',
         destImg: 'app/img/sprite2.png',
         destCSS: 'app/styl/base/icons.css',
         algorithm: 'binary-tree',
