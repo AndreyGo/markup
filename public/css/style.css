@@ -1181,6 +1181,8 @@ input:focus {
 }
 .news_article_header_thumb img {
   display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 .page_news_article {
   position: relative;
@@ -1223,13 +1225,13 @@ input:focus {
   clear: both;
 }
 .news_article_pagination_left {
-  width: 80%;
+  width: 45%;
   float: left;
 }
 .news_article_pagination_right {
-  width: 80%;
   float: right;
   text-align: right;
+  width: 45%;
 }
 .news_article_pagination_left-i,
 .news_article_pagination_right-i {
