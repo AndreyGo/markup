@@ -2880,7 +2880,7 @@ a.header_pass_forgot:hover {
   display: block;
 }
 .sidebar_payment_block {
-  position: fixed;
+  position: static;
   width: 100%;
   max-width: 214px;
   padding-bottom: 40px;

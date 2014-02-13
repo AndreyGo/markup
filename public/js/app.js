@@ -206,6 +206,17 @@ $(document).ready(function() {
         } else {
             $('.page_pageup').css('display', 'none');
         }
+
+        if(windowTop > 270) {
+          $('.sidebar_payment_block').css({
+            position: 'fixed',
+            top: '10px'
+          });
+        } else {
+          $('.sidebar_payment_block').css({
+            position: 'static'
+          });
+        }
     })
 
 
