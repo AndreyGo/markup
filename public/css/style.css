@@ -1181,8 +1181,6 @@ input:focus {
 }
 .news_article_header_thumb img {
   display: block;
-  max-width: 100%;
-  max-height: 100%;
 }
 .page_news_article {
   position: relative;
@@ -1251,6 +1249,7 @@ input:focus {
 }
 .news_article_pagination_right-i {
   float: right;
+  width: 88%;
 }
 .news_article_pagination_left_icon {
   float: left;
