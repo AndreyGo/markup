@@ -1,11 +1,12 @@
 $(document).ready(function() {
 
-    var goodsQuantity = 2; // количество товаров в корзине
+    var goodsQuantity = $('ul.header_busket_list > li').length; // количество товаров в корзине
     $('.header_busket_value').html(goodsQuantity)
 
     //Cлайдер на главной
 
     var sliderIndex = $('.slider_pagination_curent');
+    $('.slider_pagination_count').html( $('.page_slider ul > li').length );
 
     var slider = $('.page_slider ul').bxSlider({
         pager: true,
@@ -59,12 +60,38 @@ $(document).ready(function() {
 
     // Busket Close
     $('.busket_item_close').on('click', function(event) {
+
+        var URL  = $('.header_busket_list').attr('data-url');
+        var ID   = $(this).attr('data-id');
+
+        var self = this;
+
         event.preventDefault();
-        $(this).parent('.header_busket_item').fadeOut(100).remove();
-        goodsQuantity -= 1;
-        $('.header_busket_items_num span.value').html(goodsQuantity);
-        $('.header_busket_value').html(goodsQuantity);
+
+        $.ajax({
+          type: "POST",
+          url: URL,
+          data: {ID:ID},
+          statusCode: {
+              200: function() {
+                goodsQuantity -= 1;
+                $(self).parent('.header_busket_item').fadeOut(100).remove();
+                $('.header_busket_items_num span.value').html(goodsQuantity);
+                $('.header_busket_value').html(goodsQuantity);
+              }
+            }
+        });
     });
+    (function() {
+      var totalPrice = 0;
+      $('.price_value').each(function(index, el) {
+        var price = parseInt($(this).text().replace(/(&nbsp;| )+/g, ''));
+        totalPrice += price;
+      });
+      var num = String(totalPrice).slice('');
+      num.slice(0, 3, '');
+      $('.header_busket_items_sum .text-bold').text(num);
+    }());
 
     // Fancybox
     $('[data-type="modal"]').click(function() {
@@ -189,7 +216,6 @@ $(document).ready(function() {
           var ratio = 1;
           var width = $(this).width();
           var height = $(this).height();
-          console.log(width/height)
           if(width > height) {
             $(this).css('max-height', '100%');
           }
@@ -205,11 +231,10 @@ $(document).ready(function() {
           var ratio = 1;
           var width = $(this).width();
           var height = $(this).height();
-          if((height/width) < ratio) {
+          if(width > height) {
             $(this).css('max-height', '100%');
           }
-
-          if((width/height) < ratio) {
+          if(width < height) {
             $(this).css('max-width', '100%');
           }
       });
@@ -245,6 +270,22 @@ $(document).ready(function() {
         $('#login_block').toggle();
         $('#pass_block').toggle();
       })
+
+      // Call Me AJAX
+      $('#recall form').on('submit',function(){
+        var options = {
+                beforeSubmit:  function(){
+                  // Check fields
+                  return true;
+                },
+                success: function(responseText){
+                  // Sended
+                }
+            };
+
+        $(this).ajaxSubmit(options);
+        return false;
+      });
 
       // Product slider
      var productSlider = $('.product_slider ul').bxSlider({

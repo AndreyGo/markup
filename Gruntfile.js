@@ -4,10 +4,10 @@ module.exports = function(grunt) {
       all: {
         src: ['app/img/icons/*.png'],
         imgPath: '../img/sprite.png',
-        destImg: 'app/img/sprite.png',
-        destCSS: 'app/styl/base/icons.styl',
+        destImg: 'app/img/sprite2.png',
+        destCSS: 'app/styl/base/icons.css',
         algorithm: 'binary-tree',
-        cssFormat: 'stylus',
+        cssFormat: 'css',
         padding: 1
       }
     }

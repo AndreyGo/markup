@@ -40,6 +40,7 @@ gulp.task('jade', function(){
 // Собираем plugins.js
 gulp.task('plugins', function(){
     gulp.src(['./app/js/plugins/**.js'])
+        .pipe(uglify())
         .pipe(concat('plugins.js'))
         .pipe(gulp.dest('./public/js'))
 });
@@ -80,57 +81,13 @@ gulp.task('rm', function(){
 
 // Запуск сервера разработки gulp watch
 gulp.task('watch', function(){
-
-    // Предварительная сборка проекта
-    // Копируем vendor
-    gulp.src('./app/js/vendor/**/*.js')
-        .pipe(gulp.dest('./public/js/vendor'));
-
     gulp.start('stylus');
-    gulp.start('plugins');
-    gulp.start('app');
-    gulp.start('jade');
-    gulp.start('fonts');
     gulp.start('images');
+    gulp.start('app');
+    gulp.start('plugins');
     gulp.start('browser-sync');
 
     gulp.watch('app/styl/**/*.styl', ['stylus']);
-    gulp.watch('app/views/**/*.jade', ['jade']);
-    gulp.watch('app/js/**/*', ['plugins', 'app']);
     gulp.watch('app/img/**/*', ['images']);
-    gulp.watch('app/img/icons/*.png', ['sprite']);
-});
-
-gulp.task('build', function(){
-
-    // Копируем все изображения
-    gulp.src('./app/img/**/*')
-        .pipe(gulp.dest('./build/img'));
-
-    // Копируем шрифты
-    gulp.src('./app/fonts/**')
-      .pipe(gulp.dest('./build/fonts'));
-
-    // css
-    gulp.src('./app/styl/style.styl')
-    .pipe(stylus()).on('error', console.log)
-    .pipe(autoprefixer())
-    .pipe(gulp.dest('./build/css'));
-
-    // jade
-    gulp.src(['./app/views/*.jade', '!./app/views/_*.jade'])
-        .pipe(jade({
-            pretty: true
-        }))
-        .pipe(gulp.dest('./build/'));
-
-    // Main JS + plugins
-    gulp.src(['./app/js/**/*.js', '!./app/js/vendor/**/*.js'])
-        .pipe(concat('app.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest('./build/js'));
-
-    // Vendor plugins
-    gulp.src('./app/js/vendor/**/*.js')
-        .pipe(gulp.dest('./build/js/vendor'));
+    gulp.watch('app/js/**/*.js', ['app', 'plugins']);
 });
