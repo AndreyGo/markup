@@ -199,9 +199,10 @@ $(document).ready(function() {
 
     $(window).scroll(function(){
         var windowTop = $(window).scrollTop();
+        var containerLeft = $('.container').offset().left
 
         if(windowTop) {
-            $('.page_pageup').css({position: 'fixed', top: '10px', display: 'block', left: 10});
+            $('.page_pageup').css({position: 'fixed', top: '10px', display: 'block', left: containerLeft+10});
         } else {
             $('.page_pageup').css('display', 'none');
         }
