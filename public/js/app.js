@@ -334,4 +334,12 @@ $(document).ready(function() {
        infiniteLoop: false,
        hideControlOnEnd: true
      });
+
+     // Header user dropdown
+
+     $('.header_login_user').on('click', function(event) {
+        event.preventDefault();
+        $(this).toggleClass('active');
+        $('.header_user_dropdown').toggle();
+     });
 });

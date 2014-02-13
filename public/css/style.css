@@ -1533,7 +1533,7 @@ input:focus {
 .page_header {
   background: #fff;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-  padding: 22px 0;
+  padding: 30px 0 25px 0;
   color: #555;
   position: relative;
 }
@@ -1563,6 +1563,9 @@ input:focus {
   float: left;
   min-height: 1px;
 }
+.header-left hr {
+  margin-bottom: 30px;
+}
 .header-right {
   width: 74.15966386554622%;
   margin-right: 3.361344537815126%;
@@ -1588,6 +1591,13 @@ input:focus {
 }
 .header_company ul li {
   position: relative;
+  line-height: 1;
+}
+.header_company ul li:first-child {
+  margin-bottom: 21px;
+}
+.header_company ul li:nth-child(2) {
+  margin-bottom: 14px;
 }
 .header_company ul li.address a {
   border-bottom: 1px dotted #1c60ab;
@@ -1687,13 +1697,23 @@ input:focus {
   font: 400 14px Arial, Helvetica, sans-serif;
   margin: 0 0 10px 0;
 }
-.header_login .icon-user-arrow-down {
-  background-image: url("../img/sprite.png");
-  background-position: -241px -156px;
-  width: 10px;
-  height: 6px;
+.header_login_user + .icon {
   display: inline-block;
   vertical-align: middle;
+  margin-left: 5px;
+  width: 13px;
+  height: 8px;
+  background-image: url("../img/sprite2.png");
+  background-position: -65px -45px;
+}
+.header_login_user.active + .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  width: 13px;
+  height: 8px;
+  background-image: url("../img/sprite2.png");
+  background-position: -49px -31px;
 }
 .header_login .icon-user {
   background-image: url("../img/sprite.png");
@@ -1764,6 +1784,34 @@ input:focus {
 }
 .header_login_enter_block button:hover {
   background-image: linear-gradient(to bottom, #164688, #1e6dbd);
+}
+.header_user_dropdown {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  position: absolute;
+  top: 100%;
+  width: 186px;
+  display: none;
+  z-index: 10;
+}
+.header_user_dropdown .user_dropdown_item {
+  display: block;
+  height: 45px;
+  line-height: 45px;
+}
+.header_user_dropdown .user_dropdown_item a {
+  display: block;
+  color: #1c60ab;
+  padding: 0 20px;
+}
+.header_user_dropdown .user_dropdown_item a:hover {
+  background: #e2e8ef;
+}
+.header_user_dropdown .user_dropdown_item a .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
 }
 .login_block_top {
   padding: 20px;
@@ -2996,6 +3044,42 @@ a.header_pass_forgot > span:hover {
   background-position: 0px -31px;
   width: 31px;
   height: 30px;
+}
+.icon-header-user-basket {
+  background-image: url("../img/sprite2.png");
+  background-position: -65px -24px;
+  width: 20px;
+  height: 20px;
+}
+.icon-header-user-exit {
+  background-image: url("../img/sprite2.png");
+  background-position: 0px -62px;
+  width: 20px;
+  height: 20px;
+}
+.icon-header-user-flag {
+  background-image: url("../img/sprite2.png");
+  background-position: -65px 0px;
+  width: 20px;
+  height: 23px;
+}
+.icon-header-user-settings {
+  background-image: url("../img/sprite2.png");
+  background-position: -21px -62px;
+  width: 20px;
+  height: 20px;
+}
+.icon-user-arrow-down {
+  background-image: url("../img/sprite2.png");
+  background-position: -65px -45px;
+  width: 13px;
+  height: 8px;
+}
+.icon-user-arrow-up {
+  background-image: url("../img/sprite2.png");
+  background-position: -49px -31px;
+  width: 13px;
+  height: 8px;
 }
 .page_contacts {
   background: #f00;
