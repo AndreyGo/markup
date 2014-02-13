@@ -1235,6 +1235,7 @@ input:focus {
 .news_article_pagination_right-i {
   float: left;
   line-height: 1;
+  width: 80%;
 }
 .news_article_pagination_left-i:before,
 .news_article_pagination_right-i:before,
@@ -1249,7 +1250,6 @@ input:focus {
 }
 .news_article_pagination_right-i {
   float: right;
-  width: 88%;
 }
 .news_article_pagination_left_icon {
   float: left;
