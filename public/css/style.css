@@ -633,10 +633,12 @@ input:focus {
   border: 1px solid #d9e1ea;
   padding: 17px 20px;
   margin-bottom: 30px;
-  min-height: 245px;
   cursor: pointer;
   position: relative;
+  height: 260px;
+  max-height: 260px;
   transition: box-shadow 0.1s ease-in-out;
+  overflow: hidden;
 }
 .product_item:hover {
   box-shadow: 0 5px 10px rgba(37,61,85,0.5);
@@ -647,13 +649,26 @@ input:focus {
 }
 .product_item .item_title {
   font-size: 16px;
+  word-wrap: break-word;
   margin: 0 0 12px 0;
   line-height: 20px;
+  height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+.product_item .item_title:before {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background: linear-gradient(rgba(255,255,255,0), #fff);
+  content: "";
+  display: block;
 }
 .product_item .item_image {
-  max-width: 180px;
-  max-height: 130px;
-  margin: 0 0 18px 0;
+  width: 170px;
+  height: 112px;
+  margin: 0 auto 10px auto;
 }
 .product_item .item_image a {
   display: block;
@@ -665,6 +680,18 @@ input:focus {
 .product_item .item_price {
   font-size: 14px;
   color: #555;
+  position: absolute;
+  bottom: 15px;
+}
+.product_item .item_price .new_price {
+  font-size: 18px;
+  color: #ec9212;
+  font-weight: 700;
+}
+.product_item .item_price .old_price {
+  font-size: 15px;
+  text-decoration: line-through;
+  font-weight: 700;
 }
 .product_item .item_price > .bold {
   font-weight: 700;
@@ -735,6 +762,76 @@ input:focus {
   background-position: -217px -46px;
   width: 18px;
   height: 21px;
+}
+.product_item_hover_block {
+  background: rgba(255,255,255,0.9);
+  width: 214px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 17px 10px;
+  z-index: 10;
+  border-radius: 4px;
+  display: block;
+  opacity: 0;
+}
+.product_item_hover_block .item_title {
+  height: auto;
+  margin-bottom: 30px;
+  padding: 0 20px 0 10px;
+  word-wrap: break-word;
+}
+.product_item_hover_block .item_title:before {
+  content: none;
+}
+.product_item_hover_block .item_price {
+  position: relative;
+  padding: 0 10px;
+  margin-bottom: 60px;
+}
+.product_item_hover_block button {
+  height: 40px;
+  background: linear-gradient(to top, #1b5c00, #1b7f00);
+  border: none;
+  border-radius: 4px;
+  width: 93px;
+  color: #fff;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.7);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+  display: inline-block;
+}
+.product_item_hover_block button:hover {
+  background: linear-gradient(to bottom, #1b5c00, #1b7f00);
+}
+.product_item_hover_meta {
+  position: absolute;
+  bottom: 50px;
+}
+.product_item_hover_meta:before,
+.product_item_hover_meta:after {
+  content: '';
+  display: table;
+}
+.product_item_hover_meta:after {
+  clear: both;
+}
+.product_item_hover_favorite {
+  margin-right: 10px;
+  display: inline-block;
+}
+.product_item_hover_favorite .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.product_item_hover_favorite .title {
+  font-size: 13px;
+  border-bottom: 1px dotted #1c60ab;
+}
+.product_item_hover_favorite .title:hover {
+  border-bottom-color: #da4500;
 }
 .page_about_btn {
   height: 50px;
@@ -3070,31 +3167,31 @@ a.header_pass_forgot > span:hover {
 }
 .icon-header-login-fb {
   background-image: url("../img/sprite2.png");
-  background-position: 0px 0px;
+  background-position: 0px -31px;
   width: 31px;
   height: 30px;
 }
 .icon-header-login-tw {
   background-image: url("../img/sprite2.png");
-  background-position: -32px 0px;
+  background-position: 0px 0px;
   width: 32px;
   height: 30px;
 }
 .icon-header-login-vk {
   background-image: url("../img/sprite2.png");
-  background-position: 0px -31px;
+  background-position: -33px 0px;
   width: 31px;
   height: 30px;
 }
 .icon-header-user-basket {
   background-image: url("../img/sprite2.png");
-  background-position: -65px -24px;
+  background-position: 0px -62px;
   width: 20px;
   height: 20px;
 }
 .icon-header-user-exit {
   background-image: url("../img/sprite2.png");
-  background-position: 0px -62px;
+  background-position: -65px -24px;
   width: 20px;
   height: 20px;
 }
@@ -3110,15 +3207,21 @@ a.header_pass_forgot > span:hover {
   width: 20px;
   height: 20px;
 }
-.icon-user-arrow-down {
+.icon-product-item-flag {
   background-image: url("../img/sprite2.png");
   background-position: -65px -45px;
+  width: 13px;
+  height: 13px;
+}
+.icon-user-arrow-down {
+  background-image: url("../img/sprite2.png");
+  background-position: -49px -31px;
   width: 13px;
   height: 8px;
 }
 .icon-user-arrow-up {
   background-image: url("../img/sprite2.png");
-  background-position: -49px -31px;
+  background-position: -49px -40px;
   width: 13px;
   height: 8px;
 }

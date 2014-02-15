@@ -33,6 +33,17 @@ $(document).ready(function() {
       $('.dropdown_block:first', this).fadeOut(100);
     });
 
+    // Product item
+    $('.product_item').hover(function() {
+      var value = $(this).children('.item_title').text();
+      var link = $('.item_title a', this).attr('href');
+      var price = $(this).children('.item_price').html();
+      $(this).append('<div class="product_item_hover_block"><div class="item_title"><a href="'+ link +'">' + value + '</a></div><div class="item_price">'+ price +'</div><div class="product_item_hover_meta"><a href="#" class="product_item_hover_favorite"><span class="icon icon-product-item-flag"></span><span class="title">В закладки</span></a><button type="submit">Купить</button></div></div>');
+      $('.product_item_hover_block', this).animate({opacity: 1}, 300, "easeInOutCubic");
+    }, function() {
+      $('.product_item_hover_block').remove();
+    });
+
     // Item badges
 
     $('.item_badge').hover(function() {
@@ -421,4 +432,5 @@ $(document).ready(function() {
           }
         });
      });
+
 });
