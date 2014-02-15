@@ -319,12 +319,30 @@ $(document).ready(function() {
       })
 
       // Call Me AJAX
+      // Call Me AJAX
       $('#recall form').on('submit',function(){
         var options = {
                 beforeSubmit:  function(){
                   // Check fields
-                  console.log("1");
-                  return true;
+                  var sName = $('.modal_body input[name="user_name"]').val().trim();
+                  var sPhone = $('.modal_body input[name="MESSAGE"]').val().trim();
+                  var hasError = false;
+
+                  if (sName == '') {
+                    $('.modal_body input[name="user_name"]').addClass('has-error');
+                    hasError = true;
+                  } else {
+                    $('.modal_body input[name="user_name"]').removeClass('has-error');
+                  }
+
+                  if (sPhone == '') {
+                    $('.modal_body input[name="MESSAGE"]').addClass('has-error');
+                    hasError = true;
+                  } else {
+                    $('.modal_body input[name="MESSAGE"]').removeClass('has-error');
+                  }
+
+                  return !hasError;
                 },
                 success: function(responseText){
                   $('.recall_thanks').show();
