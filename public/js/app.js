@@ -179,6 +179,30 @@ $(document).ready(function() {
       checkboxClass: 'sidebar_filter_checkbox'
     });
 
+    $('#page_basket').iCheck({
+      handle: 'checkbox',
+      checkboxClass: 'page_basket_checkbox'
+    });
+
+    $('.basket-header_checkbox input').on('ifChecked', function(event){
+      $('.basket-block_item input').iCheck('check');
+    });
+
+    $('.basket-header_checkbox input').on('ifUnchecked', function(event){
+      $('.basket-block_item input').iCheck('uncheck');
+    });
+
+    $('.basket-block_item input').each(function(index, el) {
+      $(this).on('ifChecked', function(event) {
+        event.preventDefault();
+        $(this).parents('.basket-block_item').addClass('active')
+      });
+
+      $(this).on('ifUnchecked', function(event) {
+        event.preventDefault();
+        $(this).parents('.basket-block_item').removeClass('active');
+      });
+    });
 
     // Custom slider
     $('#filter-slider').slider({
