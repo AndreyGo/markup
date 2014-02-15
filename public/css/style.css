@@ -631,12 +631,12 @@ input:focus {
   background: #fff;
   border-radius: 4px;
   border: 1px solid #d9e1ea;
-  padding: 17px 20px;
+  padding: 27px 20px 17px 20px;
   margin-bottom: 30px;
   cursor: pointer;
   position: relative;
-  height: 260px;
-  max-height: 260px;
+  height: 270px;
+  max-height: 270px;
   transition: box-shadow 0.1s ease-in-out;
   overflow: hidden;
 }
@@ -702,6 +702,7 @@ input:focus {
   position: absolute;
   top: 0;
   right: -1px;
+  z-index: 100;
 }
 .product_item .item_badge .item_badge_box {
   width: 30px;
@@ -780,7 +781,7 @@ input:focus {
 .product_item_hover_block .item_title {
   height: auto;
   margin-bottom: 30px;
-  padding: 0 20px 0 10px;
+  padding: 10px 20px 0 10px;
   word-wrap: break-word;
 }
 .product_item_hover_block .item_title:before {
