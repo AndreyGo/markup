@@ -1199,7 +1199,8 @@ input:focus {
   display: inline-block;
   vertical-align: middle;
 }
-.page_news_article_body {
+.page_news_article_body,
+.page_simple_body {
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   padding: 50px;
@@ -1697,6 +1698,13 @@ input:focus {
   font: 400 14px Arial, Helvetica, sans-serif;
   margin: 0 0 10px 0;
 }
+.header_login_user.active {
+  color: #555;
+  border: none;
+}
+.header_login_user.active:hover {
+  color: #555;
+}
 .header_login_user + .icon {
   display: inline-block;
   vertical-align: middle;
@@ -2095,6 +2103,24 @@ a.header_pass_forgot > span:hover {
 .page_recall {
   display: none;
 }
+.recall_thanks {
+  display: none;
+}
+.recall_thanks_message {
+  margin-bottom: 70px;
+}
+.recall_thanks .cl {
+  text-align: center;
+  color: #bbb;
+}
+.recall_thanks a {
+  font-weight: 700;
+  text-decoration: none;
+  color: #1c60ab;
+}
+.recall_thanks a:hover {
+  color: #da4500;
+}
 .page_modal {
   border-radius: 4px;
   background: #fbfbfa;
@@ -2142,9 +2168,17 @@ a.header_pass_forgot > span:hover {
   width: 100%;
   height: 47px;
   box-shadow: inset 0 1px 6px rgba(0,0,0,0.2);
-  border: none;
+  border: 1px solid #dedede;
   border-radius: 2px;
   padding: 0 20px;
+}
+.modal_body input:focus {
+  box-shadow: 0 0 0 3px #c2e9ff;
+  border: 1px solid #aadae6;
+}
+.modal_body input .has-error {
+  box-shadow: 0 0 0 3px #ffc2c2;
+  border: 1px solid #e6aaaa;
 }
 .modal_body input:nth-child(1) {
   margin-bottom: 30px;
@@ -2979,6 +3013,12 @@ a.header_pass_forgot > span:hover {
 .sidebar_payment_block .sidebar_payment_menu ul li a:hover {
   border-bottom: 1px dotted #da4500;
 }
+.icon-zoom {
+  background-image: url("../img/sprite.png");
+  height: 21px;
+  width: 21px;
+  background-position: -261px -23px;
+}
 @font-face {
   font-family: 'kelson_sans_ruregular';
   src: url("../fonts/kelson_sans_regular_ru-webfont.eot");
@@ -3081,8 +3121,111 @@ a.header_pass_forgot > span:hover {
   width: 13px;
   height: 8px;
 }
-.page_contacts {
-  background: #f00;
+.page_contacts_block h1.h1 {
+  font-size: 24px;
+  color: #333;
+  display: block;
+  margin-bottom: 30px;
+}
+.page_address_block {
+  width: 420px;
+  margin-right: 30px;
+}
+.page_address_block_title {
+  margin-bottom: 30px;
+}
+.page_address_block_title .icon {
+  display: inline-block;
+}
+.page_address_block_title h2 {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: text-top;
+  margin: 0;
+  line-height: 1;
+  color: #1c60ab;
+  font: 400 21px 'roboto_slabbold', Arial, sans-serif;
+}
+.page_address_block_subtitle {
+  font-style: 15px;
+  color: #bbb;
+  margin-left: 20px;
+}
+.page_address_block_contacts {
+  color: #555;
+  margin-bottom: 50px;
+}
+.page_address_block_map {
+  width: 412px;
+  color: #555;
+  font-size: 15px;
+}
+.page_address_block_map_img {
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  position: relative;
+  margin-bottom: 18px;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.page_address_block_map_img li {
+  border-radius: 4px;
+  overflow: hidden;
+  height: 213px;
+}
+.page_address_block_map_img .bx-wrapper,
+.page_address_block_map_img .bx-viewport {
+  margin: 0;
+  border-radius: 4px;
+  overflow: hidden;
+  height: 213px;
+}
+.page_address_block_map_img .map_zoom {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.page_address_block_map_img img {
+  display: block;
+  max-width: 100%;
+}
+.page_address_block_map_slides:before,
+.page_address_block_map_slides:after {
+  content: '';
+  display: table;
+}
+.page_address_block_map_slides:after {
+  clear: both;
+}
+.page_address_block_map_slides_item {
+  width: 120px;
+  height: 73px;
+  border-radius: 4px;
+  border: 1px solid #d9e1ea;
+  overflow: hidden;
+  float: left;
+}
+.page_address_block_map_slides_item a {
+  display: block;
+}
+.page_address_block_map_slides_item a img {
+  display: block;
+  max-width: 100%;
+}
+.page_address_block_map_slides .bx-controls .bx-next {
+  background-image: url("../img/sprite.png");
+  background-position: -109px -174px;
+  width: 28px;
+  height: 28px;
+  right: -35px;
+}
+.page_address_block_map_slides .bx-controls .bx-prev {
+  background-image: url("../img/sprite.png");
+  background-position: -138px -174px;
+  width: 28px;
+  height: 28px;
+  left: -35px;
 }
 /* jQuery UI - v1.10.4 - 2014-02-13
 * http://jqueryui.com
@@ -3220,9 +3363,6 @@ a.header_pass_forgot > span:hover {
 .bx-wrapper img {
   max-width: 100%;
   display: block;
-}
-.bx-wrapper .bx-viewport {
-  left: -5px;
 }
 .bx-wrapper .bx-pager,
 .bx-wrapper .bx-controls-auto {
