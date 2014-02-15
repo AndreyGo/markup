@@ -2146,6 +2146,7 @@ a.header_pass_forgot > span:hover {
   background: #fff;
   border-radius: 4px;
   cursor: pointer;
+  z-index: 9000;
 }
 .modal_close .icon-modal-close {
   display: block;
@@ -3121,6 +3122,22 @@ a.header_pass_forgot > span:hover {
   width: 13px;
   height: 8px;
 }
+.page_simple_body:before,
+.page_simple_body:after {
+  content: '';
+  display: table;
+}
+.page_simple_body:after {
+  clear: both;
+}
+.page_contacts_block:before,
+.page_contacts_block:after {
+  content: '';
+  display: table;
+}
+.page_contacts_block:after {
+  clear: both;
+}
 .page_contacts_block h1.h1 {
   font-size: 24px;
   color: #333;
@@ -3128,8 +3145,12 @@ a.header_pass_forgot > span:hover {
   margin-bottom: 30px;
 }
 .page_address_block {
-  width: 420px;
+  width: 410px;
+  float: left;
   margin-right: 30px;
+}
+.page_address_block:last-child {
+  margin-right: 0;
 }
 .page_address_block_title {
   margin-bottom: 30px;
@@ -3164,7 +3185,7 @@ a.header_pass_forgot > span:hover {
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.3);
   position: relative;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   margin-top: 30px;
   overflow: hidden;
 }
@@ -3183,6 +3204,7 @@ a.header_pass_forgot > span:hover {
 .page_address_block_map_img .map_zoom {
   display: block;
   position: absolute;
+  z-index: 10;
   bottom: 10px;
   right: 10px;
 }
@@ -3218,14 +3240,53 @@ a.header_pass_forgot > span:hover {
   background-position: -109px -174px;
   width: 28px;
   height: 28px;
-  right: -35px;
+  right: -13px;
 }
 .page_address_block_map_slides .bx-controls .bx-prev {
   background-image: url("../img/sprite.png");
   background-position: -138px -174px;
   width: 28px;
   height: 28px;
-  left: -35px;
+  left: -13px;
+}
+.map_modal:before,
+.map_modal:after {
+  content: '';
+  display: table;
+}
+.map_modal:after {
+  clear: both;
+}
+.map_modal .fancybox-skin {
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.map_modal .modal_close {
+  right: 30px;
+}
+.map_modal .fancybox-title {
+  background: #f4f4f4;
+  padding: 30px 0;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  height: 90px;
+  line-height: 1;
+  border-radius: 4px 4px 0 0;
+  font: 400 21px 'roboto_slabbold', sans-serif;
+  color: #000;
+  text-transform: uppercase;
+}
+.map_modal .fancybox-close {
+  display: block;
+  position: absolute;
+  background-color: #f00;
+  background-image: url("../img/sprite.png");
+  background-position: -238px -107px;
+  width: 18px;
+  height: 16px;
+  z-index: 9000;
 }
 /* jQuery UI - v1.10.4 - 2014-02-13
 * http://jqueryui.com

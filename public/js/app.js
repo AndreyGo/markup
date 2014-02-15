@@ -345,27 +345,80 @@ $(document).ready(function() {
      });
 
      // Contacts slider
-     $('.page_address_block_map_img ul').bxSlider({
-        pagerCustom: '.page_address_block_map_slides',
+     var mapSlider = $('.page_address_block_map_img-first ul').bxSlider({
         slideWidth: 412,
-        // controls: false
+        controls: false,
+        pager: false
      });
 
-     $('.page_address_block_map_slides ul').bxSlider({
+     var mapSliderSecond = $('.page_address_block_map_img-second ul').bxSlider({
+        slideWidth: 412,
+        controls: false,
+        pager: false
+     });
+
+     var mapPagerSlide = $('.page_address_block_map_slides-first ul').bxSlider({
       pager: false,
       controls: true,
-      slideWidth: 110,
+      slideWidth: 120,
       slideMargin: 20,
-      maxSlides: 3,
+      maxSlides: 4,
       minSlides: 3,
       moveSlides: 1,
       infiniteLoop: false,
       hideControlOnEnd: true
      });
 
+     var mapPagerSlideSecond = $('.page_address_block_map_slides-second ul').bxSlider({
+      pager: false,
+      controls: true,
+      slideWidth: 120,
+      slideMargin: 20,
+      maxSlides: 4,
+      minSlides: 3,
+      moveSlides: 1,
+      infiniteLoop: false,
+      hideControlOnEnd: true
+     });
+
+    var thumb = $('.page_address_block_map_slides-first .page_address_block_map_slides_item a');
+    thumb.on('click', function(event) {
+      event.preventDefault();
+      var index = $(this).attr('data-slide-index');
+      mapSlider.goToSlide(index);
+    });
+
+    var thumb = $('.page_address_block_map_slides-second .page_address_block_map_slides_item a');
+    thumb.on('click', function(event) {
+      event.preventDefault();
+      var index = $(this).attr('data-slide-index');
+      mapSliderSecond.goToSlide(index);
+    });
+
      $('.contacts_modal').on('click', function(event) {
        event.preventDefault();
        var imgVal = $(this).children('img').attr('src');
-       $.fancybox({href:imgVal});
+       var imgTitle = $(this).children('img').attr('alt');
+       $.fancybox(imgVal, {
+          closeBtn: true,
+          padding: 0,
+          wrapCSS: "page_modal map_modal",
+          aspectRatio: true,
+          height: '800px',
+          tpl: {
+            closeBtn : '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>'
+          },
+          autoHeight: false,
+          autoSize: false,
+          maxHeight: 600,
+          title: imgTitle,
+          fitToView : false,
+          helpers: {
+            title: {
+              type: 'inside',
+              position: 'top'
+            }
+          }
+        });
      });
 });
