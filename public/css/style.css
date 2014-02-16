@@ -3471,11 +3471,18 @@ a.header_pass_forgot > span:hover {
   background: #fafafa;
   border-radius: 4px;
   border: 1px solid #d0d0d0;
-  padding-left: 14px;
   position: relative;
   display: inline-block;
   margin-right: 20px;
   margin-left: 10px;
+}
+.basket-item_info_count input {
+  background: #fafafa;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 10px;
+  width: 30px;
 }
 .basket-item_info_count .count {
   display: block;
