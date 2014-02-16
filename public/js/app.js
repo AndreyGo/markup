@@ -471,4 +471,20 @@ $(document).ready(function() {
         });
      });
 
+     // Order radio
+
+     $('#order_form input:radio').change(function(event) {
+       checkRadio()
+     });
+
+     function checkRadio () {
+       $('#order_form input:radio').each(function(index, el) {
+         var opt = $(this).is(':checked');
+         if (opt == false) {
+          $(this).parents('.order_delivery_item').removeClass('order_delivery_item-active');
+         } else {
+          $(this).parents('.order_delivery_item').addClass('order_delivery_item-active');
+         }
+       });
+     }
 });
