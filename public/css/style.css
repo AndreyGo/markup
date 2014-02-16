@@ -1473,9 +1473,6 @@ input:focus {
 .registration_input_item:after {
   clear: both;
 }
-.registration_input_item:nth-child(2) {
-  margin-bottom: 25px;
-}
 .registration_input_item label {
   width: 80px;
   font-size: 14px;
