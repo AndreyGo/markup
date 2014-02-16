@@ -1,390 +1,644 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/vendor/modernizr.js"></script>
     <link href="css/style.css" rel="stylesheet">
     <title>Billiard</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="page">
-      <header role="banner" class="page_header">
-        <div class="container">
-          <div class="header-left">
-            <div class="header_logo"><a href="/"><img src="img/billiard-logo.png"></a></div>
-            <hr class="hr">
-            <div class="header_company">
-              <ul>
-                <li class="dropdown"><a href="#"><span class="text-bold">О компании</span></a><span class="icon-dots"></span>
-                  <div class="header_company_dropdown dropdown_block">
-                    <ul class="dropdown_menu">
-                      <li><a href="#">Доставка и оплата</a></li>
-                      <li><a href="#">Контакты</a></li>
-                      <li><a href="#">История компании</a></li>
-                      <li><a href="#">Вакансии</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="address dropdown"><a href="#">Нижняя Масловка, 6</a>
-                  <div class="address_dropdown dropdown_block">
-                    <ul class="dropdown_menu">
-                      <li>Нижняя Масловка, 6</li>
-                      <li>+7 (495) 685-19-19</li>
-                      <li><a href="#">Подробнее о магазине</a></li>
-                    </ul>
-                  </div>
-                </li>
-                <li class="address dropdown"><a href="#">ТЦ «Румянцево»</a>
-                  <div class="address_dropdown dropdown_block">
-                    <ul class="dropdown_menu">
-                      <li>ТЦ «Румянцево»</li>
-                      <li>+7 (495) 685-19-19</li>
-                      <li><a href="#">Подробнее о магазине</a></li>
-                    </ul>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="header-right">
-            <div class="header_row">
-              <div class="header_info"><span class="title">8 (800) <span class="bold">123-45-67</span></span>Бесплатный звонок с территории России</div>
-              <div class="header_info"><span class="title">8 (495) <span class="bold">685-77-20</span></span>мы ждем звонка с 10:00 до 22:00</div>
-              <div class="header_callback"><span class="title"><a href="#recall" data-type="modal" data-target="#recall"><span class="bold">перезвоните мне</span></a></span>Оставьте телефон и наш менеджер перезвонит вам!</div>
-              <div class="header_login"><span class="enter-text">Вы вошли как</span><span class="icon-user"></span><a href="#user" title="user" class="header_login_user">Роман Абрамович</a><span class="icon-user-arrow-down"></span></div>
-            </div>
-            <div class="header_row">
-              <nav class="header_nav">
-                <ul>
-                  <li class="header_nav_item dropdown"><a href="#">Каталог<span class="icon-header-arrow"></span></a>
-                    <div class="header_dropdown dropdown_block">
-                      <div class="dropdown_title"><span>Эксклюзив:</span></div>
-                      <ul class="dropdown_menu">
-                        <li><a href="#">Эксклюзивные столы</a></li>
-                        <li><a href="#">Эксклюзивные кии</a></li>
-                        <li><a href="#">Бильярдные коллекции</a></li>
-                        <li><a href="#">Интерьерные проекты</a></li>
-                      </ul>
-                      <div class="dropdown_title"><span>Все для игры в бильярд:</span></div>
-                      <ul class="dropdown_menu">
-                        <li class="dropdown"><a href="#">Бильярдные столы</a>
-                          <div class="header_dropdown dropdown_block level_2">
-                            <ul class="dropdown_menu">
-                              <li><a href="#">Американский пул</a></li>
-                              <li><a href="#">Английский снукер</a></li>
-                              <li><a href="#">Русская пирамида</a></li>
-                            </ul>
-                          </div>
-                        </li>
-                        <li><a href="#">Бильярдные кии</a></li>
-                        <li><a href="#">Бильярдные шары</a></li>
-                        <li><a href="#">Аксессуары для бильярда</a></li>
-                        <li><a href="#">Аксессуары для киёв</a></li>
-                        <li><a href="#">Мебель для бильярдной</a></li>
-                      </ul>
+        <header role="banner" class="page_header">
+            <div class="container">
+                <div class="header-left">
+                    <div class="header_logo">
+                        <a href="/">
+                            <img src="img/billiard-logo.png">
+                        </a>
                     </div>
-                  </li>
-                  <li class="header_nav_item dropdown"><a href="#">Услуги<span class="icon-header-arrow"></span></a></li>
-                  <li class="header_nav_item dropdown"><a href="#">Статьи</a></li>
-                  <li class="header_nav_item dropdown"><a href="#">Помощь</a></li>
-                  <li class="header_nav_item dropdown"><a href="#">Акции</a></li>
-                </ul>
-              </nav>
-              <div class="header_busket dropdown"><a href="#"><span class="icon-header-basket"></span>В корзине<span class="header_busket_circle"><span class="header_busket_value"></span><span class="icon-basket-arrow"></span></span></a>
-                <div class="header_busket_dropdown-i">
-                  <div class="header_busket_dropdown dropdown_block">
-                    <div class="header_busket_dropdown_title"><span class="header_busket_items_num"><span class="value">2</span> товара</span><span class="header_busket_items_sum">На сумму <span class="text-bold">146 700</span> рублей:</span></div>
-                    <ul class="header_busket_list">
-                      <li class="header_busket_item">
-                        <div class="busket_item_close"><span class="icon-busket-close"></span></div>
-                        <div class="busket_item_img"><a href="#"><img src="img/table_1.jpg"></a></div>
-                        <div class="busket_item_info">
-                          <div class="title"><a href="#">Стол бильярдный «Classic II» 12 снукер</a></div>
-                          <div class="price"><span class="price_value">145 000</span>рублей 1 шт</div>
+                    <hr class="hr">
+                    <div class="header_company">
+                        <ul>
+                            <li class="dropdown">
+                                <a href="#">
+                                    <span class="text-bold">О компании</span>
+                                </a>
+                                <span class="icon-dots"></span>
+                                <div class="header_company_dropdown dropdown_block">
+                                    <ul class="dropdown_menu">
+                                        <li><a href="#">Доставка и оплата</a>
+                                        </li>
+                                        <li><a href="#">Контакты</a>
+                                        </li>
+                                        <li><a href="#">История компании</a>
+                                        </li>
+                                        <li><a href="#">Вакансии</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="address dropdown"><a href="#">Нижняя Масловка, 6</a>
+                                <div class="address_dropdown dropdown_block">
+                                    <ul class="dropdown_menu">
+                                        <li>Нижняя Масловка, 6</li>
+                                        <li>+7 (495) 685-19-19</li>
+                                        <li><a href="#">Подробнее о магазине</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="address dropdown"><a href="#">ТЦ «Румянцево»</a>
+                                <div class="address_dropdown dropdown_block">
+                                    <ul class="dropdown_menu">
+                                        <li>ТЦ «Румянцево»</li>
+                                        <li>+7 (495) 685-19-19</li>
+                                        <li><a href="#">Подробнее о магазине</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="header_row">
+                        <div class="header_info">
+                            <span class="title">8 (800)
+                                <span class="bold">123-45-67</span>
+                            </span>Бесплатный звонок с территории России</div>
+                        <div class="header_info">
+                            <span class="title">8 (495)
+                                <span class="bold">685-77-20</span>
+                            </span>мы ждем звонка с 10:00 до 22:00</div>
+                        <div class="header_callback">
+                            <span class="title">
+                                <a href="#recall" data-type="modal" data-target="#recall">
+                                    <span class="bold">перезвоните мне</span>
+                                </a>
+                            </span>Оставьте телефон и наш менеджер перезвонит вам!</div>
+                        <div class="header_login">
+                            <span class="enter-text">Вы вошли как</span>
+                            <span class="icon-user"></span><a href="#user" title="user" class="header_login_user">Роман Абрамович</a>
+                            <span class="icon-user-arrow-down"></span>
                         </div>
-                      </li>
-                      <li class="header_busket_item">
-                        <div class="busket_item_close"><span class="icon-busket-close"></span></div>
-                        <div class="busket_item_img"><a href="#"><img src="img/table_1.jpg"></a></div>
-                        <div class="busket_item_info">
-                          <div class="title"><a href="#">Стол бильярдный «Classic II» 12 снукер</a></div>
-                          <div class="price"><span class="price_value">145 000</span>рублей 1 шт</div>
+                    </div>
+                    <div class="header_row">
+                        <nav class="header_nav">
+                            <ul>
+                                <li class="header_nav_item dropdown"><a href="#">Каталог<span class="icon-header-arrow"></span></a>
+                                    <div class="header_dropdown dropdown_block">
+                                        <div class="dropdown_title">
+                                            <span>Эксклюзив:</span>
+                                        </div>
+                                        <ul class="dropdown_menu">
+                                            <li><a href="#">Эксклюзивные столы</a>
+                                            </li>
+                                            <li><a href="#">Эксклюзивные кии</a>
+                                            </li>
+                                            <li><a href="#">Бильярдные коллекции</a>
+                                            </li>
+                                            <li><a href="#">Интерьерные проекты</a>
+                                            </li>
+                                        </ul>
+                                        <div class="dropdown_title">
+                                            <span>Все для игры в бильярд:</span>
+                                        </div>
+                                        <ul class="dropdown_menu">
+                                            <li class="dropdown"><a href="#">Бильярдные столы</a>
+                                                <div class="header_dropdown dropdown_block level_2">
+                                                    <ul class="dropdown_menu">
+                                                        <li><a href="#">Американский пул</a>
+                                                        </li>
+                                                        <li><a href="#">Английский снукер</a>
+                                                        </li>
+                                                        <li><a href="#">Русская пирамида</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li><a href="#">Бильярдные кии</a>
+                                            </li>
+                                            <li><a href="#">Бильярдные шары</a>
+                                            </li>
+                                            <li><a href="#">Аксессуары для бильярда</a>
+                                            </li>
+                                            <li><a href="#">Аксессуары для киёв</a>
+                                            </li>
+                                            <li><a href="#">Мебель для бильярдной</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="header_nav_item dropdown"><a href="#">Услуги<span class="icon-header-arrow"></span></a>
+                                </li>
+                                <li class="header_nav_item dropdown"><a href="#">Статьи</a>
+                                </li>
+                                <li class="header_nav_item dropdown"><a href="#">Помощь</a>
+                                </li>
+                                <li class="header_nav_item dropdown"><a href="#">Акции</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header_busket dropdown">
+                            <a href="#">
+                                <span class="icon-header-basket"></span>В корзине
+                                <span class="header_busket_circle">
+                                    <span class="header_busket_value"></span>
+                                    <span class="icon-basket-arrow"></span>
+                                </span>
+                            </a>
+                            <div class="header_busket_dropdown-i">
+                                <div class="header_busket_dropdown dropdown_block">
+                                    <div class="header_busket_dropdown_title">
+                                        <span class="header_busket_items_num">
+                                            <span class="value">2</span>товара</span>
+                                        <span class="header_busket_items_sum">На сумму
+                                            <span class="text-bold">146 700</span>рублей:</span>
+                                    </div>
+                                    <ul class="header_busket_list">
+                                        <li class="header_busket_item">
+                                            <div class="busket_item_close">
+                                                <span class="icon-busket-close"></span>
+                                            </div>
+                                            <div class="busket_item_img">
+                                                <a href="#">
+                                                    <img src="img/table_1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="busket_item_info">
+                                                <div class="title"><a href="#">Стол бильярдный «Classic II» 12 снукер</a>
+                                                </div>
+                                                <div class="price">
+                                                    <span class="price_value">145 000</span>рублей 1 шт</div>
+                                            </div>
+                                        </li>
+                                        <li class="header_busket_item">
+                                            <div class="busket_item_close">
+                                                <span class="icon-busket-close"></span>
+                                            </div>
+                                            <div class="busket_item_img">
+                                                <a href="#">
+                                                    <img src="img/table_1.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="busket_item_info">
+                                                <div class="title"><a href="#">Стол бильярдный «Classic II» 12 снукер</a>
+                                                </div>
+                                                <div class="price">
+                                                    <span class="price_value">145 000</span>рублей 1 шт</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                      </li>
-                    </ul>
-                  </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </header>
+        <main role="main" class="page_main">
+            <div class="page_pageup">
+                <span class="icon-arrow-up"></span>
+            </div>
+            <div class="page_product">
+                <div class="container">
+                    <div class="page_category">
+                        <div class="sidebar_menu dropdown">
+                            <span class="sidebar_menu_title">Каталог товаров
+                                <span class="icon"></span>
+                            </span>
+                            <div class="sidebar_menu_dropdown-i">
+                                <div class="sidebar_menu_dropdown dropdown_block">
+                                    <div class="dropdown_title">
+                                        <span>Эксклюзив:</span>
+                                    </div>
+                                    <ul class="dropdown_menu">
+                                        <li><a href="#">Эксклюзивные столы</a>
+                                        </li>
+                                        <li><a href="#">Эксклюзивные кии</a>
+                                        </li>
+                                        <li><a href="#">Бильярдные коллекции</a>
+                                        </li>
+                                        <li><a href="#">Интерьерные проекты</a>
+                                        </li>
+                                    </ul>
+                                    <div class="dropdown_title">
+                                        <span>Все для игры
+                                            <br>в бильярд:</span>
+                                    </div>
+                                    <ul class="dropdown_menu">
+                                        <li><a href="#">Бильярдные столы</a>
+                                        </li>
+                                        <li><a href="#">Бильярдные кии</a>
+                                        </li>
+                                        <li><a href="#">Бильярдные шары</a>
+                                        </li>
+                                        <li><a href="#">Аксессуары для бильярда</a>
+                                        </li>
+                                        <li><a href="#">Аксессуары для киёв</a>
+                                        </li>
+                                        <li><a href="#">Мебель для бильярдной</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page_search-i">
+                        <div class="page_search">
+                            <form class="search_form">
+                                <input type="search" placeholder="Поиск среди более 100 000 товаров" autosave class="search_form_input">
+                                <button type="submit" class="search_form_btn btn">Найти</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="page_breadcrumbs">
+                        <ul>
+                            <li><a href="#">Бильярд.ру</a>
+                            </li>
+                            <li><a href="#">Бильярдные столы</a>
+                            </li>
+                            <li>Английский снукер</li>
+                        </ul>
+                    </div>
+                    <div class="page_product_block">
+                        <div class="page_product_header">
+                            <h1 class="h1">Бильярдный стол «Riley Aristocrat»</h1>
+                            <div class="page_product_price">
+                                <span class="page_product_price-i">от
+                                    <span class="price-bold">865 600.00</span>руб.
+                                    <span class="icon-product-price-arrow-down"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="product_view_block">
+                            <div class="product_image">
+                                <img src="img/table_big.jpg">
+                            </div>
+                            <div class="product_slider">
+                                <ul>
+                                    <li class="product_slider_item">
+                                        <a href="#">
+                                            <img src="img/table_big.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="product_slider_item">
+                                        <a href="#">
+                                            <img src="img/table_big.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="product_slider_item">
+                                        <a href="#">
+                                            <img src="img/table_big.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="product_slider_item">
+                                        <a href="#">
+                                            <img src="img/table_big.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="product_slider_item">
+                                        <a href="#">
+                                            <img src="img/table_big.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="product_slider_item">
+                                        <a href="#">
+                                            <img src="img/table_big.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="product_slider_item">
+                                        <a href="#">
+                                            <img src="img/table_big.jpg">
+                                        </a>
+                                    </li>
+                                    <li class="product_slider_item">
+                                        <a href="#">
+                                            <img src="img/table_big.jpg">
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="product_slider_pagination">
+                                    <a href="#" class="next"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_summary_block">
+                            <span class="product_summary_title">О товаре</span>
+                            <div class="product_summary_table">
+                                <div class="table_item">
+                                    <span class="item_var">Производитель:</span>
+                                    <span class="item_value">Riley</span>
+                                </div>
+                                <div class="table_item">
+                                    <span class="item_var">Класс стола:</span>
+                                    <span class="item_value">Люкс</span>
+                                </div>
+                                <div class="table_item">
+                                    <span class="item_var">Материал отделки:</span>
+                                    <span class="item_value">Красное дереро</span>
+                                </div>
+                                <div class="table_item">
+                                    <span class="item_var">Резина:</span>
+                                    <span class="item_value">Nothern</span>
+                                </div>
+                                <div class="table_item">
+                                    <span class="item_var">Сукно</span>
+                                    <span class="item_value">West of England</span>
+                                </div>
+                                <div class="table_item">
+                                    <span class="item_var">Тип игры:</span>
+                                    <span class="item_value">Английский снукер</span>
+                                </div>
+                                <div class="table_item">
+                                    <span class="item_var">Тонировка древесины</span>
+                                    <span class="item_value">Махагонф</span>
+                                </div>
+                            </div>
+                            <div class="product_summary_info">
+                                <p>Эксклюзивный английский бильярдный стол для снукера на котором проводятся все мировые чемпионаты по снукеру. Произодится в Англии. В основании игрового поля итальянская плита.</p><a href="#" class="summary_info_more">Подробное описание товара</a>
+                            </div>
+                        </div>
+                        <div class="product_sidebar_block">
+                            <div class="product_sidebar_top">
+                                <button class="product_sidebar_buy">
+                                    <span class="icon-basket"></span>Купить</button>
+                                <a href="#" class="product_sidebar_favorite">
+                                    <span class="icon-product-flag"></span>
+                                    <span class="link">Добавить в закладки</span>
+                                </a>
+                            </div>
+                            <div class="product_sidebar_middle">
+                                <div class="product_sidebar_warranty">
+                                    <span class="icon-product-warranty"></span>Гарантия 1 год</div>
+                                <div class="product_sidebar_stock">
+                                    <span class="icon-product-instock"></span>Есть в наличии</div>
+                            </div>
+                            <div class="product_sidebar_social">
+                                <span class="title">Нравится товар?
+                                    <br>Поделись им с друзьями!</span>
+                                <div data-yashareL10n="ru" data-yashareQuickServices="vkontakte,facebook,twitter" data-yashareTheme="counter" class="yashare-auto-init"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page_size-table">
+                        <div class="size-table_header">
+                            <h1 class="h1">Таблица размеров</h1>
+                        </div>
+                        <div class="size-table_block">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <span class="text-bold">Размер стола</span>
+                                    </td>
+                                    <td>Материал</td>
+                                    <td>Диаметр шара</td>
+                                    <td>Тонировка древесины</td>
+                                    <td>Кол-во опор</td>
+                                    <td>Толщина, тип плиты</td>
+                                    <td>
+                                        <span class="text-bold">Цена,</span>руб.</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>10 футов</td>
+                                    <td>Красное
+                                        <br>дерево</td>
+                                    <td>52,2 мм</td>
+                                    <td>Серебристый</td>
+                                    <td>8</td>
+                                    <td>45 мм</td>
+                                    <td>865 000</td>
+                                    <td><button class="size-table_buy">Купить</button></td>
+                                </tr>
+                                <tr>
+                                    <td>12 футов</td>
+                                    <td>Красное
+                                        <br>дерево</td>
+                                    <td>52,2 мм</td>
+                                    <td>Серебристый</td>
+                                    <td>8</td>
+                                    <td>65 мм</td>
+                                    <td>865 000</td>
+                                    <td><button class="size-table_buy">Купить</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page_similar-products">
+                <div class="container">
+                    <h1 class="h1">С этим товаром так же покупают:</h1>
+                    <div class="similar_slider">
+                        <ul>
+                            <li class="similar_slider_item">
+                                <a href="#">
+                                    <div class="similar_slider_item_title">Сукно "Казино"</div>
+                                    <div class="similar_slider_item_image">
+                                        <img src="img/similar-product-0.jpg">
+                                    </div>
+                                    <div class="similar_slider_item_price">
+                                        <span class="text-bold">750</span>руб.</div>
+                                </a>
+                            </li>
+                            <li class="similar_slider_item">
+                                <a href="#">
+                                    <div class="similar_slider_item_title">Сукно "Казино"</div>
+                                    <div class="similar_slider_item_image">
+                                        <img src="img/similar-product-1.jpg">
+                                    </div>
+                                    <div class="similar_slider_item_price">
+                                        <span class="text-bold">750</span>руб.</div>
+                                </a>
+                            </li>
+                            <li class="similar_slider_item">
+                                <a href="#">
+                                    <div class="similar_slider_item_title">Сукно "Казино"</div>
+                                    <div class="similar_slider_item_image">
+                                        <img src="img/similar-product-2.jpg">
+                                    </div>
+                                    <div class="similar_slider_item_price">
+                                        <span class="text-bold">750</span>руб.</div>
+                                </a>
+                            </li>
+                            <li class="similar_slider_item">
+                                <a href="#">
+                                    <div class="similar_slider_item_title">Сукно "Казино"</div>
+                                    <div class="similar_slider_item_image">
+                                        <img src="img/similar-product-3.jpg">
+                                    </div>
+                                    <div class="similar_slider_item_price">
+                                        <span class="text-bold">750</span>руб.</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="similar_slider_pagination"></div>
+                </div>
+            </div>
+            <div class="page_product-about">
+                <div class="container">
+                    <div class="page_product-about-left">
+                        <div class="product-about_title">Акция:</div>
+                        <div class="sidebar_discount_block">
+                            <div class="sidebar_discount-i">
+                                <div class="sidebar_discount_title">Скидка 20%</div>
+                                <div class="sidebar_discount_text">На бильярдные столы «Русская пирамида» только до конца 2013 года! Успей купить!</div>
+                                <div class="sidebar_discount_button"><a href="#">подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page_product-about-right">
+                        <div class="product-about_title">Описание товара:</div>
+                        <h1 class="h1">Бильярдный стол «Riley Aristocrat»</h1>
+                        <div class="product-about_info">Эксклюзивный английский бильярдный стол для снукера на котором проводятся все мировые чемпионаты по снукеру. Произодится в Англии. В основании игрового поля итальянская плита. Он отворотился и пошел от нее к окну. Она постояла, посмотрела на него беспокойно и вышла в тревоге. Петр Петрович хихикал слушая, но без особого увлечения. Он даже мало и слушал. Он действительно что-то обдумывал другое, и даже Лебезятников наконец это заметил. . В основании игрового поля итальянская плита. Он отворотился и пошел от нее к окну. В основании игрового поля итальянская плита. Он отворотился и пошел от нее к окну. Она постояла, посмотрела на него беспокойно и вышла в тревоге. Петр Петрович хихикал слушая, но без особого увлечения.</div>
+                        <div class="page_about_bottom">
+                            <a href="about.html" class="page_about_btn btn">
+                                <span>Подробнее</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="page_footer">
+            <div class="container">
+                <div class="footer_item">
+                    <div class="footer_logo">
+                        <a href="/" title="Billiard">
+                            <img src="img/billiard-logo.png">
+                        </a>
+                    </div>
+                    <hr class="hr">
+                    <div class="footer_list">
+                        <ul>
+                            <li>8 800
+                                <span class="text-bold">123-45-67,</span>
+                            </li>
+                            <li>8 (495)
+                                <span class="text-bold">685-77-20</span>
+                            </li>
+                            <li><a href="#recall" data-type="modal" data-target="#recall">Перезвоните мне!</a>
+                            </li>
+                            <li><a href="#">Наши магазины</a>
+                            </li>
+                            <li><a href="#">hello@billard.ru</a>
+                            </li>
+                            <li>Мы в социальных сетях:
+                                <div class="footer_social">
+                                    <a href="#" class="vk"></a>
+                                    <a href="#" class="fb"></a>
+                                    <a href="#" class="tw"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_item">
+                    <div class="title">
+                        <span class="text-bold">Все для бильярда</span>
+                    </div>
+                    <div class="footer_list">
+                        <ul>
+                            <li><a href="#">Бильярдные столы</a>
+                            </li>
+                            <li><a href="#">Бильярдные кии</a>
+                            </li>
+                            <li><a href="#">Бильярдные шары</a>
+                            </li>
+                            <li><a href="#">Аксессуары для бильярда</a>
+                            </li>
+                            <li><a href="#">Аксессуары для киёв</a>
+                            </li>
+                            <li><a href="#">Мебель для бильярдной</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_item">
+                    <div class="title">
+                        <span class="text-bold">Эксклюзив</span>
+                    </div>
+                    <div class="footer_list mb">
+                        <ul>
+                            <li><a href="#">Эксклюзивные столы</a>
+                            </li>
+                            <li><a href="#">Эксклюзивные кии</a>
+                            </li>
+                            <li><a href="#">Интерьерные проекты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="title">
+                        <span class="text-bold">Услуги компании</span>
+                    </div>
+                    <div class="footer_list">
+                        <ul>
+                            <li><a href="#">Сборка и доставка столов</a>
+                            </li>
+                            <li><a href="#">Реставрация и ремонт столов</a>
+                            </li>
+                            <li><a href="#">Ремонт киев</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer_item">
+                    <div class="title">
+                        <span class="text-bold">Покупателям</span>
+                    </div>
+                    <div class="footer_list mb">
+                        <ul>
+                            <li><a href="#">Акции</a>
+                            </li>
+                            <li><a href="#">О компании</a>
+                            </li>
+                            <li><a href="#">Новости</a>
+                            </li>
+                            <li><a href="#">Доставка и оплата</a>
+                            </li>
+                            <li><a href="#">Вопросы и ответы</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_devart">Сайт разработан и поддерживается в
+                        <br>агентстве <a href='www.devart.pro' target="_blank">Devart</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div id="recall" class="page_recall">
+            <div class="modal_header">
+                <div class="modal_close">
+                    <span class="icon-modal-close"></span>
+                </div>
+                <h2>Перезвоните мне</h2>
+            </div>
+            <div class="modal_body">
+                <div class="modal_body_i">
+                    <input type="text" placeholder="Ваше Имя">
+                    <input type="text" placeholder="Контактный номер">
+                </div>
+            </div>
+            <div class="modal_footer">
+                <div class="modal_footer_i">
+                    <button type="submit" class="modal_footer_btn btn">Перезвоните мне</button>
+                </div>
+            </div>
         </div>
-      </header>
-      <main role="main" class="page_main">
-        <div class="page_pageup"><span class="icon-arrow-up"></span></div>
-        <div class="page_product">
-          <div class="container">
-            <div class="page_category">
-              <div class="sidebar_menu dropdown"><span class="sidebar_menu_title">Каталог товаров<span class="icon"></span></span>
-                <div class="sidebar_menu_dropdown-i">
-                  <div class="sidebar_menu_dropdown dropdown_block">
-                    <div class="dropdown_title"><span>Эксклюзив:</span></div>
-                    <ul class="dropdown_menu">
-                      <li><a href="#">Эксклюзивные столы</a></li>
-                      <li><a href="#">Эксклюзивные кии</a></li>
-                      <li><a href="#">Бильярдные коллекции</a></li>
-                      <li><a href="#">Интерьерные проекты</a></li>
-                    </ul>
-                    <div class="dropdown_title"><span>Все для игры<br>в бильярд:</span></div>
-                    <ul class="dropdown_menu">
-                      <li><a href="#">Бильярдные столы</a></li>
-                      <li><a href="#">Бильярдные кии</a></li>
-                      <li><a href="#">Бильярдные шары</a></li>
-                      <li><a href="#">Аксессуары для бильярда</a></li>
-                      <li><a href="#">Аксессуары для киёв</a></li>
-                      <li><a href="#">Мебель для бильярдной</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="page_search-i">
-              <div class="page_search">
-                <form class="search_form">
-                  <input type="search" placeholder="Поиск среди более 100 000 товаров" autosave class="search_form_input">
-                  <button type="submit" class="search_form_btn btn">Найти</button>
-                </form>
-              </div>
-            </div>
-            <div class="page_breadcrumbs">
-              <ul>
-                <li><a href="#">Бильярд.ру</a></li>
-                <li><a href="#">Бильярдные столы</a></li>
-                <li>Английский снукер</li>
-              </ul>
-            </div>
-            <div class="page_product_block">
-              <div class="page_product_header">
-                <h1 class="h1">Бильярдный стол «Riley Aristocrat»</h1>
-                <div class="page_product_price"><span class="page_product_price-i">от<span class="price-bold">865 600.00</span>руб.<span class="icon-product-price-arrow-down"></span></span></div>
-              </div>
-              <div class="product_view_block">
-                <div class="product_image"><img src="img/table_big.jpg"></div>
-                <div class="product_slider">
-                  <ul>
-                    <li class="product_slider_item"><a href="#"><img src="img/table_big.jpg"></a></li>
-                    <li class="product_slider_item"><a href="#"><img src="img/table_big.jpg"></a></li>
-                    <li class="product_slider_item"><a href="#"><img src="img/table_big.jpg"></a></li>
-                    <li class="product_slider_item"><a href="#"><img src="img/table_big.jpg"></a></li>
-                    <li class="product_slider_item"><a href="#"><img src="img/table_big.jpg"></a></li>
-                    <li class="product_slider_item"><a href="#"><img src="img/table_big.jpg"></a></li>
-                    <li class="product_slider_item"><a href="#"><img src="img/table_big.jpg"></a></li>
-                    <li class="product_slider_item"><a href="#"><img src="img/table_big.jpg"></a></li>
-                  </ul>
-                  <div class="product_slider_pagination"><a href="#" class="next"></a></div>
-                </div>
-              </div>
-              <div class="product_summary_block"><span class="product_summary_title">О товаре</span>
-                <div class="product_summary_table">
-                  <div class="table_item"><span class="item_var">Производитель:</span><span class="item_value">Riley</span></div>
-                  <div class="table_item"><span class="item_var">Класс стола:</span><span class="item_value">Люкс</span></div>
-                  <div class="table_item"><span class="item_var">Материал отделки:</span><span class="item_value">Красное дереро</span></div>
-                  <div class="table_item"><span class="item_var">Резина:</span><span class="item_value">Nothern</span></div>
-                  <div class="table_item"><span class="item_var">Сукно</span><span class="item_value">West of England</span></div>
-                  <div class="table_item"><span class="item_var">Тип игры:</span><span class="item_value">Английский снукер</span></div>
-                  <div class="table_item"><span class="item_var">Тонировка древесины</span><span class="item_value">Махагонф</span></div>
-                </div>
-                <div class="product_summary_info">
-                  <p>Эксклюзивный английский бильярдный стол для снукера на котором проводятся все мировые чемпионаты по снукеру. Произодится в Англии. В основании игрового поля итальянская плита.</p><a href="#" class="summary_info_more">Подробное описание товара</a>
-                </div>
-              </div>
-              <div class="product_sidebar_block">
-                <div class="product_sidebar_top">
-                  <button class="product_sidebar_buy"><span class="icon-basket"></span>Купить</button><a href="#" class="product_sidebar_favorite"><span class="icon-product-flag"></span><span class="link">Добавить в закладки</span></a>
-                </div>
-                <div class="product_sidebar_middle">
-                  <div class="product_sidebar_warranty"><span class="icon-product-warranty"></span>Гарантия 1 год</div>
-                  <div class="product_sidebar_stock"><span class="icon-product-instock"></span>Есть в наличии</div>
-                </div>
-                <div class="product_sidebar_social"><span class="title">Нравится товар?<br>Поделись им с друзьями!</span>
-                  <div data-yashareL10n="ru" data-yashareQuickServices="vkontakte,facebook,twitter" data-yashareTheme="counter" class="yashare-auto-init"></div>
-                </div>
-              </div>
-            </div>
-            <div class="page_size-table">
-              <div class="size-table_header">
-                <h1 class="h1">Таблица размеров</h1>
-              </div>
-              <div class="size-table_block">
-                <table>
-                  <tr>
-                    <td><span class="text-bold">Размер стола</span></td>
-                    <td>Материал</td>
-                    <td>Диаметр шара</td>
-                    <td>Тонировка древесины</td>
-                    <td>Кол-во опор</td>
-                    <td>Толщина, тип плиты</td>
-                    <td><span class="text-bold">Цена,</span>руб.</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>10 футов</td>
-                    <td>Красное<br>дерево</td>
-                    <td>52,2 мм</td>
-                    <td>Серебристый</td>
-                    <td>8</td>
-                    <td>45 мм</td>
-                    <td>865 000</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>12 футов</td>
-                    <td>Красное<br>дерево</td>
-                    <td>52,2 мм</td>
-                    <td>Серебристый</td>
-                    <td>8</td>
-                    <td>65 мм</td>
-                    <td>865 000</td>
-                    <td></td>
-                  </tr>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="page_similar-products">
-          <div class="container">
-            <h1 class="h1">С этим товаром так же покупают:</h1>
-            <div class="similar_slider">
-              <ul>
-                <li class="similar_slider_item"><a href="#">
-                    <div class="similar_slider_item_title">Сукно "Казино"</div>
-                    <div class="similar_slider_item_image"><img src="img/similar-product-0.jpg"></div>
-                    <div class="similar_slider_item_price"><span class="text-bold">750</span> руб.</div></a></li>
-                <li class="similar_slider_item"><a href="#">
-                    <div class="similar_slider_item_title">Сукно "Казино"</div>
-                    <div class="similar_slider_item_image"><img src="img/similar-product-1.jpg"></div>
-                    <div class="similar_slider_item_price"><span class="text-bold">750</span> руб.</div></a></li>
-                <li class="similar_slider_item"><a href="#">
-                    <div class="similar_slider_item_title">Сукно "Казино"</div>
-                    <div class="similar_slider_item_image"><img src="img/similar-product-2.jpg"></div>
-                    <div class="similar_slider_item_price"><span class="text-bold">750</span> руб.</div></a></li>
-                <li class="similar_slider_item"><a href="#">
-                    <div class="similar_slider_item_title">Сукно "Казино"</div>
-                    <div class="similar_slider_item_image"><img src="img/similar-product-3.jpg"></div>
-                    <div class="similar_slider_item_price"><span class="text-bold">750</span> руб.</div></a></li>
-              </ul>
-            </div>
-            <div class="similar_slider_pagination"></div>
-          </div>
-        </div>
-        <div class="page_product-about">
-          <div class="container">
-            <div class="page_product-about-left">
-              <div class="product-about_title">Акция:</div>
-              <div class="sidebar_discount_block">
-                <div class="sidebar_discount-i">
-                  <div class="sidebar_discount_title">Скидка 20%</div>
-                  <div class="sidebar_discount_text">На бильярдные столы «Русская пирамида» только до конца 2013 года! Успей купить!</div>
-                  <div class="sidebar_discount_button"><a href="#">подробнее</a></div>
-                </div>
-              </div>
-            </div>
-            <div class="page_product-about-right">
-              <div class="product-about_title">Описание товара:</div>
-              <h1 class="h1">Бильярдный стол «Riley Aristocrat»</h1>
-              <div class="product-about_info">Эксклюзивный английский бильярдный стол для снукера на котором проводятся все мировые чемпионаты по снукеру. Произодится в Англии. В основании игрового поля итальянская плита. Он отворотился и пошел от нее к окну. Она постояла, посмотрела на него беспокойно и вышла в тревоге.  Петр Петрович хихикал слушая, но без особого увлечения.  Он даже мало и слушал. Он действительно что-то обдумывал другое, и даже Лебезятников наконец это заметил. . В основании игрового поля итальянская плита. Он отворотился и пошел от нее к окну. В основании игрового поля итальянская плита. Он отворотился и пошел от нее к окну. Она постояла, посмотрела на него беспокойно и вышла в тревоге.  Петр Петрович хихикал слушая, но без особого увлечения.</div>
-              <div class="page_about_bottom"><a href="about.html" class="page_about_btn btn"><span>Подробнее</span></a></div>
-            </div>
-          </div>
-        </div>
-      </main>
-      <footer class="page_footer">
-        <div class="container">
-          <div class="footer_item">
-            <div class="footer_logo"><a href="/" title="Billiard"><img src="img/billiard-logo.png"></a></div>
-            <hr class="hr">
-            <div class="footer_list">
-              <ul>
-                <li>8 800<span class="text-bold"> 123-45-67,</span></li>
-                <li>8 (495)<span class="text-bold"> 685-77-20</span></li>
-                <li><a href="#recall" data-type="modal" data-target="#recall">Перезвоните мне!</a></li>
-                <li><a href="#">Наши магазины</a></li>
-                <li><a href="#">hello@billard.ru</a></li>
-                <li>Мы в социальных сетях:
-                  <div class="footer_social"><a href="#" class="vk"></a><a href="#" class="fb"></a><a href="#" class="tw"></a></div>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer_item">
-            <div class="title"><span class="text-bold">Все для бильярда</span></div>
-            <div class="footer_list">
-              <ul>
-                <li><a href="#">Бильярдные столы</a></li>
-                <li><a href="#">Бильярдные кии</a></li>
-                <li><a href="#">Бильярдные шары</a></li>
-                <li><a href="#">Аксессуары для бильярда</a></li>
-                <li><a href="#">Аксессуары для киёв</a></li>
-                <li><a href="#">Мебель для бильярдной</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer_item">
-            <div class="title"><span class="text-bold">Эксклюзив</span></div>
-            <div class="footer_list mb">
-              <ul>
-                <li><a href="#">Эксклюзивные столы</a></li>
-                <li><a href="#">Эксклюзивные кии</a></li>
-                <li><a href="#">Интерьерные проекты</a></li>
-              </ul>
-            </div>
-            <div class="title"><span class="text-bold">Услуги компании</span></div>
-            <div class="footer_list">
-              <ul>
-                <li><a href="#">Сборка и доставка столов</a></li>
-                <li><a href="#">Реставрация и ремонт столов</a></li>
-                <li><a href="#">Ремонт киев</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer_item">
-            <div class="title"><span class="text-bold">Покупателям</span></div>
-            <div class="footer_list mb">
-              <ul>
-                <li><a href="#">Акции</a></li>
-                <li><a href="#">О компании</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">Вопросы и ответы</a></li>
-              </ul>
-            </div>
-            <div class="footer_devart">Сайт разработан и поддерживается в<br> агентстве <a href='www.devart.pro' target="_blank">Devart</a></div>
-          </div>
-        </div>
-      </footer>
-      <div id="recall" class="page_recall">
-        <div class="modal_header">
-          <div class="modal_close"><span class="icon-modal-close"></span></div>
-          <h2>Перезвоните мне</h2>
-        </div>
-        <div class="modal_body">
-          <div class="modal_body_i">
-            <input type="text" placeholder="Ваше Имя">
-            <input type="text" placeholder="Контактный номер">
-          </div>
-        </div>
-        <div class="modal_footer">
-          <div class="modal_footer_i">
-            <button type="submit" class="modal_footer_btn btn">Перезвоните мне</button>
-          </div>
-        </div>
-      </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')
+    </script>
     <script src="js/plugins.js"></script>
     <script src="js/app.js"></script>
-  </body>
+</body>
+
 </html>
