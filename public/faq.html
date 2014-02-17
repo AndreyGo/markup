@@ -243,114 +243,62 @@
                             </div>
                         </div>
                     </div>
-                    <form id="sidebar_filter">
-                        <div class="sidebar_filter">
-                            <div class="sidebar_filter_header">Бильярдные столы</div>
-                            <div class="sidebar_filter_menu">
-                                <ul>
-                                    <li><a href="#">Американский пул</a>
-                                        <span class="sidebar_filter_menu_quan">231</span>
-                                    </li>
-                                    <li><a href="#">Английский снукер</a>
-                                        <span class="sidebar_filter_menu_quan">71</span>
-                                    </li>
-                                    <li><a href="#">Русская пирамида</a>
-                                        <span class="sidebar_filter_menu_quan">59</span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="sidebar_filter_instock">
-                                <label>В наличии
-                                    <input type="checkbox" id="inStock">
-                                    <span class="sidebar_filter_menu_quan">59</span>
-                                </label>
-                            </div>
+                    <div class="sidebar_faq_block">
+                        <div class="sidebar_block_header">
+                            <span class="title">Быстрая навигация по вопросам:</span>
                         </div>
-                        <div class="sidebar_filter">
-                            <div class="sidebar_filter_header">Цена
-                                <span class="gray">в руб.</span>
-                            </div>
-                            <div class="sidebar_filter_price_field">
-                                <input type="text" id="minPrice" placeholder="47 300">-
-                                <input type="text" id="maxPrice" placeholder="80 000">
-                            </div>
-                            <div class="sidebar_filter_price_range">
-                                <div id="filter-slider"></div>
-                                <input type="range">
-                                <ul class="sidebar_filter_price_range_list">
-                                    <li>43 000</li>
-                                    <li>60 000</li>
-                                    <li>102 000</li>
-                                </ul>
-                            </div>
+                        <div class="sidebar_payment_menu sidebar_faq_menu">
+                            <ul>
+                                <li>
+                                    <a href="#">Все вопросы</a>
+                                    <span class="count">1231</span>
+                                </li>
+                                <li>
+                                    <a href="#">Доставка</a>
+                                    <span class="count">251</span>
+                                </li>
+                                <li>
+                                    <a href="#">Оплата</a>
+                                    <span class="count">521</span>
+                                </li>
+                                <li>
+                                    <a href="#">Товары</a>
+                                    <span class="count">373</span>
+                                </li>
+                                <li>
+                                    <a href="#">Услуги</a>
+                                    <span class="count">85</span>
+                                </li>
+                                <li>
+                                    <a href="#">Магазины, персонал</a>
+                                    <span class="count">25</span>
+                                </li>
+                            </ul>
                         </div>
-                        <div class="sidebar_filter">
-                            <div class="sidebar_filter_header">Поиск
-                                <span class="gray">по товарам</span>
-                            </div>
-                            <div class="sidebar_filter_block">
-                                <div class="sidebar_filter_block_header">
-                                    <span class="icon"></span>
-                                    <span class="sidebar_filter_block_header_title">Бренд</span>
+                    </div>
+                    <div class="sidebar_faq_block sidebar_faq_ask">
+                        <h3>Задайте свой вопрос</h3>
+                        <form id="faq_ask">
+                            <input type="text" name="name" placeholder="Ваше Имя">
+                            <input type="email" name="email" placeholder="Ваше e-mail">
+                            <div class="sidebar_filter_dropdown dropdown_list page_filter_type">
+                                <span class="page_filter_dropdown_label">Укажите тему</span>
+                                <span class="icon-dropdown-list-arrow-down"></span>
+                                <div class="page_filter_dropdown-i">
+                                    <ul class="page_filter_dropdown_list">
+                                        <li><a href="/catalog/tables/?type=All">Все</a>
+                                        </li>
+                                        <li><a href="/catalog/tables/?type=Elite">Элитные</a>
+                                        </li>
+                                        <li><a href="/catalog/tables/?type=Wood">Дерево</a>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <fieldset>
-                                    <label>Porter Billiards
-                                        <input type="checkbox">
-                                        <span class="sidebar_filter_menu_quan">59</span>
-                                    </label>
-                                    <label>Пирамида-26
-                                        <input type="checkbox">
-                                        <span class="sidebar_filter_menu_quan">59</span>
-                                    </label>
-                                    <label>Фабрика «Старт»
-                                        <input type="checkbox">
-                                        <span class="sidebar_filter_menu_quan">59</span>
-                                    </label>
-                                    <label>Пирамида-32
-                                        <input type="checkbox">
-                                        <span class="sidebar_filter_menu_quan">59</span>
-                                    </label>
-                                </fieldset>
                             </div>
-                            <div class="sidebar_filter_block">
-                                <div class="sidebar_filter_block_header">
-                                    <span class="icon"></span>
-                                    <span class="sidebar_filter_block_header_title">Размер стола</span>
-                                </div>
-                                <fieldset>
-                                    <label>12" 7,0 х 5,3м
-                                        <input type="checkbox">
-                                        <span class="sidebar_filter_menu_quan">59</span>
-                                    </label>
-                                    <label>10" 6,3 х 4,9м
-                                        <input type="checkbox">
-                                        <span class="sidebar_filter_menu_quan">59</span>
-                                    </label>
-                                    <label>9" 6,0 х 4,8м
-                                        <input type="checkbox">
-                                        <span class="sidebar_filter_menu_quan">59</span>
-                                    </label>
-                                    <label>8" 5,7 х 4,6м
-                                        <input type="checkbox">
-                                        <span class="sidebar_filter_menu_quan">59</span>
-                                    </label>
-                                </fieldset>
-                            </div>
-                            <span class="sidebar_filter_attention">По вашему запросу мы нашли<a href="#"> 315 товаров</a>
-                            </span>
-                            <a href="#" class="sidebar_filter_reset">
-                                <span class="icon-filter-reset"></span>
-                                <span class="title">Сбросить фильтры</span>
-                            </a>
-                        </div>
-                    </form>
-                    <div class="sidebar_discount_block">
-                        <div class="sidebar_discount-i">
-                            <div class="sidebar_discount_title">Скидка 20%</div>
-                            <div class="sidebar_discount_text">На бильярдные столы «Русская пирамида» только до конца 2013 года! Успей купить!</div>
-                            <div class="sidebar_discount_button"><a href="#">подробнее</a>
-                            </div>
-                        </div>
+                            <textarea name="question" id="" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                            <div class="sidebar_ask_title">Прежде чем задать вопрос, пожалуйста убедитесь, что он уникален.</div>
+                            <button type="submit" class="btn-green">Задать вопрос</button>
+                        </form>
                     </div>
                 </aside>
                 <article class="page_content">
@@ -369,274 +317,59 @@
                             <li>Английский снукер</li>
                         </ul>
                     </div>
-                    <div class="page_filter">
-                        <h1 class="h1">Английский снукер</h1>
-                        <div class="page_filter_body">
-                            <div class="page_filter_block">Класс стола
-                                <div class="page_filter_dropdown dropdown_list page_filter_type">
-                                    <span class="page_filter_dropdown_label">Все</span>
-                                    <span class="icon-dropdown-list-arrow-down"></span>
-                                    <div class="page_filter_dropdown-i">
-                                        <ul class="page_filter_dropdown_list">
-                                            <li><a href="/catalog/tables/?type=All">Все</a>
-                                            </li>
-                                            <li><a href="/catalog/tables/?type=Elite">Элитные</a>
-                                            </li>
-                                            <li><a href="/catalog/tables/?type=Wood">Дерево</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="page_filter_block">Цена
-                                <div class="page_filter_dropdown dropdown_list page_filter_price">
-                                    <span class="page_filter_dropdown_label">По возрастанию</span>
-                                    <span class="icon-dropdown-list-arrow-down"></span>
-                                    <div class="page_filter_dropdown-i">
-                                        <ul class="page_filter_dropdown_list">
-                                            <li><a href="/catalog/tables/?type=All">Все</a>
-                                            </li>
-                                            <li><a href="/catalog/tables/?type=Elite">Элитные</a>
-                                            </li>
-                                            <li><a href="/catalog/tables/?type=Wood">Дерево</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="page_filter_block">Отображать по
-                                <div class="page_filter_dropdown dropdown_list page_filter_quan">
-                                    <span class="page_filter_dropdown_label">12</span>
-                                    <span class="icon-dropdown-list-arrow-down"></span>
-                                    <div class="page_filter_dropdown-i">
-                                        <ul class="page_filter_dropdown_list">
-                                            <li><a href="/catalog/tables/?type=All">Все</a>
-                                            </li>
-                                            <li><a href="/catalog/tables/?type=Elite">Элитные</a>
-                                            </li>
-                                            <li><a href="/catalog/tables/?type=Wood">Дерево</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                    <div class="page_faq_header">
+                        <h1 class="h1">Ответы на вопросы</h1>
+                        <span class="page_faq_header_subtitle">В категории «Все вопросы». Найдено ответов: 1231</span>
+                        <div class="page_filter_block">Отображать по
+                            <div class="page_filter_dropdown dropdown_list page_filter_quan">
+                                <span class="page_filter_dropdown_label">12</span>
+                                <span class="icon-dropdown-list-arrow-down"></span>
+                                <div class="page_filter_dropdown-i">
+                                    <ul class="page_filter_dropdown_list">
+                                        <li><a href="/catalog/tables/?type=All">24</a>
+                                        </li>
+                                        <li><a href="/catalog/tables/?type=Elite">48</a>
+                                        </li>
+                                        <li><a href="/catalog/tables/?type=Wood">64</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="page_special_grid">
-                        <div class="product_item">
-                            <div data-type="exclamation" class="item_badge badge_exclamation">
-                                <div class="item_badge_box">
-                                    <span class="icon"></span>
+                    <div class="page_article page_faq_article">
+                        <div class="faq-article_item">
+                            <div class="faq-article_item_header">
+                                <div class="faq-article_item_header_user">
+                                    <span class="icon icon-user"></span>
+                                    <span class="username">Александр Кержаков:</span>
+                                </div>
+                                <div class="faq-article_item_header_date">
+                                    <span class="icon icon-time"></span>30.09.2013
                                 </div>
                             </div>
-                            <div class="item_title"><a href="#">Бильярдный стол «Корнет»</a>
+                            <div class="faq-article_item_question">
+                                Я хотел узнать я живу в пензенской обл доставка какая у вас есть
                             </div>
-                            <div class="item_image">
-                                <a href="#">
-                                    <img src="img/table_1.jpg">
-                                </a>
-                            </div>
-                            <div class="item_price">от
-                                <span class="bold">47 730</span>
-                                <span class="gray">руб.</span>
+                            <div class="faq-article_item_answer">
+                                <span class="text-bold">Ответ:</span>Александр, добрый день. В зависимости от состава заказа он может быть доставлен как силами Почты России (экспресс-сервиса EMS), так и любой другой транспортной компанией.
                             </div>
                         </div>
-                        <div class="product_item">
-                            <div data-type="discount" class="item_badge badge_discount">
-                                <div class="item_badge_box">
-                                    <span class="icon"></span>
+                        <div class="faq-article_item">
+                            <div class="faq-article_item_header">
+                                <div class="faq-article_item_header_user">
+                                    <span class="icon icon-user"></span>
+                                    <span class="username">Александр Кержаков:</span>
+                                </div>
+                                <div class="faq-article_item_header_date">
+                                    <span class="icon icon-time"></span>30.09.2013
                                 </div>
                             </div>
-                            <div class="item_title"><a href="#">Бильярдный стол «Корнет»</a>
+                            <div class="faq-article_item_question">
+                                Я хотел узнать я живу в пензенской обл доставка какая у вас есть
                             </div>
-                            <div class="item_image">
-                                <a href="#">
-                                    <img src="img/table_2.jpg">
-                                </a>
-                            </div>
-                            <div class="item_price">от
-                                <span class="bold">47 730</span>
-                                <span class="gray">руб.</span>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div data-type="like" class="item_badge badge_like">
-                                <div class="item_badge_box">
-                                    <span class="icon"></span>
-                                </div>
-                            </div>
-                            <div class="item_title"><a href="#">Бильярдный стол «Корнет»</a>
-                            </div>
-                            <div class="item_image">
-                                <a href="#">
-                                    <img src="img/table_1.jpg">
-                                </a>
-                            </div>
-                            <div class="item_price">от
-                                <span class="bold">47 730</span>
-                                <span class="gray">руб.</span>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div data-type="exclamation" class="item_badge badge_exclamation">
-                                <div class="item_badge_box">
-                                    <span class="icon"></span>
-                                </div>
-                            </div>
-                            <div class="item_title"><a href="#">Бильярдный стол «Корнет»</a>
-                            </div>
-                            <div class="item_image">
-                                <a href="#">
-                                    <img src="img/table_1.jpg">
-                                </a>
-                            </div>
-                            <div class="item_price">от
-                                <span class="bold">47 730</span>
-                                <span class="gray">руб.</span>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div data-type="discount" class="item_badge badge_discount">
-                                <div class="item_badge_box">
-                                    <span class="icon"></span>
-                                </div>
-                            </div>
-                            <div class="item_title"><a href="#">Бильярдный стол «Корнет»</a>
-                            </div>
-                            <div class="item_image">
-                                <a href="#">
-                                    <img src="img/table_2.jpg">
-                                </a>
-                            </div>
-                            <div class="item_price">от
-                                <span class="bold">47 730</span>
-                                <span class="gray">руб.</span>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div data-type="like" class="item_badge badge_like">
-                                <div class="item_badge_box">
-                                    <span class="icon"></span>
-                                </div>
-                            </div>
-                            <div class="item_title"><a href="#">Бильярдный стол «Корнет»</a>
-                            </div>
-                            <div class="item_image">
-                                <a href="#">
-                                    <img src="img/table_1.jpg">
-                                </a>
-                            </div>
-                            <div class="item_price">от
-                                <span class="bold">47 730</span>
-                                <span class="gray">руб.</span>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div data-type="exclamation" class="item_badge badge_exclamation">
-                                <div class="item_badge_box">
-                                    <span class="icon"></span>
-                                </div>
-                            </div>
-                            <div class="item_title"><a href="#">Бильярдный стол «Корнет»</a>
-                            </div>
-                            <div class="item_image">
-                                <a href="#">
-                                    <img src="img/table_1.jpg">
-                                </a>
-                            </div>
-                            <div class="item_price">от
-                                <span class="bold">47 730</span>
-                                <span class="gray">руб.</span>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div data-type="discount" class="item_badge badge_discount">
-                                <div class="item_badge_box">
-                                    <span class="icon"></span>
-                                </div>
-                            </div>
-                            <div class="item_title"><a href="#">Бильярдный стол «Корнет»</a>
-                            </div>
-                            <div class="item_image">
-                                <a href="#">
-                                    <img src="img/table_2.jpg">
-                                </a>
-                            </div>
-                            <div class="item_price">от
-                                <span class="bold">47 730</span>
-                                <span class="gray">руб.</span>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div data-type="like" class="item_badge badge_like">
-                                <div class="item_badge_box">
-                                    <span class="icon"></span>
-                                </div>
-                            </div>
-                            <div class="item_title"><a href="#">Бильярдный стол «Корнет»</a>
-                            </div>
-                            <div class="item_image">
-                                <a href="#">
-                                    <img src="img/table_1.jpg">
-                                </a>
-                            </div>
-                            <div class="item_price">от
-                                <span class="bold">47 730</span>
-                                <span class="gray">руб.</span>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div data-type="exclamation" class="item_badge badge_exclamation">
-                                <div class="item_badge_box">
-                                    <span class="icon"></span>
-                                </div>
-                            </div>
-                            <div class="item_title"><a href="#">Бильярдный стол «Корнет»</a>
-                            </div>
-                            <div class="item_image">
-                                <a href="#">
-                                    <img src="img/table_1.jpg">
-                                </a>
-                            </div>
-                            <div class="item_price">от
-                                <span class="bold">47 730</span>
-                                <span class="gray">руб.</span>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div data-type="discount" class="item_badge badge_discount">
-                                <div class="item_badge_box">
-                                    <span class="icon"></span>
-                                </div>
-                            </div>
-                            <div class="item_title"><a href="#">Бильярдный стол «Корнет»</a>
-                            </div>
-                            <div class="item_image">
-                                <a href="#">
-                                    <img src="img/table_2.jpg">
-                                </a>
-                            </div>
-                            <div class="item_price">от
-                                <span class="bold">47 730</span>
-                                <span class="gray">руб.</span>
-                            </div>
-                        </div>
-                        <div class="product_item">
-                            <div data-type="like" class="item_badge badge_like">
-                                <div class="item_badge_box">
-                                    <span class="icon"></span>
-                                </div>
-                            </div>
-                            <div class="item_title"><a href="#">Бильярдный стол «Корнет»</a>
-                            </div>
-                            <div class="item_image">
-                                <a href="#">
-                                    <img src="img/table_1.jpg">
-                                </a>
-                            </div>
-                            <div class="item_price">от
-                                <span class="bold">47 730</span>
-                                <span class="gray">руб.</span>
+                            <div class="faq-article_item_answer">
+                                <span class="text-bold">Ответ:</span>Александр, добрый день. В зависимости от состава заказа он может быть доставлен как силами Почты России (экспресс-сервиса EMS), так и любой другой транспортной компанией.
                             </div>
                         </div>
                     </div>
@@ -650,17 +383,7 @@
                             </li>
                         </ul>из<a href="#" class="page_pagination_pagecount">6</a><a href="#" class="page_pagination_nextpage">Следующая страница →</a>
                     </div>
-                    <div class="page_about">
-                        <div class="page_section_title">
-                            <h1 class="h1">Английский снукер</h1>
-                        </div>
-                        <div class="page_about_text">Английский снукер является, пожалуй, самым популярным и зрелищным видом бильярдной игры. Удовольствие от игры, качество игры, зрелищность и красота игры возможны на соответствующем оборудовании. Наш магазин предлагает Вашему вниманию столы для снукера российских и зарубежных производителей. Благодаря постоянно обновляемому каталогу Вы сможете подобрать именно тот стол,</div>
-                        <div class="page_about_bottom">
-                            <a href="about.html" class="page_about_btn btn">
-                                <span>Подробнее</span>
-                            </a>
-                        </div>
-                    </div>
+                    <!-- end -->
                 </article>
             </div>
         </main>
