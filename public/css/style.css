@@ -4119,6 +4119,7 @@ a.header_pass_forgot > span:hover {
 }
 .page_search_header {
   padding: 20px;
+  color: #555;
 }
 .page_search_header_subtitle {
   display: block;
@@ -4151,8 +4152,17 @@ a.header_pass_forgot > span:hover {
   display: block;
   margin-bottom: 25px;
 }
+.page_search_result h2.h2.no-result {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
 .page_search_result h2.h2 .count_results {
   color: #bbb;
+}
+.page_search_result .page_leaders h2.h2 {
+  color: #da4500;
+  display: inline-block;
+  margin: 0;
 }
 /* jQuery UI - v1.10.4 - 2014-02-13
 * http://jqueryui.com
