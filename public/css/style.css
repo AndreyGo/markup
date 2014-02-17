@@ -323,7 +323,7 @@ input:focus {
   color: #000;
   background: #fff;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-  z-index: 100;
+  z-index: 120;
   width: 220px;
   border-radius: 4px;
   line-height: 27px;
@@ -3833,29 +3833,34 @@ a.header_pass_forgot > span:hover {
 #faq_ask button {
   margin: 20px auto;
 }
-.page_faq_header {
+.page_faq_header,
+.page_search_header {
   border-radius: 4px;
   background: #fff;
   border: 1px solid #d9e1ea;
-  height: 95px;
   margin-bottom: 30px;
   padding: 15px 40px 20px 40px;
   position: relative;
 }
 .page_faq_header:before,
-.page_faq_header:after {
+.page_search_header:before,
+.page_faq_header:after,
+.page_search_header:after {
   content: '';
   display: table;
 }
-.page_faq_header:after {
+.page_faq_header:after,
+.page_search_header:after {
   clear: both;
 }
-.page_faq_header h1.h1 {
+.page_faq_header h1.h1,
+.page_search_header h1.h1 {
   line-height: 1;
   display: block;
   margin-bottom: 15px;
 }
-.page_faq_header .page_filter_block {
+.page_faq_header .page_filter_block,
+.page_search_header .page_filter_block {
   position: absolute;
   right: 40px;
   bottom: 15px;
@@ -4111,6 +4116,43 @@ a.header_pass_forgot > span:hover {
 }
 .order_sidebar_buy button:hover {
   background: linear-gradient(to bottom, #1b5c00, #1b7f00);
+}
+.page_search_header {
+  padding: 20px;
+}
+.page_search_header_subtitle {
+  display: block;
+  margin-bottom: 5px;
+}
+.page_search_header .search_filter_sort {
+  position: relative;
+  float: left;
+}
+.page_search_header .search_filter_sort .page_filter_dropdown {
+  width: 170px;
+}
+.page_search_header .search_filter_view {
+  position: relative;
+  float: right;
+}
+.search_filters_block {
+  position: relative;
+}
+.search_filters_block:before,
+.search_filters_block:after {
+  content: '';
+  display: table;
+}
+.search_filters_block:after {
+  clear: both;
+}
+.page_search_result h2.h2 {
+  color: #333;
+  display: block;
+  margin-bottom: 25px;
+}
+.page_search_result h2.h2 .count_results {
+  color: #bbb;
 }
 /* jQuery UI - v1.10.4 - 2014-02-13
 * http://jqueryui.com
