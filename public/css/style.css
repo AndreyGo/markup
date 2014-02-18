@@ -123,9 +123,9 @@ figure {
   margin: 0;
 }
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 legend {
   border: 0;
@@ -2726,6 +2726,7 @@ a.header_pass_forgot > span:hover {
 }
 .sidebar_block,
 .sidebar_filter,
+.sidebar_profile_block,
 .sidebar_discount_block,
 .sidebar_faq_block,
 .sidebar_payment_block {
@@ -3209,116 +3210,134 @@ a.header_pass_forgot > span:hover {
 }
 .icon-basket-header_checkbox-checked {
   background-image: url("../img/sprite2.png");
-  background-position: -85px -24px;
+  background-position: -65px 0px;
   width: 21px;
   height: 23px;
 }
 .icon-basket-header_checkbox {
   background-image: url("../img/sprite2.png");
-  background-position: -85px 0px;
+  background-position: -21px -62px;
   width: 21px;
   height: 23px;
 }
 .icon-basket-item-count-down {
   background-image: url("../img/sprite2.png");
-  background-position: -75px -48px;
+  background-position: -51px -86px;
   width: 9px;
   height: 6px;
 }
 .icon-basket-item-count-up {
   background-image: url("../img/sprite2.png");
-  background-position: -50px -49px;
+  background-position: -87px -80px;
   width: 9px;
   height: 5px;
 }
 .icon-basket-item-delete {
   background-image: url("../img/sprite2.png");
-  background-position: -64px -48px;
+  background-position: -26px -86px;
   width: 10px;
   height: 10px;
 }
 .icon-basket-item-flag {
   background-image: url("../img/sprite2.png");
-  background-position: -64px -24px;
+  background-position: -65px -24px;
   width: 20px;
   height: 23px;
 }
 .icon-basket-item-refresh {
   background-image: url("../img/sprite2.png");
-  background-position: -63px -62px;
+  background-position: -49px -31px;
   width: 14px;
   height: 15px;
 }
 .icon-contacts-geo {
   background-image: url("../img/sprite2.png");
-  background-position: -33px -31px;
+  background-position: -32px -31px;
   width: 16px;
   height: 25px;
 }
 .icon-delivery-corner,
 .order_delivery:before {
   background-image: url("../img/sprite2.png");
-  background-position: -78px -62px;
+  background-position: 0px -86px;
   width: 25px;
   height: 12px;
 }
 .icon-header-login-fb {
   background-image: url("../img/sprite2.png");
-  background-position: 0px 0px;
+  background-position: 0px -31px;
   width: 31px;
   height: 30px;
 }
 .icon-header-login-tw {
   background-image: url("../img/sprite2.png");
-  background-position: 0px -31px;
+  background-position: -32px 0px;
   width: 32px;
   height: 30px;
 }
 .icon-header-login-vk {
   background-image: url("../img/sprite2.png");
-  background-position: -32px 0px;
+  background-position: 0px 0px;
   width: 31px;
   height: 30px;
 }
 .icon-header-user-basket {
   background-image: url("../img/sprite2.png");
-  background-position: -42px -62px;
+  background-position: -87px 0px;
   width: 20px;
   height: 20px;
 }
 .icon-header-user-exit {
   background-image: url("../img/sprite2.png");
-  background-position: 0px -62px;
+  background-position: -87px -21px;
   width: 20px;
   height: 20px;
 }
 .icon-header-user-flag {
   background-image: url("../img/sprite2.png");
-  background-position: -64px 0px;
+  background-position: 0px -62px;
   width: 20px;
   height: 23px;
 }
 .icon-header-user-settings {
   background-image: url("../img/sprite2.png");
-  background-position: -21px -62px;
+  background-position: -62px -62px;
   width: 20px;
   height: 20px;
 }
 .icon-product-item-flag {
   background-image: url("../img/sprite2.png");
-  background-position: -85px -48px;
+  background-position: -65px -48px;
   width: 13px;
   height: 13px;
 }
+.icon-profile-check {
+  background-image: url("../img/sprite2.png");
+  background-position: -87px -61px;
+  width: 20px;
+  height: 18px;
+}
+.icon-profile-lock {
+  background-image: url("../img/sprite2.png");
+  background-position: -43px -62px;
+  width: 18px;
+  height: 22px;
+}
+.icon-profile-question {
+  background-image: url("../img/sprite2.png");
+  background-position: -87px -42px;
+  width: 18px;
+  height: 18px;
+}
 .icon-user-arrow-down {
   background-image: url("../img/sprite2.png");
-  background-position: -50px -31px;
+  background-position: -49px -47px;
   width: 13px;
   height: 8px;
 }
 .icon-user-arrow-up {
   background-image: url("../img/sprite2.png");
-  background-position: -50px -40px;
+  background-position: -37px -86px;
   width: 13px;
   height: 8px;
 }
@@ -4142,6 +4161,125 @@ a.header_pass_forgot > span:hover {
 }
 .order_sidebar_buy button:hover {
   background: linear-gradient(to bottom, #1b5c00, #1b7f00);
+}
+.sidebar_profile_block {
+  padding: 20px 0 0 0;
+}
+.sidebar_profile_block h3.h3 {
+  padding: 0 20px;
+  margin: 0 0 20px 0;
+}
+.sidebar_profile_menu {
+  width: 100%;
+  z-index: 10;
+}
+.sidebar_profile_menu .user_dropdown_item {
+  display: block;
+  height: 45px;
+  line-height: 45px;
+}
+.sidebar_profile_menu .user_dropdown_item a {
+  display: block;
+  color: #1c60ab;
+  padding: 0 20px;
+}
+.sidebar_profile_menu .user_dropdown_item a .value {
+  color: #bbb;
+}
+.sidebar_profile_menu .user_dropdown_item a:hover {
+  background: #e2e8ef;
+}
+.sidebar_profile_menu .user_dropdown_item a .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px;
+}
+.page_profile {
+  padding: 40px;
+}
+.page_profile h1.h1 {
+  display: block;
+  font-size: 24px;
+}
+.page_profile input {
+  display: block;
+  height: 45px;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  padding-left: 10px;
+}
+.page_profile textarea {
+  display: inline-block;
+  height: 110px;
+  width: 380px;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  padding: 10px;
+  border: none;
+}
+.page_profile_item {
+  background: #f4f7fb;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  padding: 25px 60px 40px 25px;
+}
+.page_profile_item:nth-child(3) .profile_item_subtitle {
+  margin-bottom: 0;
+}
+.profile_item_title {
+  margin: 0 0 5px 0;
+  color: #333;
+  line-height: 1;
+  display: block;
+}
+.profile_item_subtitle {
+  color: #bbb;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 27px;
+}
+.profile_item_group {
+  margin-bottom: 12px;
+  color: #555;
+  line-height: 1;
+}
+.profile_item_group label {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+  padding-right: 5px;
+  line-height: 18px;
+  vertical-align: middle;
+}
+.profile_item_group input {
+  display: inline-block;
+  width: 380px;
+  vertical-align: middle;
+}
+.profile_item_saved {
+  margin-bottom: 30px;
+}
+.profile_item_saved .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.page_profile_savebtn:before,
+.page_profile_savebtn:after {
+  content: '';
+  display: table;
+}
+.page_profile_savebtn:after {
+  clear: both;
+}
+.page_profile_savebtn button {
+  margin-right: 60px;
+  height: 50px;
+  font-size: 16px;
+  width: 380px;
+  display: block;
+  float: right;
 }
 .page_search_header {
   padding: 20px;
