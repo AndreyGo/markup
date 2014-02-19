@@ -335,7 +335,6 @@ $(document).ready(function() {
     })
 
     // Call Me AJAX
-    // Call Me AJAX
     $('#recall form').on('submit', function() {
         var options = {
             beforeSubmit: function() {
@@ -370,7 +369,7 @@ $(document).ready(function() {
     });
 
     // Product slider
-    var productSlider = $('.product_slider ul').bxSlider({
+    var productMiniSlider = $('.product_slider ul').bxSlider({
         slideSelector: 'li.product_slider_item',
         pager: false,
         controls: true,
@@ -385,6 +384,47 @@ $(document).ready(function() {
         moveSlides: 1,
         infiniteLoop: false,
         hideControlOnEnd: true
+    });
+
+    var productSlider = $('.product_image ul').bxSlider({
+        pager: false,
+        controls: false
+    });
+
+    $('.product_slider_item a').on('click', function(){
+        event.preventDefault();
+        var index = $(this).attr('data-slide-index');
+        productSlider.goToSlide(index);
+    });
+
+    $('.product_image a').on('click', function(event) {
+        event.preventDefault();
+        var imgVal = $(this).children('img').attr('src');
+        var imgTitle = $(this).children('img').attr('alt');
+        var imgPic = $(this).parents('.product_image').children('img');
+        console.log(imgPic);
+        $.fancybox(imgVal, {
+            closeBtn: true,
+            padding: 0,
+            wrapCSS: "page_modal map_modal product",
+            aspectRatio: true,
+            height: '800px',
+            minWidth: '600px',
+            tpl: {
+                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>'
+            },
+            autoHeight: false,
+            autoSize: false,
+            maxHeight: 600,
+            title: imgTitle,
+            fitToView: false,
+            helpers: {
+                title: {
+                    type: 'inside',
+                    position: 'top'
+                }
+            }
+        });
     });
 
     // Similar Product Slider

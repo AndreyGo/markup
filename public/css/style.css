@@ -15,68 +15,74 @@
 }
 .icon-basket-header_checkbox-checked {
   background-image: url("../img/sprite2.png");
-  background-position: -26px -62px;
+  background-position: -68px -62px;
   width: 21px;
   height: 23px;
 }
 .icon-basket-header_checkbox {
   background-image: url("../img/sprite2.png");
-  background-position: -110px 0px;
+  background-position: 0px -87px;
   width: 21px;
   height: 23px;
 }
 .icon-basket-item-count-down {
   background-image: url("../img/sprite2.png");
-  background-position: -69px -78px;
+  background-position: -65px -50px;
   width: 9px;
   height: 6px;
 }
 .icon-basket-item-count-up {
   background-image: url("../img/sprite2.png");
-  background-position: -79px -78px;
+  background-position: -75px -50px;
   width: 9px;
   height: 5px;
 }
 .icon-basket-item-delete {
   background-image: url("../img/sprite2.png");
-  background-position: -64px -50px;
+  background-position: -111px -81px;
   width: 10px;
   height: 10px;
 }
 .icon-basket-item-flag {
   background-image: url("../img/sprite2.png");
-  background-position: -89px 0px;
+  background-position: -90px 0px;
   width: 20px;
   height: 23px;
 }
 .icon-basket-item-refresh {
   background-image: url("../img/sprite2.png");
-  background-position: -21px -87px;
+  background-position: -111px -35px;
   width: 14px;
   height: 15px;
 }
 .icon-contacts-geo {
   background-image: url("../img/sprite2.png");
-  background-position: -33px -31px;
+  background-position: -32px -31px;
   width: 16px;
   height: 25px;
 }
 .icon-delivery-corner,
 .order_delivery:before {
   background-image: url("../img/sprite2.png");
-  background-position: -52px -87px;
+  background-position: -42px -111px;
   width: 25px;
   height: 12px;
 }
+.icon-exclamation-orange {
+  background-image: url("../img/sprite2.png");
+  background-position: -90px -68px;
+  width: 16px;
+  height: 18px;
+}
 .icon-faq-answer-corner {
   background-image: url("../img/sprite2.png");
-  background-position: -36px -87px;
+  background-position: -111px -19px;
   width: 15px;
   height: 15px;
 }
 .icon-faq-question-corner {
   background-image: url("../img/sprite2.png");
-  background-position: -69px -62px;
+  background-position: -111px -51px;
   width: 15px;
   height: 15px;
 }
@@ -90,100 +96,118 @@
 .icon-footer-social-tw-hover,
 .footer_social .tw:hover {
   background-image: url("../img/sprite2.png");
-  background-position: -64px -25px;
+  background-position: -65px -25px;
   width: 24px;
   height: 24px;
 }
 .icon-footer-social-vk-hover,
 .footer_social .vk:hover {
   background-image: url("../img/sprite2.png");
-  background-position: -64px 0px;
+  background-position: -65px 0px;
   width: 24px;
   height: 24px;
 }
 .icon-header-login-fb {
   background-image: url("../img/sprite2.png");
-  background-position: 0px 0px;
+  background-position: 0px -31px;
   width: 31px;
   height: 30px;
 }
 .icon-header-login-tw {
   background-image: url("../img/sprite2.png");
-  background-position: 0px -31px;
+  background-position: 0px 0px;
   width: 32px;
   height: 30px;
 }
 .icon-header-login-vk {
   background-image: url("../img/sprite2.png");
-  background-position: -32px 0px;
+  background-position: -33px 0px;
   width: 31px;
   height: 30px;
 }
 .icon-header-user-basket {
   background-image: url("../img/sprite2.png");
-  background-position: -110px -47px;
+  background-position: -90px -47px;
   width: 20px;
   height: 20px;
 }
 .icon-header-user-exit {
   background-image: url("../img/sprite2.png");
-  background-position: -89px -24px;
+  background-position: -44px -87px;
   width: 20px;
   height: 20px;
 }
 .icon-header-user-flag {
   background-image: url("../img/sprite2.png");
-  background-position: -48px -62px;
+  background-position: -47px -62px;
   width: 20px;
   height: 23px;
 }
 .icon-header-user-settings {
   background-image: url("../img/sprite2.png");
-  background-position: -89px -45px;
+  background-position: -65px -87px;
   width: 20px;
   height: 20px;
 }
+.icon-product-buy-check {
+  background-image: url("../img/sprite2.png");
+  background-position: -22px -87px;
+  width: 21px;
+  height: 21px;
+}
+.icon-product-flag-check {
+  background-image: url("../img/sprite2.png");
+  background-position: -26px -62px;
+  width: 20px;
+  height: 23px;
+}
 .icon-product-item-flag {
   background-image: url("../img/sprite2.png");
-  background-position: -50px -31px;
+  background-position: -111px -67px;
   width: 13px;
   height: 13px;
 }
+.icon-product-outstock {
+  background-image: url("../img/sprite2.png");
+  background-position: -21px -111px;
+  width: 20px;
+  height: 17px;
+}
 .icon-profile-check {
   background-image: url("../img/sprite2.png");
-  background-position: 0px -87px;
+  background-position: 0px -111px;
   width: 20px;
   height: 18px;
 }
 .icon-profile-lock {
   background-image: url("../img/sprite2.png");
-  background-position: -110px -24px;
+  background-position: -90px -24px;
   width: 18px;
   height: 22px;
 }
 .icon-profile-question-dark {
   background-image: url("../img/sprite2.png");
-  background-position: -89px -66px;
+  background-position: -111px 0px;
   width: 18px;
   height: 18px;
 }
 .icon-profile-question {
   background-image: url("../img/sprite2.png");
-  background-position: -110px -68px;
+  background-position: -86px -87px;
   width: 18px;
   height: 18px;
 }
 .icon-user-arrow-down,
 .header_login_user + .icon {
   background-image: url("../img/sprite2.png");
-  background-position: -75px -50px;
+  background-position: -111px -92px;
   width: 13px;
   height: 8px;
 }
 .icon-user-arrow-up,
 .header_login_user.active + .icon {
   background-image: url("../img/sprite2.png");
-  background-position: -50px -45px;
+  background-position: -111px -101px;
   width: 13px;
   height: 8px;
 }
@@ -467,6 +491,15 @@ input:focus {
 }
 .size-table_block tr:hover .size-table_buy {
   visibility: visible;
+}
+.size-table_block .new-price {
+  display: block;
+  color: #ec9212;
+  margin-bottom: 5px;
+}
+.size-table_block .old-price {
+  display: block;
+  text-decoration: line-through;
 }
 .size-table_block tr:first-child:hover {
   background: #fff;
@@ -2591,12 +2624,35 @@ a.header_pass_forgot > span:hover {
   float: left;
   min-height: 1px;
 }
+.page_product_price_move {
+  color: #ec9212;
+  border-color: #ec9212;
+}
+.page_product_price_move .price-bold {
+  color: #ec9212;
+}
+.page_product_price_move .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 1px;
+}
 .product_image {
   border-radius: 4px;
   background: #fff;
   overflow: hidden;
   border: 1px solid #d9e1ea;
   margin-bottom: 20px;
+  position: relative;
+}
+.product_image .icon {
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  z-index: 10;
+}
+.product_image a {
+  display: block;
 }
 .product_image img {
   display: block;
@@ -2623,12 +2679,23 @@ a.header_pass_forgot > span:hover {
   background: #fff;
   border: 1px solid #d9e1ea;
   margin-right: 5px;
+  overflow: hidden;
 }
 .product_slider_item a {
   display: block;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 .product_slider_item a img {
   max-width: 100%;
+  display: block;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 .product_slider_pagination .bx-next,
 .product_slider_pagination .bx-prev {
@@ -2716,16 +2783,20 @@ a.header_pass_forgot > span:hover {
 .page_basket_sum_block-i button,
 .order_save button,
 .order_sidebar_buy button {
-  height: 45px;
+  height: 50px;
   background: linear-gradient(to top, #1b5c00, #1b7f00);
   border: none;
   border-radius: 4px;
   width: 100%;
   color: #fff;
+  font: 700 16px Arial, Helvetica, sans-serif;
   text-shadow: 0 1px 1px rgba(0,0,0,0.7);
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
-  display: inline-block;
-  margin-bottom: 20px;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10px;
 }
 .product_sidebar_buy:hover {
   background: linear-gradient(to bottom, #1b5c00, #1b7f00);
@@ -2739,6 +2810,57 @@ a.header_pass_forgot > span:hover {
   vertical-align: middle;
   margin-right: 10px;
 }
+.product_sidebar_buy .title,
+.page_basket_sum_block-i button .title,
+.order_save button .title,
+.order_sidebar_buy button .title {
+  height: 50px;
+  line-height: 50px;
+  float: left;
+}
+.product_sidebar_buy .icon-i,
+.page_basket_sum_block-i button .icon-i,
+.order_save button .icon-i,
+.order_sidebar_buy button .icon-i {
+  display: block;
+  height: 50px;
+  position: relative;
+  float: left;
+  left: 0;
+  top: 0;
+  width: 50px;
+  background-color: #195b00;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.5);
+  margin-right: 15px;
+}
+.product_sidebar_buy .icon-i .icon,
+.page_basket_sum_block-i button .icon-i .icon,
+.order_save button .icon-i .icon,
+.order_sidebar_buy button .icon-i .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.product_sidebar_1click {
+  display: block;
+  background-color: #e6e6e6;
+  background-image: linear-gradient(to top, #e6e6e6, #fff);
+  height: 50px;
+  border: none;
+  width: 100%;
+  font: 700 14px Arial, Helvetica, sans-serif;
+  color: #1c60ab;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.product_sidebar_1click:hover {
+  background-image: linear-gradient(to bottom, #e6e6e6, #fff);
+}
 .product_sidebar_favorite {
   display: block;
 }
@@ -2747,6 +2869,8 @@ a.header_pass_forgot > span:hover {
   background-position: -152px -125px;
   width: 20px;
   height: 23px;
+}
+.product_sidebar_favorite .icon {
   display: inline-block;
   vertical-align: middle;
   margin-right: 10px;
@@ -2776,14 +2900,16 @@ a.header_pass_forgot > span:hover {
   vertical-align: middle;
   margin-right: 10px;
 }
+.product_sidebar_stock .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
 .icon-product-instock {
   background-image: url("../img/sprite.png");
   background-position: -217px -107px;
   width: 20px;
   height: 17px;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 10px;
 }
 .product_sidebar_middle,
 .product_sidebar_social {
@@ -3371,6 +3497,72 @@ a.header_pass_forgot > span:hover {
   width: 21px;
   background-position: -261px -23px;
 }
+.product_image .item_badge {
+  position: absolute;
+  top: 0;
+  right: -1px;
+  z-index: 100;
+}
+.product_image .item_badge .item_badge_box {
+  width: 30px;
+  height: 30px;
+  border-radius: 2px;
+  z-index: 2;
+  position: relative;
+}
+.product_image .item_badge .badge_name {
+  position: absolute;
+  display: block;
+  opacity: 1;
+  z-index: 1;
+  background: rgba(0,0,0,0.5);
+  border-radius: 2px;
+  height: 100%;
+  right: 0;
+  color: #fff;
+  font-size: 12px;
+  text-shadow: 0 0 1px #000;
+  padding: 10px;
+  line-height: 1;
+  white-space: nowrap;
+}
+.product_image .item_badge .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  margin: auto;
+}
+.product_image .badge_discount .item_badge_box {
+  background: #309c12;
+}
+.product_image .badge_discount .icon {
+  background-image: url("../img/sprite.png");
+  background-position: -239px -125px;
+  width: 14px;
+  height: 15px;
+}
+.product_image .badge_like .item_badge_box {
+  background: #12639c;
+}
+.product_image .badge_like .icon {
+  background-image: url("../img/sprite.png");
+  background-position: -236px -89px;
+  width: 14px;
+  height: 17px;
+}
+.product_image .badge_exclamation .item_badge_box {
+  background: #eec315;
+}
+.product_image .badge_exclamation .icon {
+  background-image: url("../img/sprite.png");
+  background-position: -217px -46px;
+  width: 18px;
+  height: 21px;
+}
 @font-face {
   font-family: 'kelson_sans_ruregular';
   src: url("../fonts/kelson_sans_regular_ru-webfont.eot");
@@ -3872,6 +4064,9 @@ a.header_pass_forgot > span:hover {
 .map_modal .modal_close {
   right: 30px;
 }
+.map_modal .fancybox-inner {
+  background: #fff;
+}
 .map_modal .fancybox-title {
   background: #f4f4f4;
   padding: 30px 0;
@@ -3894,6 +4089,17 @@ a.header_pass_forgot > span:hover {
   width: 18px;
   height: 16px;
   z-index: 9000;
+}
+.map_modal .fancybox-image,
+.map_modal .fancybox-iframe {
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
 }
 .page_faq_article {
   margin-bottom: 25px;
