@@ -368,6 +368,47 @@ $(document).ready(function() {
         return false;
     });
 
+    // FAQ form
+    $('#faq_ask').on('submit', function() {
+        var options = {
+            beforeSubmit: function() {
+                // Check fields
+                var sName = $('#faq_ask input[name="user_name"]').val().trim();
+                var sMail = $('#faq_ask input[name="user_email"]').val().trim();
+                var hasError = false;
+
+                if (sName == '') {
+                    $('#faq_ask input[name="user_name"]').addClass('has-error');
+                    hasError = true;
+                } else {
+                    $('#faq_ask input[name="user_name"]').removeClass('has-error');
+                }
+
+                if (sMail == '') {
+                    $('#faq_ask input[name="user_email"]').addClass('has-error');
+                    hasError = true;
+                } else {
+                    $('#faq_ask input[name="user_email"]').removeClass('has-error');
+                }
+
+                return !hasError;
+            },
+            success: function(responseText) {
+                $('.ask_block').hide()
+                $('.thanks_block').show();
+            }
+        };
+
+        $(this).ajaxSubmit(options);
+        return false;
+    });
+
+    $('.thanks_block .icon').on('click', function(){
+        $('.thanks_block').hide();
+        $('.ask_block').show();
+        $('#faq_ask input').val('');
+    });
+
     // Product slider
     var productMiniSlider = $('.product_slider ul').bxSlider({
         slideSelector: 'li.product_slider_item',

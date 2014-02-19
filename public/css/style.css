@@ -4129,7 +4129,13 @@ a.header_pass_forgot > span:hover {
   color: #bbb;
 }
 .sidebar_faq_ask {
+  padding: 0;
+}
+.sidebar_faq_ask .ask_block {
   padding: 20px;
+}
+.sidebar_faq_ask .ask_block h3 {
+  margin: 0 0 20px 0;
 }
 .sidebar_faq_ask input {
   display: block;
@@ -4154,7 +4160,7 @@ a.header_pass_forgot > span:hover {
   margin: 0 0 20px 0;
 }
 #faq_ask button {
-  margin: 20px auto;
+  margin: 20px auto 0 auto;
 }
 .page_faq_header,
 .page_search_header {
@@ -4281,6 +4287,44 @@ a.header_pass_forgot > span:hover {
   text-align: center;
   line-height: 40px;
   background: rgba(0,0,0,0.5);
+}
+.thanks_block {
+  background: #f4f7fb;
+  border-radius: 4px;
+  padding: 30px 20px;
+  overflow: hidden;
+  position: relative;
+  display: none;
+  color: #555;
+  line-height: 20px;
+}
+.thanks_block h3 {
+  font-size: 16px;
+  margin: 0 0 20px 0;
+  color: #000;
+}
+.thanks_block .icon {
+  width: 32px;
+  top: 20px;
+  right: 20px;
+  background: #fff;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+}
+.thanks_block .icon .icon-close {
+  display: block;
+  position: absolute;
+  background-image: url("../img/sprite.png");
+  background-position: -238px -107px;
+  width: 18px;
+  height: 16px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 .page_order h1.h1 {
   display: block;
@@ -4464,6 +4508,11 @@ a.header_pass_forgot > span:hover {
 }
 .order_sidebar_buy button:hover {
   background: linear-gradient(to bottom, #1b5c00, #1b7f00);
+}
+.user-order_noitems {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 .sidebar_profile_block {
   padding: 20px 0 0 0;
