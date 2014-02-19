@@ -2283,7 +2283,6 @@ a.header_pass_forgot > span:hover {
   background-color: #1c60ab;
   background-image: linear-gradient(to top, #164688, #1e6dbd);
   box-shadow: inset 0 1px 2px rgba(255,255,255,0.6), 0 3px 8px rgba(0,0,0,0.3);
-  padding: 0 10px;
   width: 100%;
   height: 50px;
   max-width: 185px;
@@ -2310,7 +2309,8 @@ a.header_pass_forgot > span:hover {
   color: #fff;
   font: 700 14px Arial, Helvetica, sans-serif;
   text-shadow: 0 1px 1px rgba(0,0,0,0.6);
-  display: inline-block;
+  display: block;
+  line-height: 50px;
   vertical-align: middle;
 }
 .header_busket a:hover {
