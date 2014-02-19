@@ -373,26 +373,35 @@ $(document).ready(function() {
         var options = {
             beforeSubmit: function() {
                 // Check fields
-                var sName = $('#faq_ask input[name="user_name"]').val().trim();
-                var sMail = $('#faq_ask input[name="user_email"]').val().trim();
+                var sName = $('#faq_ask_name').val().trim();
+                var sMail = $('#faq_ask_email').val().trim();
+                var sMessage = $('#faq_ask_text').val().trim();
                 var hasError = false;
 
                 if (sName == '') {
-                    $('#faq_ask input[name="user_name"]').addClass('has-error');
+                    $('#faq_ask_name').addClass('has-error');
                     hasError = true;
                 } else {
-                    $('#faq_ask input[name="user_name"]').removeClass('has-error');
+                    $('#faq_ask_name').removeClass('has-error');
                 }
 
                 if (sMail == '') {
-                    $('#faq_ask input[name="user_email"]').addClass('has-error');
+                    $('#faq_ask_email').addClass('has-error');
                     hasError = true;
                 } else {
-                    $('#faq_ask input[name="user_email"]').removeClass('has-error');
+                    $('#faq_ask_email').removeClass('has-error');
+                }
+
+                if (sMessage == '') {
+                    $('#faq_ask_text').addClass('has-error');
+                    hasError = true;
+                } else {
+                    $('#faq_ask_text').removeClass('has-error');
                 }
 
                 return !hasError;
             },
+
             success: function(responseText) {
                 $('.ask_block').hide()
                 $('.thanks_block').show();
@@ -403,7 +412,8 @@ $(document).ready(function() {
         return false;
     });
 
-    $('.thanks_block .icon').on('click', function(){
+
+    $('.thanks_block .icon').on('click', function() {
         $('.thanks_block').hide();
         $('.ask_block').show();
         $('#faq_ask input').val('');
@@ -432,7 +442,7 @@ $(document).ready(function() {
         controls: false
     });
 
-    $('.product_slider_item a').on('click', function(){
+    $('.product_slider_item a').on('click', function() {
         event.preventDefault();
         var index = $(this).attr('data-slide-index');
         productSlider.goToSlide(index);
@@ -606,11 +616,11 @@ $(document).ready(function() {
                 display: 'block'
             }).fadeIn("fast");
             $(this).parents('.user-order_status').children('.icon').removeClass('icon-profile-question').addClass('icon-profile-question-dark');
-        }, function(){
+        }, function() {
             $(this.toolTip).fadeOut('fast');
             $(this).parents('.user-order_status').children('.icon').removeClass('icon-profile-question-dark').addClass('icon-profile-question');
         });
-        $('.user-order_status .value').mousemove(function(e){
+        $('.user-order_status .value').mousemove(function(e) {
             $('.status_tooltip').css({
                 top: 20 + e.pageY + 'px',
                 left: 10 + e.pageX + 'px'
