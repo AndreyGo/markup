@@ -15,154 +15,175 @@
 }
 .icon-basket-header_checkbox-checked {
   background-image: url("../img/sprite2.png");
-  background-position: -21px -62px;
+  background-position: -26px -62px;
   width: 21px;
   height: 23px;
 }
 .icon-basket-header_checkbox {
   background-image: url("../img/sprite2.png");
-  background-position: -65px 0px;
+  background-position: -110px 0px;
   width: 21px;
   height: 23px;
 }
 .icon-basket-item-count-down {
   background-image: url("../img/sprite2.png");
-  background-position: -108px 0px;
+  background-position: -69px -78px;
   width: 9px;
   height: 6px;
 }
 .icon-basket-item-count-up {
   background-image: url("../img/sprite2.png");
-  background-position: -108px -7px;
+  background-position: -79px -78px;
   width: 9px;
   height: 5px;
 }
 .icon-basket-item-delete {
   background-image: url("../img/sprite2.png");
-  background-position: -79px -86px;
+  background-position: -64px -50px;
   width: 10px;
   height: 10px;
 }
 .icon-basket-item-flag {
   background-image: url("../img/sprite2.png");
-  background-position: -65px -24px;
+  background-position: -89px 0px;
   width: 20px;
   height: 23px;
 }
 .icon-basket-item-refresh {
   background-image: url("../img/sprite2.png");
-  background-position: -49px -31px;
+  background-position: -21px -87px;
   width: 14px;
   height: 15px;
 }
 .icon-contacts-geo {
   background-image: url("../img/sprite2.png");
-  background-position: -32px -31px;
+  background-position: -33px -31px;
   width: 16px;
   height: 25px;
 }
 .icon-delivery-corner,
 .order_delivery:before {
   background-image: url("../img/sprite2.png");
-  background-position: -53px -86px;
+  background-position: -52px -87px;
   width: 25px;
   height: 12px;
 }
 .icon-faq-answer-corner {
   background-image: url("../img/sprite2.png");
-  background-position: -21px -86px;
+  background-position: -36px -87px;
   width: 15px;
   height: 15px;
 }
 .icon-faq-question-corner {
   background-image: url("../img/sprite2.png");
-  background-position: -37px -86px;
+  background-position: -69px -62px;
   width: 15px;
   height: 15px;
 }
+.icon-footer-social-fb-hover,
+.footer_social .fb:hover {
+  background-image: url("../img/sprite2.png");
+  background-position: 0px -62px;
+  width: 25px;
+  height: 24px;
+}
+.icon-footer-social-tw-hover,
+.footer_social .tw:hover {
+  background-image: url("../img/sprite2.png");
+  background-position: -64px -25px;
+  width: 24px;
+  height: 24px;
+}
+.icon-footer-social-vk-hover,
+.footer_social .vk:hover {
+  background-image: url("../img/sprite2.png");
+  background-position: -64px 0px;
+  width: 24px;
+  height: 24px;
+}
 .icon-header-login-fb {
   background-image: url("../img/sprite2.png");
-  background-position: 0px -31px;
+  background-position: 0px 0px;
   width: 31px;
   height: 30px;
 }
 .icon-header-login-tw {
   background-image: url("../img/sprite2.png");
-  background-position: 0px 0px;
+  background-position: 0px -31px;
   width: 32px;
   height: 30px;
 }
 .icon-header-login-vk {
   background-image: url("../img/sprite2.png");
-  background-position: -33px 0px;
+  background-position: -32px 0px;
   width: 31px;
   height: 30px;
 }
 .icon-header-user-basket {
   background-image: url("../img/sprite2.png");
-  background-position: -62px -62px;
+  background-position: -110px -47px;
   width: 20px;
   height: 20px;
 }
 .icon-header-user-exit {
   background-image: url("../img/sprite2.png");
-  background-position: -87px 0px;
+  background-position: -89px -24px;
   width: 20px;
   height: 20px;
 }
 .icon-header-user-flag {
   background-image: url("../img/sprite2.png");
-  background-position: 0px -62px;
+  background-position: -48px -62px;
   width: 20px;
   height: 23px;
 }
 .icon-header-user-settings {
   background-image: url("../img/sprite2.png");
-  background-position: -87px -21px;
+  background-position: -89px -45px;
   width: 20px;
   height: 20px;
 }
 .icon-product-item-flag {
   background-image: url("../img/sprite2.png");
-  background-position: -65px -48px;
+  background-position: -50px -31px;
   width: 13px;
   height: 13px;
 }
 .icon-profile-check {
   background-image: url("../img/sprite2.png");
-  background-position: 0px -86px;
+  background-position: 0px -87px;
   width: 20px;
   height: 18px;
 }
 .icon-profile-lock {
   background-image: url("../img/sprite2.png");
-  background-position: -43px -62px;
+  background-position: -110px -24px;
   width: 18px;
   height: 22px;
 }
 .icon-profile-question-dark {
   background-image: url("../img/sprite2.png");
-  background-position: -87px -61px;
+  background-position: -89px -66px;
   width: 18px;
   height: 18px;
 }
 .icon-profile-question {
   background-image: url("../img/sprite2.png");
-  background-position: -87px -42px;
+  background-position: -110px -68px;
   width: 18px;
   height: 18px;
 }
 .icon-user-arrow-down,
 .header_login_user + .icon {
   background-image: url("../img/sprite2.png");
-  background-position: -49px -47px;
+  background-position: -75px -50px;
   width: 13px;
   height: 8px;
 }
 .icon-user-arrow-up,
 .header_login_user.active + .icon {
   background-image: url("../img/sprite2.png");
-  background-position: -90px -86px;
+  background-position: -50px -45px;
   width: 13px;
   height: 8px;
 }
@@ -460,6 +481,7 @@ input:focus {
 }
 .page_main {
   padding: 40px 0 80px 0;
+  min-height: 600px;
 }
 .btn {
   background-color: #e6e6e6;
@@ -962,6 +984,10 @@ input:focus {
 .product_item_hover_block .item_title:before {
   content: none;
 }
+.product_item_hover_block .item_producer {
+  font-size: 14px;
+  color: #555;
+}
 .product_item_hover_block .item_price {
   position: relative;
   padding: 0 10px;
@@ -993,6 +1019,17 @@ input:focus {
 .product_item_hover_meta:after {
   clear: both;
 }
+.product_item_hover_block_link {
+  display: block;
+}
+.product_item_hover_block_link:before,
+.product_item_hover_block_link:after {
+  content: '';
+  display: table;
+}
+.product_item_hover_block_link:after {
+  clear: both;
+}
 .product_item_hover_favorite {
   margin-right: 10px;
   display: inline-block;
@@ -1003,11 +1040,13 @@ input:focus {
   margin-right: 5px;
 }
 .product_item_hover_favorite .title {
+  color: #1c60ab;
   font-size: 13px;
   border-bottom: 1px dotted #1c60ab;
 }
 .product_item_hover_favorite .title:hover {
   border-bottom-color: #da4500;
+  color: #da4500;
 }
 .page_about_btn {
   height: 50px;
@@ -1769,6 +1808,15 @@ input:focus {
 .footer_list {
   line-height: 40px;
 }
+.footer_list ul li:last-child {
+  line-height: 28px;
+}
+.footer_list ul li:last-child > a {
+  color: #bbb;
+}
+.footer_list ul li:last-child > a:hover {
+  color: #da4500;
+}
 .footer_list.mb {
   margin-bottom: 30px;
 }
@@ -1778,6 +1826,17 @@ input:focus {
 }
 .footer_logo a img {
   max-width: 100%;
+}
+.footer_social {
+  margin-bottom: 25px;
+}
+.footer_social:before,
+.footer_social:after {
+  content: '';
+  display: table;
+}
+.footer_social:after {
+  clear: both;
 }
 .footer_social a {
   display: block;
