@@ -504,55 +504,37 @@ $(document).ready(function() {
         $('.header_user_dropdown').toggle();
     });
 
-    // Contacts slider
-    var mapSlider = $('.page_address_block_map_img-first ul').bxSlider({
-        slideWidth: 412,
-        controls: false,
-        pager: false
-    });
+    // Contact sliders
+    var mySliders = [];
+    $('.page_address_block_map').each(function (i,obj) {
 
-    var mapSliderSecond = $('.page_address_block_map_img-second ul').bxSlider({
-        slideWidth: 412,
-        controls: false,
-        pager: false
-    });
+        var self = this;
 
-    var mapPagerSlide = $('.page_address_block_map_slides-first ul').bxSlider({
-        pager: false,
-        controls: true,
-        slideWidth: 120,
-        slideMargin: 20,
-        maxSlides: 4,
-        minSlides: 3,
-        moveSlides: 1,
-        infiniteLoop: false,
-        hideControlOnEnd: true
-    });
+        $('.page_address_block_map_slides ul',self).bxSlider({
+            pager: false,
+            controls: true,
+            slideWidth: 120,
+            slideMargin: 20,
+            maxSlides: 4,
+            minSlides: 3,
+            moveSlides: 1,
+            infiniteLoop: false,
+            hideControlOnEnd: true
+        });
 
-    var mapPagerSlideSecond = $('.page_address_block_map_slides-second ul').bxSlider({
-        pager: false,
-        controls: true,
-        slideWidth: 120,
-        slideMargin: 20,
-        maxSlides: 4,
-        minSlides: 3,
-        moveSlides: 1,
-        infiniteLoop: false,
-        hideControlOnEnd: true
-    });
+        mySliders.push(
+            $('.page_address_block_map_img ul',self).bxSlider({
+                slideWidth: 412,
+                controls: false,
+                pager: false
+            })
+        );
 
-    var thumb = $('.page_address_block_map_slides-first .page_address_block_map_slides_item a');
-    thumb.on('click', function(event) {
-        event.preventDefault();
-        var index = $(this).attr('data-slide-index');
-        mapSlider.goToSlide(index);
-    });
-
-    var thumb = $('.page_address_block_map_slides-second .page_address_block_map_slides_item a');
-    thumb.on('click', function(event) {
-        event.preventDefault();
-        var index = $(this).attr('data-slide-index');
-        mapSliderSecond.goToSlide(index);
+        $('.page_address_block_map_slides_item a',self).on('click', function(event) {
+            event.preventDefault();
+            var index = $(this).attr('data-slide-index');
+            mySliders[i].goToSlide(index);
+        });
     });
 
     $('.contacts_modal').on('click', function(event) {
