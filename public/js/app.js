@@ -11,6 +11,8 @@ $(document).ready(function() {
     var slider = $('.page_slider ul').bxSlider({
         pager: true,
         hideControlOnEnd: true,
+        autoStart: true,
+        auto: true,
         pagerCustom: '.page_slider_pagination',
         infiniteLoop: false,
         onSliderLoad: function(currentIndex) {
@@ -582,24 +584,18 @@ $(document).ready(function() {
     }
 
     // User profile order tooltip
-    (function() {
+    (function(){
+        var toolTip = $('.status_tooltip');
         $('.user-order_status .value').hover(function(e) {
-            var waitingTooltip = $('.tooltip_waiting');
-            var sendTooltip = $('.tooltip_send');
-            var toolTip;
-            if ($(this).attr('data-tooltip') == 'waiting') {
-                this.toolTip = waitingTooltip;
-            } else if ($(this).attr('data-tooltip') == 'send') {
-                this.toolTip = sendTooltip;
-            }
-            $(this.toolTip).css({
+            toolTip.text($(this).attr('data-text'));
+            $(toolTip).css({
                 top: 20 + e.pageY + "px",
                 left: 10 + e.pageX + "px",
                 display: 'block'
-            }).fadeIn("fast");
+            });
             $(this).parents('.user-order_status').children('.icon').removeClass('icon-profile-question').addClass('icon-profile-question-dark');
         }, function() {
-            $(this.toolTip).fadeOut('fast');
+            $(toolTip).css('display', 'none');
             $(this).parents('.user-order_status').children('.icon').removeClass('icon-profile-question-dark').addClass('icon-profile-question');
         });
         $('.user-order_status .value').mousemove(function(e) {
@@ -609,5 +605,6 @@ $(document).ready(function() {
             });
         })
     }());
+
 
 });

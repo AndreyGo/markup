@@ -4510,6 +4510,29 @@ input.has-error {
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
+.page_faq_header_delete {
+  display: block;
+  float: right;
+}
+.page_faq_header_delete .icon-i {
+  width: 21px;
+  height: 21px;
+  border-radius: 4px;
+  background: #f2f2f2;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  margin-right: 10px;
+}
+.page_faq_header_delete .icon-i .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
 .sidebar_profile_block {
   padding: 20px 0 0 0;
 }
@@ -4777,6 +4800,49 @@ input.has-error {
   left: 0;
   right: 0;
   bottom: 0;
+}
+.order-item_block {
+  margin-bottom: 30px;
+}
+.order-item_table .text-bold {
+  color: #000;
+}
+.order-item_table table {
+  background: #fff;
+  width: 100%;
+  border: 1px solid #d9e1ea;
+  border-radius: 4px;
+  overflow: hidden;
+  font-size: 13px;
+  color: #555;
+}
+.order-item_table table td {
+  padding: 10px;
+  border: 1px solid #d9e1ea;
+}
+.order-item_info tr td:first-child,
+.order-item_delivery tr td:first-child,
+.order-item_userinfo tr td:first-child {
+  text-align: right;
+}
+.order-item_info tr td:last-child,
+.order-item_delivery tr td:last-child,
+.order-item_userinfo tr td:last-child {
+  width: 435px;
+}
+.order-item_contain thead td {
+  border: none;
+}
+.order-item_contain thead tr td:first-child {
+  width: 270px;
+}
+.order-item_contain thead tr td:last-child {
+  width: auto;
+}
+.order-item_userinfo .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 .page_search_header {
   padding: 20px;
