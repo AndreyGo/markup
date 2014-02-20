@@ -114,6 +114,7 @@ $(document).ready(function() {
 
     // Fancybox
     $('[data-type="modal"]').click(function() {
+        var self = this;
         var target = $(this).attr('data-target');
         $.fancybox.open(target, {
             wrapCSS: "page_modal",
@@ -608,35 +609,81 @@ $(document).ready(function() {
 
     // Search autocomplete
 
-    $(function() {
-    function log( message ) {
-      $( "<div/>" ).text( message ).prependTo( "#log" );
-      $( "#log" ).attr( "scrollTop", 0 );
-    }
+    // $(function() {
+    //     function log(message) {
+    //         $("<div/>").text(message).prependTo("#log");
+    //         $("#log").attr("scrollTop", 0);
+    //     }
 
-    $.ajax({
-      url: "london.xml",
-      dataType: "xml",
-      success: function( xmlResponse ) {
-        var data = $( "geoname", xmlResponse ).map(function() {
-          return {
-            value: $( "name", this ).text() + ", " +
-              ( $.trim( $( "countryName", this ).text() ) || "(unknown country)" ),
-            id: $( "geonameId", this ).text()
-          };
-        }).get();
-        $( "#mainSearch" ).autocomplete({
-          source: data,
-          minLength: 0,
-          select: function( event, ui ) {
-            log( ui.item ?
-              "Selected: " + ui.item.value + ", geonameId: " + ui.item.id :
-              "Nothing selected, input was " + this.value );
-          }
+    //     $.ajax({
+    //         url: "london.xml",
+    //         dataType: "xml",
+    //         success: function(xmlResponse) {
+    //             var data = $("geoname", xmlResponse).map(function() {
+    //                 return {
+    //                     value: $("name", this).text() + ", " + ($.trim($("countryName", this).text()) || "(unknown country)"),
+    //                     id: $("geonameId", this).text()
+    //                 };
+    //             }).get();
+    //             $("#mainSearch").autocomplete({
+    //                 source: data,
+    //                 minLength: 0,
+    //                 select: function(event, ui) {
+    //                     log(ui.item ?
+    //                         "Selected: " + ui.item.value + ", geonameId: " + ui.item.id :
+    //                         "Nothing selected, input was " + this.value);
+    //                 }
+    //             });
+    //         }
+    //     });
+    // });
+
+
+    // Cancel order
+    $('.user-order_cancel').click(function() {
+        var self = this;
+        var target = $(this).attr('data-target');
+        var itemNumber = $(this).parents('.user-order_item').find('.user-order_code').children('.value').text();
+        $.fancybox.open(target, {
+            wrapCSS: "page_modal",
+            width: 650,
+            padding: 0,
+            fitToView: false,
+            autoSize: false,
+            autoHeight: true,
+            scrolling: "no",
+            closeBtn: false,
+            helpers: {
+                overlay: {
+                    locked: false,
+                    css: {
+                        'background': 'rgba(4, 31, 61, 0.80)'
+                    }
+                }
+            },
+            afterLoad: function(current) {
+                $('.orderNumber').text(itemNumber);
+
+            }
         });
-      }
+        return false;
     });
-  });
 
+    $('.orderCancel .close_modal').click(function(){
+        $.fancybox.close();
+    });
 
+    // Cansel order submit
+
+    $('#orderCansel').on('submit', function() {
+        var options = {
+            success: function(responseText) {
+                $('.orderCancel_window').hide();
+                $('.orderCancel_thanks').show();
+                setTimeout( function() {$.fancybox.close(); },5000);
+            }
+        };
+
+        $(this).ajaxSubmit(options);
+    });
 });

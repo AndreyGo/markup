@@ -202,64 +202,71 @@
         </header>
         <main role="main" class="page_main">
             <div class="container">
-               <aside class="page_sidebar-left">
-                   <div class="sidebar_menu dropdown">
-                       <span class="sidebar_menu_title">Каталог товаров
-                           <span class="icon"></span>
-                       </span>
-                       <div class="sidebar_menu_dropdown-i">
-                           <div class="sidebar_menu_dropdown dropdown_block">
-                               <div class="dropdown_title">
-                                   <span>Эксклюзив:</span>
-                               </div>
-                               <ul class="dropdown_menu">
-                                   <li><a href="#">Эксклюзивные столы</a>
-                                   </li>
-                                   <li><a href="#">Эксклюзивные кии</a>
-                                   </li>
-                                   <li><a href="#">Бильярдные коллекции</a>
-                                   </li>
-                                   <li><a href="#">Интерьерные проекты</a>
-                                   </li>
-                               </ul>
-                               <div class="dropdown_title">
-                                   <span>Все для игры
-                                       <br>в бильярд:</span>
-                               </div>
-                               <ul class="dropdown_menu">
-                                   <li><a href="#">Бильярдные столы</a>
-                                   </li>
-                                   <li><a href="#">Бильярдные кии</a>
-                                   </li>
-                                   <li><a href="#">Бильярдные шары</a>
-                                   </li>
-                                   <li><a href="#">Аксессуары для бильярда</a>
-                                   </li>
-                                   <li><a href="#">Аксессуары для киёв</a>
-                                   </li>
-                                   <li><a href="#">Мебель для бильярдной</a>
-                                   </li>
-                               </ul>
-                           </div>
-                       </div>
-                   </div>
-                   <div class="sidebar_profile_block">
-                       <h3 class="h3">Личный кабинет</h3>
-                       <div class="sidebar_profile_menu">
-                           <ul>
-                               <li class="user_dropdown_item">
-                                   <a href="#"><span class="icon icon-header-user-basket"></span>Мои заказы <span class="value">2</span></a>
-                               </li>
-                               <li class="user_dropdown_item">
-                                   <a href="#"><span class="icon icon-header-user-flag"></span>Закладки <span class="value">2</span></a>
-                               </li>
-                               <li class="user_dropdown_item">
-                                   <a href="#"><span class="icon icon-header-user-settings"></span>Настройки</a>
-                               </li>
-                           </ul>
-                       </div>
-                   </div>
-               </aside>
+                <aside class="page_sidebar-left">
+                    <div class="sidebar_menu dropdown">
+                        <span class="sidebar_menu_title">Каталог товаров
+                            <span class="icon"></span>
+                        </span>
+                        <div class="sidebar_menu_dropdown-i">
+                            <div class="sidebar_menu_dropdown dropdown_block">
+                                <div class="dropdown_title">
+                                    <span>Эксклюзив:</span>
+                                </div>
+                                <ul class="dropdown_menu">
+                                    <li><a href="#">Эксклюзивные столы</a>
+                                    </li>
+                                    <li><a href="#">Эксклюзивные кии</a>
+                                    </li>
+                                    <li><a href="#">Бильярдные коллекции</a>
+                                    </li>
+                                    <li><a href="#">Интерьерные проекты</a>
+                                    </li>
+                                </ul>
+                                <div class="dropdown_title">
+                                    <span>Все для игры
+                                        <br>в бильярд:</span>
+                                </div>
+                                <ul class="dropdown_menu">
+                                    <li><a href="#">Бильярдные столы</a>
+                                    </li>
+                                    <li><a href="#">Бильярдные кии</a>
+                                    </li>
+                                    <li><a href="#">Бильярдные шары</a>
+                                    </li>
+                                    <li><a href="#">Аксессуары для бильярда</a>
+                                    </li>
+                                    <li><a href="#">Аксессуары для киёв</a>
+                                    </li>
+                                    <li><a href="#">Мебель для бильярдной</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar_profile_block">
+                        <h3 class="h3">Личный кабинет</h3>
+                        <div class="sidebar_profile_menu">
+                            <ul>
+                                <li class="user_dropdown_item">
+                                    <a href="#">
+                                        <span class="icon icon-header-user-basket"></span>Мои заказы
+                                        <span class="value">2</span>
+                                    </a>
+                                </li>
+                                <li class="user_dropdown_item">
+                                    <a href="#">
+                                        <span class="icon icon-header-user-flag"></span>Закладки
+                                        <span class="value">2</span>
+                                    </a>
+                                </li>
+                                <li class="user_dropdown_item">
+                                    <a href="#">
+                                        <span class="icon icon-header-user-settings"></span>Настройки</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
                 <article class="page_content">
                     <div class="page_search">
                         <form class="search_form">
@@ -345,7 +352,7 @@
                                     <span data-text="Cтатус появляется после того как заказ сформирован и выставлен в резерв. Вместе со статусом в теле самого заказа в личном кабинете клиента появляется кнопка «Оплатить» или «Квитанция», в зависимости от типа выбранного платежа." class="value">Принят, ожидается оплата</span>
                                     <span class="icon icon-profile-question"></span>
                                 </span>
-                                <span class="user-order_cancel">
+                                <span data-type="modal" data-target="#orderCancel" class="user-order_cancel">
                                     <span class="icon">
                                         <span class="icon-basket-item-delete"></span>
                                     </span>Отменить заказ</span>
@@ -357,7 +364,7 @@
                         <div class="user-order_item">
                             <div class="user-order_header">
                                 <span class="user-order_code">Код заказа:
-                                    <span class="value text-bold">41235123</span>
+                                    <span class="value text-bold">4111111</span>
                                 </span>
                                 <span class="user-order_price">Стоимость заказа:
                                     <span class="value text-bold">146 700 руб</span>
@@ -406,7 +413,7 @@
                                     proident, sunt in culpa qui officia deserunt mollit anim id est laborum." class="value">Отправлен</span>
                                     <span class="icon icon-profile-question"></span>
                                 </span>
-                                <span class="user-order_cancel">
+                                <span data-type="modal" data-target="#orderCancel" class="user-order_cancel">
                                     <span class="icon">
                                         <span class="icon-basket-item-delete"></span>
                                     </span>Отменить заказ</span>
@@ -541,6 +548,46 @@
             <div class="modal_footer">
                 <div class="modal_footer_i">
                     <button type="submit" class="modal_footer_btn btn">Перезвоните мне</button>
+                </div>
+            </div>
+        </div>
+        <div id="orderCancel" class="page_recall page_order-cancel">
+            <div class="orderCancel_window">
+              <div class="modal_header">
+                  <div class="modal_close">
+                      <span class="icon-modal-close"></span>
+                  </div>
+                  <h2>Отмена заказа</h2>
+              </div>
+              <div class="modal_body">
+                  <div class="modal_body_i">
+                      <p class="message">Вы уверены, что хотите отменить заказ
+                          <span class="orderNumber text-bold">asd</span>?
+                          <br>
+                          <span class="text-bold">Обращаем внимание, что отмена заказа необратима!</span>
+                      </p>
+                      <textarea id="orderCancelMessage" placeholder="Укажите, пожалуйста, причину отмены заказа..."></textarea>
+                  </div>
+              </div>
+              <div class="modal_footer">
+                  <div class="modal_footer_i">
+                      <span class="close_modal">Я передумал</span>
+                      <button type="submit" class="modal_footer_btn btn">Отменить заказ</button>
+                  </div>
+              </div>
+            </div>
+            <div class="orderCancel_thanks">
+                <div class="modal_header">
+                    <div class="modal_close">
+                        <span class="icon-modal-close"></span>
+                    </div>
+                    <h2>Спасибо за обращение!</h2>
+                </div>
+                <div class="modal_body">
+                    <div class="modal_body_i">
+                        <div class="recall_thanks_message">Ваш заказ успешно удален. Мы рады помочь вам!</div>
+                        <div class="cl">Окно автоматически закроется через 5 секунд...</div>
+                    </div>
                 </div>
             </div>
         </div>
