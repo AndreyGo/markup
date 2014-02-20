@@ -66,10 +66,10 @@ $(document).ready(function() {
                 text = 'нравится';
                 break;
             case 'exclamation':
-                text = 'эксклюзив';
+                text = 'внимание';
                 break;
             case 'discount':
-                text = 'акция';
+                text = 'скидка';
                 break;
         }
         $(self).find('.item_badge_box').before('<div class="badge_name">' + text + '</div>');
@@ -454,9 +454,8 @@ $(document).ready(function() {
     $('.product_image a').on('click', function(event) {
         event.preventDefault();
         var imgVal = $(this).children('img').attr('src');
-        var imgTitle = $(this).children('img').attr('alt');
+        var imgTitle = $(this).parents('.page_product_block').find('h1').text();
         var imgPic = $(this).parents('.product_image').children('img');
-        console.log(imgPic);
         $.fancybox(imgVal, {
             closeBtn: true,
             padding: 0,
@@ -606,38 +605,6 @@ $(document).ready(function() {
             });
         })
     }());
-
-    // Search autocomplete
-
-    // $(function() {
-    //     function log(message) {
-    //         $("<div/>").text(message).prependTo("#log");
-    //         $("#log").attr("scrollTop", 0);
-    //     }
-
-    //     $.ajax({
-    //         url: "london.xml",
-    //         dataType: "xml",
-    //         success: function(xmlResponse) {
-    //             var data = $("geoname", xmlResponse).map(function() {
-    //                 return {
-    //                     value: $("name", this).text() + ", " + ($.trim($("countryName", this).text()) || "(unknown country)"),
-    //                     id: $("geonameId", this).text()
-    //                 };
-    //             }).get();
-    //             $("#mainSearch").autocomplete({
-    //                 source: data,
-    //                 minLength: 0,
-    //                 select: function(event, ui) {
-    //                     log(ui.item ?
-    //                         "Selected: " + ui.item.value + ", geonameId: " + ui.item.id :
-    //                         "Nothing selected, input was " + this.value);
-    //                 }
-    //             });
-    //         }
-    //     });
-    // });
-
 
     // Cancel order
     $('.user-order_cancel').click(function() {
