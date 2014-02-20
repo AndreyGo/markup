@@ -3618,6 +3618,9 @@ input.has-error {
   background: #fff;
   width: 700px;
 }
+.order-table_date {
+  width: 90px;
+}
 @font-face {
   font-family: 'kelson_sans_ruregular';
   src: url("../fonts/kelson_sans_regular_ru-webfont.eot");
