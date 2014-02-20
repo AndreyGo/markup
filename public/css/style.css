@@ -541,6 +541,7 @@ input:focus {
 }
 .dropdown_block {
   position: absolute;
+  text-align: left;
   display: none;
   font: 400 14px Arial, Helvetica, sans-serif;
   color: #000;
@@ -2253,11 +2254,10 @@ a.header_pass_forgot > span:hover {
   margin: 0 0 0 5px;
 }
 .header_nav_item {
-  display: block;
-  float: left;
-  width: 18%;
-  margin: 0 2% 0 0;
+  display: table-cell;
+  width: 1%;
   position: relative;
+  text-align: center;
 }
 .header_nav_item:hover .icon-header-arrow {
   background-image: url("../img/sprite.png");
@@ -4010,10 +4010,11 @@ input.has-error {
   margin-right: 0;
 }
 .page_address_block_title {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .page_address_block_title .icon {
   display: inline-block;
+  vertical-align: middle;
 }
 .page_address_block_title h2 {
   display: inline-block;
