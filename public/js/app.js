@@ -66,10 +66,10 @@ $(document).ready(function() {
                 text = 'нравится';
                 break;
             case 'exclamation':
-                text = 'внимание';
+                text = 'эксклюзив';
                 break;
             case 'discount':
-                text = 'скидка';
+                text = 'акция';
                 break;
         }
         $(self).find('.item_badge_box').before('<div class="badge_name">' + text + '</div>');
