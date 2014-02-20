@@ -508,11 +508,11 @@ $(document).ready(function() {
 
     // Contact sliders
     var mySliders = [];
-    $('.page_address_block_map').each(function (i,obj) {
+    $('.page_address_block_map').each(function(i, obj) {
 
         var self = this;
 
-        $('.page_address_block_map_slides ul',self).bxSlider({
+        $('.page_address_block_map_slides ul', self).bxSlider({
             pager: false,
             controls: true,
             slideWidth: 120,
@@ -525,14 +525,14 @@ $(document).ready(function() {
         });
 
         mySliders.push(
-            $('.page_address_block_map_img ul',self).bxSlider({
+            $('.page_address_block_map_img ul', self).bxSlider({
                 slideWidth: 412,
                 controls: false,
                 pager: false
             })
         );
 
-        $('.page_address_block_map_slides_item a',self).on('click', function(event) {
+        $('.page_address_block_map_slides_item a', self).on('click', function(event) {
             event.preventDefault();
             var index = $(this).attr('data-slide-index');
             mySliders[i].goToSlide(index);
@@ -584,7 +584,7 @@ $(document).ready(function() {
     }
 
     // User profile order tooltip
-    (function(){
+    (function() {
         var toolTip = $('.status_tooltip');
         $('.user-order_status .value').hover(function(e) {
             toolTip.text($(this).attr('data-text'));
@@ -605,6 +605,38 @@ $(document).ready(function() {
             });
         })
     }());
+
+    // Search autocomplete
+
+    $(function() {
+    function log( message ) {
+      $( "<div/>" ).text( message ).prependTo( "#log" );
+      $( "#log" ).attr( "scrollTop", 0 );
+    }
+
+    $.ajax({
+      url: "london.xml",
+      dataType: "xml",
+      success: function( xmlResponse ) {
+        var data = $( "geoname", xmlResponse ).map(function() {
+          return {
+            value: $( "name", this ).text() + ", " +
+              ( $.trim( $( "countryName", this ).text() ) || "(unknown country)" ),
+            id: $( "geonameId", this ).text()
+          };
+        }).get();
+        $( "#mainSearch" ).autocomplete({
+          source: data,
+          minLength: 0,
+          select: function( event, ui ) {
+            log( ui.item ?
+              "Selected: " + ui.item.value + ", geonameId: " + ui.item.id :
+              "Nothing selected, input was " + this.value );
+          }
+        });
+      }
+    });
+  });
 
 
 });

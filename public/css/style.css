@@ -3566,6 +3566,10 @@ input.has-error {
   width: 18px;
   height: 21px;
 }
+.ui-autocomplete {
+  background: #fff;
+  width: 700px;
+}
 @font-face {
   font-family: 'kelson_sans_ruregular';
   src: url("../fonts/kelson_sans_regular_ru-webfont.eot");
