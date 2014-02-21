@@ -3651,9 +3651,6 @@ input.has-error {
 .ui-menu-item:hover {
   background: #e2e8ef;
 }
-.ui-front {
-  z-index: 120;
-}
 .order-table_date {
   width: 90px;
 }
@@ -5088,7 +5085,7 @@ input.has-error {
   filter: Alpha(0);
 }
 .ui-front {
-  z-index: 100;
+  z-index: 120;
 }
 .ui-state-disabled {
   cursor: default !important;
