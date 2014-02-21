@@ -3953,6 +3953,54 @@ input.has-error {
   font: 700 24px Arial, Helvetica, sans-serif;
   color: #000;
 }
+.page-bookmark_header .page_faq_header_subtitle:before,
+.page-bookmark_header .page_faq_header_subtitle:after {
+  content: '';
+  display: table;
+}
+.page-bookmark_header .page_faq_header_subtitle:after {
+  clear: both;
+}
+.bookmark_filter {
+  float: right;
+}
+.bookmark_delete,
+.bookmark_delete-all {
+  border-bottom: 1px dotted #1c60ab;
+  display: inline-block;
+  line-height: 1;
+}
+.bookmark_delete:hover,
+.bookmark_delete-all:hover {
+  border-bottom-color: #da4500;
+}
+.bookmark_delete {
+  margin-left: 20px;
+}
+.bookmark_delete-all {
+  margin-left: 70px;
+}
+.page-bookmark_grid:before,
+.page-bookmark_grid:after {
+  content: '';
+  display: table;
+}
+.page-bookmark_grid:after {
+  clear: both;
+}
+.product-bookmark_check {
+  position: relative;
+  float: left;
+  min-height: 50px;
+  top: -3px;
+}
+.bookmark_empty {
+  margin-bottom: 60px;
+  color: #555;
+}
+.bookmark_empty h3 {
+  color: #000;
+}
 .page_category_link {
   margin-bottom: 60px;
 }

@@ -218,6 +218,41 @@ $(document).ready(function() {
         });
     });
 
+    $('.product-bookmark_check').iCheck({
+        handle: 'checkbox',
+        checkboxClass: 'sidebar_filter_checkbox'
+    });
+
+    (function() {
+        var total = 0;
+        $('.page-bookmark_grid .product_item .product-bookmark_check').on('ifChecked', function(event) {
+            event.preventDefault();
+            total++;
+            checkBook(total);
+            console.log(total);
+        });
+        $('.page-bookmark_grid .product_item .product-bookmark_check').on('ifUnchecked', function(event) {
+            event.preventDefault();
+            total--;
+            checkBook(total);
+            console.log(total);
+        });
+
+        function checkBook (num) {
+            if (num < 1) {
+                $('.page_faq_header_subtitle .message').text('Вы ничего не выбрали');
+            } else if (num == 1){
+                $('.page_faq_header_subtitle .message').html('<span class="message">Выбран <span class="bookmark_num">'+ total +'</span> продукт</span>');
+            } else if (num > 4) {
+                $('.page_faq_header_subtitle .message').html('<span class="message">Выбрано <span class="bookmark_num">'+ total +'</span> продуктов</span>');
+            } else {
+                $('.page_faq_header_subtitle .message').html('<span class="message">Выбрано <span class="bookmark_num">'+ total +'</span> продукта</span>');
+            }
+            $('.bookmark_num').text(total);
+        }
+    }());
+
+
     // Custom slider
     $('#filter-slider').slider({
         range: true,
@@ -636,7 +671,7 @@ $(document).ready(function() {
         return false;
     });
 
-    $('.orderCancel .close_modal').click(function(){
+    $('.orderCancel .close_modal').click(function() {
         $.fancybox.close();
     });
 
@@ -647,7 +682,9 @@ $(document).ready(function() {
             success: function(responseText) {
                 $('.orderCancel_window').hide();
                 $('.orderCancel_thanks').show();
-                setTimeout( function() {$.fancybox.close(); },5000);
+                setTimeout(function() {
+                    $.fancybox.close();
+                }, 5000);
             }
         };
 

@@ -4,141 +4,135 @@ times in msec
  clock   self+sourced   self:  sourced script
  clock   elapsed:              other lines
 
-000.008  000.008: --- VIM STARTING ---
-000.084  000.076: Allocated generic buffers
-000.537  000.453: locale set
-000.567  000.030: GUI prepared
-000.574  000.007: clipboard setup
-000.585  000.011: window checked
-001.257  000.672: inits 1
-001.285  000.028: parsing arguments
-008.032  006.747: expanding arguments
-011.385  003.353: shell init
-012.102  000.717: Termcap init
-012.153  000.051: inits 2
-015.569  003.416: init highlight
-016.149  000.177  000.177: sourcing $VIM/vimrc
-017.621  000.558  000.558: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/util.vim
-018.468  001.766  001.208: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle.vim
-019.321  000.480  000.480: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/init.vim
-020.643  000.800  000.800: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/config.vim
-020.743  000.030  000.030: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/ftoff.vim
-021.680  000.515  000.515: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/autoload.vim
-022.615  000.527  000.527: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/parser.vim
-023.880  000.482  000.482: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/types/git.vim
-024.411  000.187  000.187: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/types/hg.vim
-024.891  000.116  000.116: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/types/nosync.vim
-025.473  000.228  000.228: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/types/raw.vim
-025.960  000.156  000.156: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/types/svn.vim
-068.585  000.077  000.077: sourcing /Users/langolf/.vim/bundle/vim-stylus/ftdetect/stylus.vim
-068.829  000.163  000.163: sourcing /Users/langolf/.vim/bundle/vim-javascript/ftdetect/javascript.vim
-068.975  000.046  000.046: sourcing /Users/langolf/.vim/bundle/vim-jquery/ftdetect/jquery.vim
-069.144  000.090  000.090: sourcing /Users/langolf/.vim/bundle/vim-json/ftdetect/json.vim
-069.258  000.042  000.042: sourcing /Users/langolf/.vim/bundle/vim-jade/ftdetect/jade.vim
-069.519  000.049  000.049: sourcing /Users/langolf/.vim/bundle/ultisnips/ftdetect/snippets.vim
-069.570  000.020  000.020: sourcing /Users/langolf/.vim/bundle/ultisnips/ftdetect/UltiSnips.vim
-069.742  000.041  000.041: sourcing /Users/langolf/.vim/bundle/neobundle.vim/ftdetect/vimrecipe.vim
-069.878  017.552  017.024: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/filetype.vim
-070.170  000.050  000.050: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/ftplugin.vim
-070.455  000.054  000.054: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/indent.vim
-071.358  000.339  000.339: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
-071.499  000.718  000.379: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/synload.vim
-071.535  000.990  000.272: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syntax.vim
-073.512  001.253  001.253: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/installer.vim
-075.900  000.213  000.213: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/nosyntax.vim
-076.631  000.272  000.272: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
-076.771  000.645  000.373: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/synload.vim
-076.806  001.174  000.316: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syntax.vim
-083.830  000.517  000.517: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
-084.961  000.496  000.496: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
-130.937  053.590  052.577: sourcing /Users/langolf/.vim/bundle/tomorrow-theme/vim/colors/Tomorrow-Night.vim
-132.099  000.290  000.290: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
-132.807  000.285  000.285: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
-177.660  046.452  045.877: sourcing /Users/langolf/.vim/bundle/tomorrow-theme/vim/colors/Tomorrow-Night.vim
-178.695  162.443  036.041: sourcing $HOME/.vimrc
-178.703  000.514: sourcing vimrc file(s)
-179.027  000.116  000.116: sourcing /Users/langolf/.vim/bundle/vimproc/plugin/vimproc.vim
-179.362  000.218  000.218: sourcing /Users/langolf/.vim/bundle/ack.vim/plugin/ack.vim
-182.329  002.092  002.092: sourcing /Users/langolf/.vim/bundle/nerdtree/autoload/nerdtree.vim
-186.049  001.393  001.393: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/path.vim
-186.886  000.519  000.519: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim
-187.390  000.206  000.206: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim
-187.957  000.276  000.276: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/key_map.vim
-188.829  000.574  000.574: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim
-189.839  000.719  000.719: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim
-190.872  000.768  000.768: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim
-191.690  000.507  000.507: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/opener.vim
-192.553  000.564  000.564: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/creator.vim
-203.707  000.311  000.311: sourcing /Users/langolf/.vim/bundle/nerdtree/nerdtree_plugin/exec_menuitem.vim
-205.319  001.242  001.242: sourcing /Users/langolf/.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim
-206.287  026.818  017.647: sourcing /Users/langolf/.vim/bundle/nerdtree/plugin/NERD_tree.vim
-207.386  000.319  000.319: sourcing /Users/langolf/.vim/bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim
-207.717  001.222  000.903: sourcing /Users/langolf/.vim/bundle/ctrlp.vim/plugin/ctrlp.vim
-207.876  000.026  000.026: sourcing /Users/langolf/.vim/bundle/ctrlp-funky/plugin/funky.vim
-212.913  004.926  004.926: sourcing /Users/langolf/.vim/bundle/vim-fugitive/plugin/fugitive.vim
-219.791  006.708  006.708: sourcing /Users/langolf/.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim
-221.119  001.142  001.142: sourcing /Users/langolf/.vim/bundle/vim-matchit/plugin/matchit.vim
-222.512  001.163  001.163: sourcing /Users/langolf/.vim/bundle/vim-surround/plugin/surround.vim
-223.394  000.728  000.728: sourcing /Users/langolf/.vim/bundle/tabular/plugin/Tabular.vim
-224.746  000.744  000.744: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline.vim
-225.133  001.591  000.847: sourcing /Users/langolf/.vim/bundle/vim-airline/plugin/airline.vim
-225.516  000.071  000.071: sourcing /Users/langolf/.vim/bundle/neocomplete/plugin/neocomplete/buffer.vim
-225.612  000.063  000.063: sourcing /Users/langolf/.vim/bundle/neocomplete/plugin/neocomplete/dictionary.vim
-225.702  000.059  000.059: sourcing /Users/langolf/.vim/bundle/neocomplete/plugin/neocomplete/include.vim
-225.791  000.058  000.058: sourcing /Users/langolf/.vim/bundle/neocomplete/plugin/neocomplete/syntax.vim
-225.879  000.058  000.058: sourcing /Users/langolf/.vim/bundle/neocomplete/plugin/neocomplete/tag.vim
-226.056  000.147  000.147: sourcing /Users/langolf/.vim/bundle/neocomplete/plugin/neocomplete.vim
-228.826  001.198  001.198: sourcing /Users/langolf/.vim/bundle/delimitMate/autoload/delimitMate.vim
-231.846  005.610  004.412: sourcing /Users/langolf/.vim/bundle/delimitMate/plugin/delimitMate.vim
-233.865  001.859  001.859: sourcing /Users/langolf/.vim/bundle/KeyboardLayoutSwitcher/plugin/KeyboardLayoutSwitcher.vim
-234.165  000.183  000.183: sourcing /Users/langolf/.vim/bundle/vim-pasta/plugin/pasta.vim
-234.699  000.051  000.051: sourcing /Users/langolf/.vim/bundle/ultisnips/plugin/snipMate_compatibility.vim
-236.013  000.126  000.126: sourcing /Users/langolf/.vim/bundle/ultisnips/autoload/UltiSnips/variables.vim
-236.090  000.759  000.633: sourcing /Users/langolf/.vim/bundle/ultisnips/autoload/UltiSnips/map_keys.vim
-236.205  001.475  000.716: sourcing /Users/langolf/.vim/bundle/ultisnips/plugin/UltiSnips.vim
-236.981  000.121  000.121: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/getscriptPlugin.vim
-237.533  000.322  000.322: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/gzip.vim
-238.253  000.492  000.492: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/matchparen.vim
-239.283  000.797  000.797: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/netrwPlugin.vim
-239.625  000.096  000.096: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/rrhelper.vim
-239.936  000.074  000.074: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/spellfile.vim
-240.431  000.200  000.200: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/tarPlugin.vim
-241.037  000.368  000.368: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/tohtml.vim
-241.478  000.202  000.202: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/vimballPlugin.vim
-241.990  000.263  000.263: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/zipPlugin.vim
-242.451  000.103  000.103: sourcing /Users/langolf/.vim/bundle/neobundle.vim/plugin/neobundle.vim
-243.815  000.625  000.625: sourcing /Users/langolf/.vim/bundle/tabular/autoload/tabular.vim
-245.924  003.318  002.693: sourcing /Users/langolf/.vim/bundle/tabular/after/plugin/TabularMaps.vim
-246.651  000.587  000.587: sourcing /Users/langolf/.vim/bundle/indentLine/after/plugin/indentLine.vim
-246.961  000.148  000.148: sourcing /Users/langolf/.vim/bundle/ultisnips/after/plugin/UltiSnips_after.vim
-246.969  006.883: loading plugins
-246.974  000.005: inits 3
-248.771  001.797: reading viminfo
-248.788  000.017: setting raw mode
-248.802  000.014: start termcap
-248.857  000.055: clearing screen
-250.035  000.471  000.471: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/init.vim
-251.042  000.164  000.164: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/parts.vim
-252.504  000.574  000.574: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions.vim
-253.306  000.109  000.109: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/quickfix.vim
-253.999  000.097  000.097: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/netrw.vim
-254.659  000.142  000.142: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/ctrlp.vim
-255.380  000.149  000.149: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/branch.vim
-256.223  000.155  000.155: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/whitespace.vim
-257.472  000.568  000.568: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/tabline.vim
-260.701  000.127  000.127: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/section.vim
-261.861  000.454  000.454: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/highlighter.vim
-264.794  000.110  000.110: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/themes.vim
-265.213  001.107  000.997: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/themes/sol.vim
-266.063  000.174  000.174: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/builder.vim
-266.839  000.170  000.170: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/util.vim
-267.839  000.186  000.186: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/default.vim
-292.497  038.993: opening buffers
-296.271  003.774: BufEnter autocommands
-296.275  000.004: editing files in windows
-334.642  038.367: VimEnter autocommands
-334.671  000.029: before starting main loop
-432.757  094.647  094.647: sourcing /Users/langolf/.vim/bundle/ultisnips/autoload/UltiSnips.vim
-434.234  000.111  000.111: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/default.vim
-440.880  011.451: first screen update
-440.883  000.003: --- VIM STARTED ---
+000.006  000.006: --- VIM STARTING ---
+000.080  000.074: Allocated generic buffers
+000.525  000.445: locale set
+000.570  000.045: GUI prepared
+000.578  000.008: clipboard setup
+000.593  000.015: window checked
+001.251  000.658: inits 1
+001.269  000.018: parsing arguments
+007.468  006.199: expanding arguments
+011.259  003.791: shell init
+011.671  000.412: Termcap init
+011.741  000.070: inits 2
+013.921  002.180: init highlight
+014.135  000.137  000.137: sourcing $VIM/vimrc
+014.763  000.247  000.247: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/util.vim
+015.347  000.962  000.715: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle.vim
+015.651  000.193  000.193: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/init.vim
+016.368  000.471  000.471: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/config.vim
+016.460  000.028  000.028: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/ftoff.vim
+016.828  000.207  000.207: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/autoload.vim
+017.282  000.294  000.294: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/parser.vim
+018.087  000.239  000.239: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/types/git.vim
+018.397  000.154  000.154: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/types/hg.vim
+018.640  000.087  000.087: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/types/nosync.vim
+018.993  000.202  000.202: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/types/raw.vim
+019.271  000.126  000.126: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/types/svn.vim
+062.877  000.077  000.077: sourcing /Users/langolf/.vim/bundle/vim-stylus/ftdetect/stylus.vim
+063.103  000.143  000.143: sourcing /Users/langolf/.vim/bundle/vim-javascript/ftdetect/javascript.vim
+063.217  000.039  000.039: sourcing /Users/langolf/.vim/bundle/vim-jquery/ftdetect/jquery.vim
+063.431  000.116  000.116: sourcing /Users/langolf/.vim/bundle/vim-json/ftdetect/json.vim
+063.601  000.052  000.052: sourcing /Users/langolf/.vim/bundle/vim-jade/ftdetect/jade.vim
+063.858  000.054  000.054: sourcing /Users/langolf/.vim/bundle/ultisnips/ftdetect/snippets.vim
+063.908  000.020  000.020: sourcing /Users/langolf/.vim/bundle/ultisnips/ftdetect/UltiSnips.vim
+064.077  000.041  000.041: sourcing /Users/langolf/.vim/bundle/neobundle.vim/ftdetect/vimrecipe.vim
+064.218  017.268  016.726: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/filetype.vim
+064.508  000.051  000.051: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/ftplugin.vim
+064.784  000.050  000.050: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/indent.vim
+065.687  000.347  000.347: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+065.834  000.729  000.382: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/synload.vim
+065.870  000.996  000.267: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syntax.vim
+067.140  000.884  000.884: sourcing /Users/langolf/.vim/bundle/neobundle.vim/autoload/neobundle/installer.vim
+068.820  000.168  000.168: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/nosyntax.vim
+069.522  000.260  000.260: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+069.687  000.652  000.392: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/synload.vim
+069.722  001.123  000.303: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syntax.vim
+076.588  000.275  000.275: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+077.166  000.250  000.250: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+128.175  058.080  057.555: sourcing /Users/langolf/.vim/bundle/tomorrow-theme/vim/colors/Tomorrow-Night.vim
+129.468  000.315  000.315: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+130.166  000.306  000.306: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/syntax/syncolor.vim
+176.108  047.648  047.027: sourcing /Users/langolf/.vim/bundle/tomorrow-theme/vim/colors/Tomorrow-Night.vim
+176.977  162.795  033.732: sourcing $HOME/.vimrc
+176.987  000.134: sourcing vimrc file(s)
+177.293  000.119  000.119: sourcing /Users/langolf/.vim/bundle/vimproc/plugin/vimproc.vim
+177.629  000.220  000.220: sourcing /Users/langolf/.vim/bundle/ack.vim/plugin/ack.vim
+179.307  001.090  001.090: sourcing /Users/langolf/.vim/bundle/nerdtree/autoload/nerdtree.vim
+180.575  000.513  000.513: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/path.vim
+180.789  000.150  000.150: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/menu_controller.vim
+180.957  000.109  000.109: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/menu_item.vim
+181.146  000.125  000.125: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/key_map.vim
+181.472  000.263  000.263: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/bookmark.vim
+181.934  000.395  000.395: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/tree_file_node.vim
+182.448  000.446  000.446: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/tree_dir_node.vim
+182.708  000.200  000.200: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/opener.vim
+183.059  000.292  000.292: sourcing /Users/langolf/.vim/bundle/nerdtree/lib/nerdtree/creator.vim
+193.555  000.123  000.123: sourcing /Users/langolf/.vim/bundle/nerdtree/nerdtree_plugin/exec_menuitem.vim
+194.151  000.561  000.561: sourcing /Users/langolf/.vim/bundle/nerdtree/nerdtree_plugin/fs_menu.vim
+194.707  016.955  012.688: sourcing /Users/langolf/.vim/bundle/nerdtree/plugin/NERD_tree.vim
+195.283  000.253  000.253: sourcing /Users/langolf/.vim/bundle/ctrlp.vim/autoload/ctrlp/mrufiles.vim
+195.589  000.767  000.514: sourcing /Users/langolf/.vim/bundle/ctrlp.vim/plugin/ctrlp.vim
+195.724  000.024  000.024: sourcing /Users/langolf/.vim/bundle/ctrlp-funky/plugin/funky.vim
+200.426  004.596  004.596: sourcing /Users/langolf/.vim/bundle/vim-fugitive/plugin/fugitive.vim
+207.806  007.102  007.102: sourcing /Users/langolf/.vim/bundle/nerdcommenter/plugin/NERD_commenter.vim
+209.769  001.683  001.683: sourcing /Users/langolf/.vim/bundle/vim-matchit/plugin/matchit.vim
+211.586  001.434  001.434: sourcing /Users/langolf/.vim/bundle/vim-surround/plugin/surround.vim
+212.284  000.492  000.492: sourcing /Users/langolf/.vim/bundle/tabular/plugin/Tabular.vim
+213.098  000.370  000.370: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline.vim
+213.545  001.123  000.753: sourcing /Users/langolf/.vim/bundle/vim-airline/plugin/airline.vim
+215.731  001.017  001.017: sourcing /Users/langolf/.vim/bundle/delimitMate/autoload/delimitMate.vim
+219.186  005.415  004.398: sourcing /Users/langolf/.vim/bundle/delimitMate/plugin/delimitMate.vim
+221.412  002.054  002.054: sourcing /Users/langolf/.vim/bundle/KeyboardLayoutSwitcher/plugin/KeyboardLayoutSwitcher.vim
+221.783  000.212  000.212: sourcing /Users/langolf/.vim/bundle/vim-pasta/plugin/pasta.vim
+222.341  000.056  000.056: sourcing /Users/langolf/.vim/bundle/ultisnips/plugin/snipMate_compatibility.vim
+223.054  000.121  000.121: sourcing /Users/langolf/.vim/bundle/ultisnips/autoload/UltiSnips/bootstrap.vim
+264.859  042.151  042.030: sourcing /Users/langolf/.vim/bundle/ultisnips/autoload/UltiSnips/map_keys.vim
+265.000  042.627  000.476: sourcing /Users/langolf/.vim/bundle/ultisnips/plugin/UltiSnips.vim
+265.592  000.106  000.106: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/getscriptPlugin.vim
+266.022  000.397  000.397: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/gzip.vim
+266.275  000.219  000.219: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/matchparen.vim
+266.857  000.549  000.549: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/netrwPlugin.vim
+266.997  000.063  000.063: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/rrhelper.vim
+267.087  000.049  000.049: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/spellfile.vim
+267.317  000.189  000.189: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/tarPlugin.vim
+267.487  000.122  000.122: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/tohtml.vim
+267.688  000.161  000.161: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/vimballPlugin.vim
+267.955  000.215  000.215: sourcing /Applications/MacVim.app/Contents/Resources/vim/runtime/plugin/zipPlugin.vim
+268.186  000.069  000.069: sourcing /Users/langolf/.vim/bundle/neobundle.vim/plugin/neobundle.vim
+269.075  000.370  000.370: sourcing /Users/langolf/.vim/bundle/tabular/autoload/tabular.vim
+271.182  002.855  002.485: sourcing /Users/langolf/.vim/bundle/tabular/after/plugin/TabularMaps.vim
+271.601  000.274  000.274: sourcing /Users/langolf/.vim/bundle/indentLine/after/plugin/indentLine.vim
+271.869  000.138  000.138: sourcing /Users/langolf/.vim/bundle/ultisnips/after/plugin/UltiSnips_after.vim
+271.876  004.604: loading plugins
+271.882  000.006: inits 3
+273.867  001.985: reading viminfo
+273.884  000.017: setting raw mode
+273.899  000.015: start termcap
+273.946  000.047: clearing screen
+274.562  000.128  000.128: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/init.vim
+275.231  000.135  000.135: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/parts.vim
+276.192  000.305  000.305: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions.vim
+276.592  000.067  000.067: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/quickfix.vim
+277.002  000.064  000.064: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/netrw.vim
+277.457  000.117  000.117: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/ctrlp.vim
+277.970  000.117  000.117: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/branch.vim
+278.552  000.125  000.125: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/whitespace.vim
+279.336  000.332  000.332: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/tabline.vim
+282.384  000.104  000.104: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/section.vim
+282.939  000.192  000.192: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/highlighter.vim
+284.895  000.085  000.085: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/themes.vim
+285.258  000.661  000.576: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/themes/sol.vim
+285.699  000.098  000.098: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/builder.vim
+286.104  000.115  000.115: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/util.vim
+286.672  000.110  000.110: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/default.vim
+305.864  029.248: opening buffers
+310.866  005.002: BufEnter autocommands
+310.873  000.007: editing files in windows
+358.802  047.929: VimEnter autocommands
+358.821  000.019: before starting main loop
+362.417  000.512  000.512: sourcing /Users/langolf/.vim/bundle/ultisnips/autoload/UltiSnips.vim
+364.448  000.171  000.171: sourcing /Users/langolf/.vim/bundle/vim-airline/autoload/airline/extensions/tabline/default.vim
+370.559  011.055: first screen update
+370.564  000.005: --- VIM STARTED ---
