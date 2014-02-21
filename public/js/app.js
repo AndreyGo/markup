@@ -699,4 +699,44 @@ $(document).ready(function() {
       }
       $(this).removeClass('page_input-active');
     });
+
+    // Masonry Interior
+    var container = $('.page-interior_grid');
+    container.imagesLoaded(function(){
+      container.masonry({
+        columnWidth: 214,
+        itemSelector: '.interior_item',
+        gutter: 32
+      });
+    });
+
+    $('.interior_item').on('click', function(event) {
+        event.preventDefault();
+        var imgVal = $(this).find('.interior-item_image img').attr('src');
+        var imgTitle = $(this).find('.interior-item_image img').attr('alt');
+        var imgPic = $(this).parents('.product_image').children('img');
+        $.fancybox(imgVal, {
+            closeBtn: true,
+            padding: 20,
+            wrapCSS: "page_modal map_modal product interior_modal",
+            minWidth: '400px',
+            tpl: {
+                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>'
+            },
+            autoHeight: true,
+            autoSize: true,
+            title: imgTitle,
+            helpers: {
+                title: {
+                    type: 'outside',
+                    position: 'top'
+                },
+                close: {
+                  type: 'outside',
+                  position: 'top'
+                }
+            }
+        });
+    });
+
 });
