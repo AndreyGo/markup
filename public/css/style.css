@@ -435,6 +435,14 @@ body {
 input:focus {
   outline: none;
 }
+textarea:focus {
+  outline: none;
+}
+.page_input-active {
+  box-shadow: 0 0 0 3px #c2e9ff;
+  border: 1px solid #aadae6;
+  color: #000 !important;
+}
 .page h1.h1 {
   color: #333;
 }
@@ -453,10 +461,21 @@ input:focus {
   margin: 0;
   list-style: none;
 }
-.page input {
+.page input,
+.page textarea,
+.modal_body input {
   width: 100%;
-  border: none;
+  border: solid 1px rgba(0,0,0,0.1);
+  border-radius: 4px;
   background: #fff;
+  box-shadow: inset 0 1px 4px rgba(0,0,0,0.1);
+}
+.page input.page_input-active,
+.page textarea.page_input-active,
+.modal_body input.page_input-active {
+  box-shadow: 0 0 0 3px #c2e9ff;
+  border: 1px solid #aadae6;
+  color: #000 !important;
 }
 .page a {
   color: #1c60ab;
@@ -703,11 +722,12 @@ input:focus {
   margin-right: 1.41643059490085%;
   height: 50px;
   padding: 0 20px;
-  color: #bbb;
   border-radius: 2px;
-  box-shadow: inset 0 1px 4px rgba(0,0,0,0.2);
+  box-shadow: inset 0 1px 4px rgba(0,0,0,0.1);
   display: block;
   float: left;
+  color: #bbb;
+  font-size: 15px;
   box-sizing: border-box;
 }
 .search_form button {
@@ -2527,16 +2547,8 @@ a.header_pass_forgot > span:hover {
 }
 .modal_body input {
   display: block;
-  width: 100%;
   height: 47px;
-  box-shadow: inset 0 1px 6px rgba(0,0,0,0.2);
-  border: 1px solid #dedede;
-  border-radius: 2px;
   padding: 0 20px;
-}
-.modal_body input:focus {
-  box-shadow: 0 0 0 3px #c2e9ff;
-  border: 1px solid #aadae6;
 }
 input.has-error {
   box-shadow: 0 0 0 3px #ffc2c2;
@@ -3224,7 +3236,7 @@ input.has-error {
   clear: both;
 }
 .sidebar_filter_price_field input {
-  box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+  box-shadow: inset 0 1px 4px rgba(0,0,0,0.1);
   border-radius: 3px;
   padding: 10px;
   width: 46%;
@@ -3616,7 +3628,21 @@ input.has-error {
 }
 .ui-autocomplete {
   background: #fff;
-  width: 700px;
+  box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  position: absolute !important;
+  top: 100%;
+}
+.ui-menu-item {
+  height: 40px;
+  font-size: 15px;
+  line-height: 40px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.ui-menu-item:hover {
+  background: #e2e8ef;
 }
 .order-table_date {
   width: 90px;
@@ -4249,7 +4275,7 @@ input.has-error {
   height: 40px;
   margin-bottom: 20px;
   border-radius: 4px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  box-shadow: inset 0 1px 4px rgba(0,0,0,0.1);
   padding-left: 10px;
 }
 .sidebar_faq_ask textarea {
@@ -4257,9 +4283,8 @@ input.has-error {
   height: 110px;
   width: 100%;
   border-radius: 4px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+  box-shadow: inset 0 1px 4px rgba(0,0,0,0.1);
   padding: 10px;
-  border: none;
   margin-bottom: 20px;
 }
 .sidebar_faq_ask .sidebar_filter_dropdown {
@@ -4485,18 +4510,13 @@ input.has-error {
   display: inline-block;
   width: 420px;
   height: 45px;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
   padding-left: 20px;
 }
 .order_input textarea {
   display: inline-block;
   width: 420px;
   height: 110px;
-  border-radius: 4px;
-  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
-  padding-left: 20px;
-  border: none;
+  padding: 10px;
 }
 .order_delivery {
   margin: 30px 0;
