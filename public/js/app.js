@@ -699,30 +699,4 @@ $(document).ready(function() {
       }
       $(this).removeClass('page_input-active');
     });
-
-    var availableTags = [
-      "ActionScript",
-      "AppleScript",
-      "Asp",
-      "BASIC",
-      "C",
-      "Clojure",
-      "C++",
-      "COBOL",
-      "ColdFusion",
-      "Erlang",
-      "Fortran",
-      "Groovy",
-      "Haskell",
-      "Java",
-      "JavaScript",
-      "Lisp"
-    ];
-    $('#mainSearch').autocomplete({
-      source: availableTags,
-      appendTo: 'form.search_form',
-      open: function(e, ui) {
-        $('.ui-autocomplete').css('top', $("ul.ui-autocomplete").cssUnit('top')[0] + 10);
-      }
-    });
 });

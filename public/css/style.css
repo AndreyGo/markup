@@ -438,6 +438,9 @@ input:focus {
 textarea:focus {
   outline: none;
 }
+button:focus {
+  outline: none;
+}
 .page_input-active {
   box-shadow: 0 0 0 3px #c2e9ff;
   border: 1px solid #aadae6;
@@ -2011,6 +2014,9 @@ textarea:focus {
 .header_company_dropdown .dropdown_menu {
   padding: 10px 0;
 }
+.header_company_dropdown .dropdown_menu li {
+  margin: 0 !important;
+}
 .header_company_dropdown .dropdown_menu li a {
   font-weight: 400;
   height: 45px;
@@ -2020,7 +2026,7 @@ textarea:focus {
   color: #1c60ab;
 }
 .address_dropdown {
-  top: -9px;
+  top: -20px;
   left: -20px;
 }
 .address_dropdown ul.dropdown_menu {
@@ -2031,6 +2037,7 @@ textarea:focus {
   padding: 0 20px;
   height: 35px;
   line-height: 35px;
+  margin: 0;
 }
 .address_dropdown ul.dropdown_menu li a {
   border: none;
@@ -3643,6 +3650,9 @@ input.has-error {
 }
 .ui-menu-item:hover {
   background: #e2e8ef;
+}
+.ui-front {
+  z-index: 120;
 }
 .order-table_date {
   width: 90px;
