@@ -2691,6 +2691,9 @@ input.has-error {
   float: left;
   min-height: 1px;
 }
+.product-image_wrap {
+  padding: 20px;
+}
 .page_product_price_move {
   color: #ec9212;
   border-color: #ec9212;
@@ -4138,6 +4141,9 @@ input.has-error {
   margin-top: 30px;
   overflow: hidden;
 }
+.page_address_block_map_img a {
+  display: block;
+}
 .page_address_block_map_img li {
   border-radius: 4px;
   overflow: hidden;
@@ -4239,17 +4245,6 @@ input.has-error {
   width: 18px;
   height: 16px;
   z-index: 9000;
-}
-.map_modal .fancybox-image,
-.map_modal .fancybox-iframe {
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
 }
 .page_faq_article {
   margin-bottom: 25px;

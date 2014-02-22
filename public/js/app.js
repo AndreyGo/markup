@@ -3,6 +3,29 @@ $(document).ready(function() {
     var goodsQuantity = $('ul.header_busket_list > li').length; // количество товаров в корзине
     $('.header_busket_value').html(goodsQuantity)
 
+
+    // Add to bookmark AJAX
+    //
+    $('#addBookmark').on('click', function(){
+      var self = this;
+
+      $.ajax({
+        type: "GET",
+        url: '/bitrix/templates/.default/inc/bookmarks.php',
+        dataType: 'text',
+        data: { id : id },
+        success: function(data) {
+          if (data == 'add') {
+            $(self).text('Удалить');
+          } else if (data == 'remove') {
+            $(self).text('В закладки');
+          }
+        }
+      });
+
+      return false;
+    });
+
     //Cлайдер на главной
 
     var sliderIndex = $('.slider_pagination_curent');
@@ -486,26 +509,31 @@ $(document).ready(function() {
         productSlider.goToSlide(index);
     });
 
+
     $('.product_image a').on('click', function(event) {
         event.preventDefault();
-        var imgVal = $(this).children('img').attr('src');
+        var href = [];
+        $('.product_image img').each(function(index, el){
+          //href[index] = $(this).attr('src');
+          href.push($(this).attr('src'));
+        });
+        var imgVal = $(this).attr('src');
         var imgTitle = $(this).parents('.page_product_block').find('h1').text();
         var imgPic = $(this).parents('.product_image').children('img');
-        $.fancybox(imgVal, {
+        $.fancybox(href, {
             closeBtn: true,
+            mouseWheel: true,
+            arrows: true,
             padding: 0,
             wrapCSS: "page_modal map_modal product",
-            aspectRatio: true,
-            height: '800px',
             minWidth: '600px',
             tpl: {
+                image    : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>',
                 closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>'
             },
-            autoHeight: false,
-            autoSize: false,
-            maxHeight: 600,
+            autoHeight: true,
+            autoSize: true,
             title: imgTitle,
-            fitToView: false,
             helpers: {
                 title: {
                     type: 'inside',
@@ -576,16 +604,20 @@ $(document).ready(function() {
 
     $('.contacts_modal').on('click', function(event) {
         event.preventDefault();
-        var imgVal = $(this).children('img').attr('src');
+        var href = [];
+        $('.page_address_block_map_img .contacts_modal img').each(function(){
+          href.push($(this).attr('src'));
+        });
         var imgTitle = $(this).children('img').attr('alt');
-        $.fancybox(imgVal, {
+        $.fancybox(href, {
             closeBtn: true,
             padding: 0,
             wrapCSS: "page_modal map_modal",
             aspectRatio: true,
             height: '800px',
             tpl: {
-                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>'
+                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
+                image    : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
             },
             autoHeight: false,
             autoSize: false,
@@ -710,33 +742,35 @@ $(document).ready(function() {
       });
     });
 
-    $('.interior_item').on('click', function(event) {
+    $('.interior_item a').on('click', function(event) {
         event.preventDefault();
-        var imgVal = $(this).find('.interior-item_image img').attr('src');
+        var href = []
+        $('.interior_item .interior-item_image img').each(function(index, el){
+          href.push($(this).attr('src'));
+        });
+        console.log(href)
         var imgTitle = $(this).find('.interior-item_image img').attr('alt');
-        var imgPic = $(this).parents('.product_image').children('img');
-        $.fancybox(imgVal, {
+        $.fancybox(href, {
             closeBtn: true,
-            padding: 20,
+            padding: 0,
             wrapCSS: "page_modal map_modal product interior_modal",
             minWidth: '400px',
             tpl: {
-                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>'
+                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
+                image    : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
             },
             autoHeight: true,
             autoSize: true,
             title: imgTitle,
             helpers: {
                 title: {
-                    type: 'outside',
+                    type: 'inside',
                     position: 'top'
-                },
-                close: {
-                  type: 'outside',
-                  position: 'top'
                 }
             }
         });
+        return false;
     });
+
 
 });
