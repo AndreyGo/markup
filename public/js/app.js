@@ -604,20 +604,16 @@ $(document).ready(function() {
 
     $('.contacts_modal').on('click', function(event) {
         event.preventDefault();
-        var href = [];
-        $('.page_address_block_map_img .contacts_modal img').each(function(){
-          href.push($(this).attr('src'));
-        });
+        var imgVal = $(this).children('img').attr('src');
         var imgTitle = $(this).children('img').attr('alt');
-        $.fancybox(href, {
+        $.fancybox(imgVal, {
             closeBtn: true,
             padding: 0,
             wrapCSS: "page_modal map_modal",
             aspectRatio: true,
             height: '800px',
             tpl: {
-                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
-                image    : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
+                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>'
             },
             autoHeight: false,
             autoSize: false,
@@ -742,35 +738,37 @@ $(document).ready(function() {
       });
     });
 
-    $('.interior_item a').on('click', function(event) {
-        event.preventDefault();
-        var href = []
-        $('.interior_item .interior-item_image img').each(function(index, el){
-          href.push($(this).attr('src'));
-        });
-        console.log(href)
-        var imgTitle = $(this).find('.interior-item_image img').attr('alt');
-        $.fancybox(href, {
-            closeBtn: true,
-            padding: 0,
-            wrapCSS: "page_modal map_modal product interior_modal",
-            minWidth: '400px',
-            tpl: {
-                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
-                image    : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
-            },
-            autoHeight: true,
-            autoSize: true,
-            title: imgTitle,
-            helpers: {
-                title: {
-                    type: 'inside',
-                    position: 'top'
-                }
-            }
-        });
-        return false;
-    });
+/*
+ *     $('.interior_item').on('click', function(event) {
+ *         event.preventDefault();
+ *         var imgVal = $(this).find('.interior-item_image img').attr('src');
+ *         var imgTitle = $(this).find('.interior-item_image img').attr('alt');
+ *         var imgPic = $(this).parents('.product_image').children('img');
+ *         $.fancybox(imgVal, {
+ *             closeBtn: true,
+ *             padding: 20,
+ *             wrapCSS: "page_modal map_modal product interior_modal",
+ *             minWidth: '400px',
+ *             tpl: {
+ *                 closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>'
+ *             },
+ *             autoHeight: true,
+ *             autoSize: true,
+ *             title: imgTitle,
+ *             helpers: {
+ *                 title: {
+ *                     type: 'outside',
+ *                     position: 'top'
+ *                 },
+ *                 close: {
+ *                   type: 'outside',
+ *                   position: 'top'
+ *                 }
+ *             }
+ *         });
+ *     });
+ *
+ */
 
-
+      $('.interior_item a').fancybox();
 });
