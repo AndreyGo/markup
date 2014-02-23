@@ -103,7 +103,9 @@ $(document).ready(function() {
 
         var URL = $('.header_busket_list').attr('data-url');
         var ID = $(this).attr('data-id');
+        var totalPrice = parseInt($('.header_busket_items_sum .text-bold').text());
 
+        var price = parseInt($(this).parents('.header_busket_item').find('.price_value').text().replace(/(&nbsp;| )+/g, ''));
         var self = this;
 
         event.preventDefault();
@@ -117,6 +119,8 @@ $(document).ready(function() {
             statusCode: {
                 200: function() {
                     goodsQuantity -= 1;
+                    totalPrice -=price;
+                    $('.header_busket_items_sum .text-bold').text(totalPrice);
                     $(self).parent('.header_busket_item').fadeOut(100).remove();
                     $('.header_busket_items_num span.value').html(goodsQuantity);
                     $('.header_busket_value').html(goodsQuantity);
@@ -130,9 +134,7 @@ $(document).ready(function() {
             var price = parseInt($(this).text().replace(/(&nbsp;| )+/g, ''));
             totalPrice += price;
         });
-        var num = String(totalPrice).slice('');
-        num.slice(0, 3, '');
-        $('.header_busket_items_sum .text-bold').text(num);
+        $('.header_busket_items_sum .text-bold').text(totalPrice);
     }());
 
     // Fancybox
