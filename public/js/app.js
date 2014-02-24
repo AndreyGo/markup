@@ -3,11 +3,10 @@ $(document).ready(function() {
     var goodsQuantity = $('ul.header_busket_list > li').length; // количество товаров в корзине
     $('.header_busket_value').html(goodsQuantity)
 
-
     // Add to bookmark AJAX
-    //
-    $('#addBookmark').on('click', function(){
-      var self = this;
+    $('.product_item_hover_favorite, .product_sidebar_favorite').on('click', function(){
+      var self = this,
+      id = $(self).attr('data-id');
 
       $.ajax({
         type: "GET",
@@ -16,9 +15,20 @@ $(document).ready(function() {
         data: { id : id },
         success: function(data) {
           if (data == 'add') {
-            $(self).text('Удалить');
+            $(self).find('.title').text('Удалить');
+
+            if ($(self).attr('class') == 'product_sidebar_favorite') {
+              $(self).find('.icon').addClass('icon-product-flag-check');
+              $(self).find('.icon').removeClass('icon-product-flag');
+            }
+
           } else if (data == 'remove') {
-            $(self).text('В закладки');
+            $(self).find('.title').text('В закладки');
+
+            if ($(self).attr('class') == 'product_sidebar_favorite') {
+              $(self).find('.icon').addClass('icon-product-flag');
+              $(self).find('.icon').removeClass('icon-product-flag-check');
+            }
           }
         }
       });
