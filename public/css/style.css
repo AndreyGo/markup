@@ -2298,7 +2298,6 @@ a.header_pass_forgot > span:hover {
   float: left;
   width: 20%;
   text-align: center;
-  padding: 16px 0;
 }
 .header_nav_item:hover .icon-header-arrow {
   background-image: url("../img/sprite.png");
@@ -2312,6 +2311,7 @@ a.header_pass_forgot > span:hover {
   text-transform: uppercase;
   display: block;
   position: relative;
+  padding: 16px 0;
 }
 .header_nav_item > a:hover {
   color: #fff;

@@ -423,7 +423,11 @@ $(document).ready(function() {
                 return !hasError;
             },
             success: function(responseText) {
+                $('.recall_ask').hide();
                 $('.recall_thanks').show();
+                setTimeout(function(){
+                  $.fancybox.close();
+                }, 5000);
             }
         };
 
@@ -707,7 +711,7 @@ $(document).ready(function() {
 
     // Cansel order submit
 
-    $('#orderCansel').on('submit', function() {
+    $('#orderCancel').on('submit', function() {
         var options = {
             success: function(responseText) {
                 $('.orderCancel_window').hide();
