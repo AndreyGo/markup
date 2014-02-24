@@ -615,40 +615,38 @@ $(document).ready(function() {
             var index = $(this).attr('data-slide-index');
             mySliders[i].goToSlide(index);
         });
-    });
 
-    $('.contacts_modal').on('click', function(event) {
-        event.preventDefault();
-        var thisParent = $(this).parents('.page_address_block_map_img').find('.contacts_modal img');
-        console.log(thisParent);
-        var href = [];
-        $(thisParent).each(function(){
-          href.push($(this).attr('src'));
-        });
-        var imgTitle = $(this).children('img').attr('alt');
-        $.fancybox(href, {
+        $('.contacts_modal', self).on('click', function(event){
+          var href = [];
+          $('.page_address_block_map_img img', self).each(function(el){
+            href.push($(this).attr('src'));
+          });
+          $.fancybox(href, {
             closeBtn: true,
             padding: 0,
             wrapCSS: "page_modal map_modal",
             aspectRatio: true,
             height: '800px',
             tpl: {
-                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
-                image    : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
+              closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
+              image    : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
             },
             autoHeight: false,
             autoSize: false,
             maxHeight: 600,
-            title: imgTitle,
-            fitToView: false,
+            title: "NEW",
+            fitToView: true,
             helpers: {
-                title: {
-                    type: 'inside',
-                    position: 'top'
-                }
+              title: {
+                type: 'inside',
+                position: 'top'
+              }
             }
+          });
+
         });
     });
+
 
     // Order radio
 
