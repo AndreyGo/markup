@@ -1573,6 +1573,7 @@ button:focus {
   border-radius: 4px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
   padding: 50px;
+  background: #fff;
 }
 .page_news_article_body p {
   font: 400 15px/32px Arial, Helvetica, sans-serif;
