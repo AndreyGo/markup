@@ -3332,14 +3332,36 @@ input.has-error {
   vertical-align: middle;
   margin: 0 0 0 4px;
 }
+.sidebar_filter_block label {
+  margin: 0 0 15px 0;
+}
+.sidebar_filter_block label:before,
+.sidebar_filter_block label:after {
+  content: '';
+  display: table;
+}
+.sidebar_filter_block label:after {
+  clear: both;
+}
 .sidebar_filter_checkbox {
   float: left;
   margin: 0 5px 0 0;
-  top: 2px;
+  top: -1px;
   background-image: url("../img/sprite.png");
   background-position: -237px -68px;
   width: 18px;
   height: 20px;
+  position: relative;
+}
+.sidebar_filter_block fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.sidebar_filter_block fieldset span.title {
+  display: block;
+  padding-left: 22px;
+  line-height: 16px;
 }
 .sidebar_filter_checkbox.checked {
   background-image: url("../img/sprite.png");
@@ -3452,14 +3474,6 @@ input.has-error {
   background-position: -275px -68px;
   width: 6px;
   height: 11px;
-}
-.sidebar_filter_block fieldset {
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-.sidebar_filter_block label {
-  margin: 0 0 15px 0;
 }
 .sidebar_filter_block_header {
   margin: 0 0 20px 0;
