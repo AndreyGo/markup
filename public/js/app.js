@@ -96,10 +96,10 @@ $(document).ready(function() {
         var type = $(self).attr('data-type');
         switch (type) {
             case 'like':
-                text = 'нравится';
+                text = 'выбор игроков';
                 break;
             case 'exclamation':
-                text = 'внимание';
+                text = 'акция';
                 break;
             case 'discount':
                 text = 'скидка';
