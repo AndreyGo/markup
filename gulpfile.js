@@ -24,6 +24,7 @@ gulp.task('sprite', function(){
 gulp.task('stylus', function(){
     gulp.src('./app/styl/style.styl')
     .pipe(stylus()).on('error', console.log)
+    .pipe(autoprefixer())
     .pipe(gulp.dest('./public/css'));
 });
 

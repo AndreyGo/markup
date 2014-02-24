@@ -287,19 +287,6 @@ $(document).ready(function() {
         }
     }());
 
-
-    // Custom slider
-    $('#filter-slider').slider({
-        range: true,
-        min: 43000,
-        max: 102000,
-        values: [47300, 80000],
-        slide: function(event, ui) {
-            $("#minPrice").val(ui.values[0]);
-            $("#maxPrice").val(ui.values[1]);
-        }
-    });
-
     // Sidebar filters
 
     $('.sidebar_filter_block_header').on('click', function(event) {
