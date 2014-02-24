@@ -530,7 +530,6 @@ $(document).ready(function() {
         event.preventDefault();
         var href = [];
         $('.product_image img').each(function(index, el){
-          //href[index] = $(this).attr('src');
           href.push($(this).attr('src'));
         });
         var imgVal = $(this).attr('src');
@@ -620,16 +619,22 @@ $(document).ready(function() {
 
     $('.contacts_modal').on('click', function(event) {
         event.preventDefault();
-        var imgVal = $(this).children('img').attr('src');
+        var thisParent = $(this).parents('.page_address_block_map_img').find('.contacts_modal img');
+        console.log(thisParent);
+        var href = [];
+        $(thisParent).each(function(){
+          href.push($(this).attr('src'));
+        });
         var imgTitle = $(this).children('img').attr('alt');
-        $.fancybox(imgVal, {
+        $.fancybox(href, {
             closeBtn: true,
             padding: 0,
             wrapCSS: "page_modal map_modal",
             aspectRatio: true,
             height: '800px',
             tpl: {
-                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>'
+                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
+                image    : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
             },
             autoHeight: false,
             autoSize: false,
@@ -754,37 +759,35 @@ $(document).ready(function() {
       });
     });
 
-/*
- *     $('.interior_item').on('click', function(event) {
- *         event.preventDefault();
- *         var imgVal = $(this).find('.interior-item_image img').attr('src');
- *         var imgTitle = $(this).find('.interior-item_image img').attr('alt');
- *         var imgPic = $(this).parents('.product_image').children('img');
- *         $.fancybox(imgVal, {
- *             closeBtn: true,
- *             padding: 20,
- *             wrapCSS: "page_modal map_modal product interior_modal",
- *             minWidth: '400px',
- *             tpl: {
- *                 closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>'
- *             },
- *             autoHeight: true,
- *             autoSize: true,
- *             title: imgTitle,
- *             helpers: {
- *                 title: {
- *                     type: 'outside',
- *                     position: 'top'
- *                 },
- *                 close: {
- *                   type: 'outside',
- *                   position: 'top'
- *                 }
- *             }
- *         });
- *     });
- *
- */
+    $('.interior_item a').on('click', function(event) {
+        event.preventDefault();
+        var imgTitle = $(this).find('.interior-item_image img').attr('alt');
+        var href = []
+        $('.interior_item .interior-item_image img').each(function(index, el){
+          href.push($(this).attr('src'));
+        });
+        $.fancybox(href, {
+            closeBtn: true,
+            padding: 20,
+            wrapCSS: "page_modal map_modal product interior_modal",
+            minWidth: '400px',
+            tpl: {
+                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
+                image : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
+            },
+            autoHeight: true,
+            autoSize: true,
+            title: imgTitle,
+            helpers: {
+                title: {
+                    type: 'inside',
+                    position: 'top'
+                }
+            }
+        });
+        return false;
+    });
+
 
       $('.interior_item a').fancybox();
 });
