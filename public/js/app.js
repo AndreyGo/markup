@@ -47,7 +47,7 @@ $(document).ready(function() {
         autoStart: true,
         auto: true,
         pagerCustom: '.page_slider_pagination',
-        infiniteLoop: false,
+        infiniteLoop: true,
         onSliderLoad: function(currentIndex) {
             var newIndex = currentIndex + 1
             sliderIndex.html(newIndex + " ");
