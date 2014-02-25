@@ -744,35 +744,25 @@ $(document).ready(function() {
       });
     });
 
-    $('.interior_item a').on('click', function(event) {
-        event.preventDefault();
-        var imgTitle = $(this).find('.interior-item_image img').attr('alt');
-        var href = []
-        $('.interior_item .interior-item_image img').each(function(index, el){
-          href.push($(this).attr('src'));
-        });
-        $.fancybox(href, {
-            closeBtn: true,
-            padding: 20,
-            wrapCSS: "page_modal map_modal product interior_modal",
-            minWidth: '400px',
-            tpl: {
-                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
-                image : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
-            },
-            autoHeight: true,
-            autoSize: true,
-            title: imgTitle,
-            helpers: {
-                title: {
-                    type: 'inside',
-                    position: 'top'
-                }
-            }
-        });
-        return false;
+    $('.interior_item a').fancybox({
+      closeBtn: true,
+      padding: 0,
+      wrapCSS: "page_modal map_modal product interior_modal",
+      minWidth: '400px',
+      tpl: {
+        closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
+        image : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
+      },
+      autoHeight: true,
+      autoSize: true,
+      beforeLoad: function(){
+        this.title = $(this.element).find('img').attr('alt');
+      },
+      helpers: {
+        title: {
+          type: 'inside',
+          position: 'top'
+        }
+      }
     });
-
-
-      $('.interior_item a').fancybox();
 });
