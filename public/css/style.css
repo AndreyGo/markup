@@ -1063,6 +1063,15 @@ button:focus {
   width: 18px;
   height: 21px;
 }
+.product_item .badge_star .item_badge_box {
+  background: #ee4815;
+}
+.product_item .badge_star .icon {
+  background-image: url("../img/sprite.png");
+  background-position: -251px -88px;
+  width: 17px;
+  height: 19px;
+}
 .product_item_hover_block {
   background: rgba(255,255,255,0.9);
   width: 214px;

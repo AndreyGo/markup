@@ -1,7 +1,70 @@
-$(document).ready(function() {
+$(document).ready(ready);
 
-    var goodsQuantity = $('ul.header_busket_list > li').length; // количество товаров в корзине
-    $('.header_busket_value').html(goodsQuantity)
+function initProductItem() {
+
+    function dropdownList(el, ch) {
+        var self = this;
+        this.placeholder = el.children('.page_filter_dropdown_label');
+        this.index = -1;
+        this.val = '';
+        this.opts = el.find('ul > li');
+        this.onchange = ch;
+
+        el.on('click', function(event) {
+            event.preventDefault();
+            el.toggleClass('active');
+            return false;
+        });
+
+        self.opts.on('click', function() {
+            var opt = $(this);
+            this.val = opt.text();
+            self.placeholder.text(this.val);
+
+            if ($.isFunction(self.onchange)) {
+                self.onchange(opt);
+            }
+        });
+
+    }
+
+    var pageFilterType = new dropdownList($('.page_filter_type'), function(o) {
+        document.location = $('a', o).attr('href');
+    });
+
+    var pageFilterPrice = new dropdownList($('.page_filter_price'), function(o) {
+        if ( $('#pageOrder').size()  == 1) {
+            $('#pageOrder').val( $('a', o).attr('data-value') );
+            $('#mainFilter').submit();
+            return false;
+        }
+        document.location = $('a', o).attr('href');
+    });
+
+    var pageFilterQuan = new dropdownList($('.page_filter_quan'), function(o) {
+        if ( $('#pageSize').size()  == 1) {
+            $('#pageSize').val( $('a', o).attr('data-value') );
+            $('#mainFilter').submit();
+            return false;
+        }
+        document.location = $('a', o).attr('href');
+    });
+
+    $(document).click(function() {
+        // all dropdowns
+        $('.dropdown_list').removeClass('active');
+    });
+
+    // Product item
+    $('.product_item').hover(function() {
+        $('.product_item_hover_block', this).animate({
+            opacity: 1
+        }, 200, "easeInOutCubic");
+    }, function() {
+        $('.product_item_hover_block', this).animate({
+            opacity: 0
+        }, 200, "easeInOutCubic");
+    });
 
     // Add to bookmark AJAX
     $('.product_item_hover_favorite, .product_sidebar_favorite').on('click', function(){
@@ -35,6 +98,11 @@ $(document).ready(function() {
 
       return false;
     });
+}
+
+function ready() {
+    var goodsQuantity = $('ul.header_busket_list > li').length; // количество товаров в корзине
+    $('.header_busket_value').html(goodsQuantity)
 
     //Cлайдер на главной
 
@@ -68,16 +136,6 @@ $(document).ready(function() {
         $('.dropdown_block:first', this).fadeOut(100);
     });
 
-    // Product item
-    $('.product_item').hover(function() {
-        $('.product_item_hover_block', this).animate({
-            opacity: 1
-        }, 200, "easeInOutCubic");
-    }, function() {
-        $('.product_item_hover_block', this).animate({
-            opacity: 0
-        }, 200, "easeInOutCubic");
-    });
 
     // Item badges
 
@@ -177,50 +235,7 @@ $(document).ready(function() {
         $.fancybox.close();
     });
 
-    // Filters
-
-    function dropdownList(el, ch) {
-        var self = this;
-        this.placeholder = el.children('.page_filter_dropdown_label');
-        this.index = -1;
-        this.val = '';
-        this.opts = el.find('ul > li');
-        this.onchange = ch;
-
-        el.on('click', function(event) {
-            event.preventDefault();
-            el.toggleClass('active');
-            return false;
-        });
-
-        self.opts.on('click', function() {
-            var opt = $(this);
-            this.val = opt.text();
-            self.placeholder.text(this.val);
-
-            if ($.isFunction(self.onchange)) {
-                self.onchange(opt);
-            }
-        });
-
-    }
-
-    var pageFilterType = new dropdownList($('.page_filter_type'), function(o) {
-        document.location = $('a', o).attr('href');
-    });
-
-    var pageFilterPrice = new dropdownList($('.page_filter_price'), function(o) {
-        document.location = $('a', o).attr('href');
-    });
-
-    var pageFilterQuan = new dropdownList($('.page_filter_quan'), function(o) {
-        document.location = $('a', o).attr('href');
-    });
-
-    $(document).click(function() {
-        // all dropdowns
-        $('.dropdown_list').removeClass('active');
-    });
+    initProductItem();
 
     // iCheck
     $('#sidebar_filter').iCheck({
@@ -759,4 +774,4 @@ $(document).ready(function() {
         }
       }
     });
-});
+}
