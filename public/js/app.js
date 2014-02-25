@@ -333,20 +333,21 @@ $(document).ready(function() {
 
 
     // Images
-    $('.news_item_image img').each(function() {
-        var maxWidth = 214;
-        var maxHeight = 214;
-        var ratio = 1;
-        var width = $(this).width();
-        var height = $(this).height();
-        if (width > height) {
-            $(this).css('max-height', '100%');
-        }
-        if (width < height) {
-            $(this).css('max-width', '100%');
-        }
-
-    });
+    $('.news_item_image').imagesLoaded(function(){
+      $('.news_item_image img').each(function() {
+          var maxWidth = 214;
+          var maxHeight = 214;
+          var ratio = 1;
+          var width = $(this).width();
+          var height = $(this).height();
+          if (width > height) {
+              $(this).css('max-height', '100%');
+          }
+          if (width < height) {
+              $(this).css('max-width', '100%');
+          }
+      });
+    })
 
     $('.news_article_header_thumb img').load(function() {
         var maxWidth = 60;

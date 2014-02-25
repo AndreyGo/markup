@@ -999,7 +999,7 @@ button:focus {
 }
 .product_item .item_badge {
   position: absolute;
-  top: 0;
+  top: -1px;
   right: -1px;
   z-index: 100;
 }
@@ -2091,7 +2091,6 @@ button:focus {
 .header_company_dropdown .dropdown_menu li a {
   font-weight: 400;
   height: 45px;
-  line-height: 45px;
 }
 .header_company_dropdown .dropdown_menu li a:hover {
   color: #1c60ab;
