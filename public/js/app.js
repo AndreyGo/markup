@@ -513,16 +513,7 @@ $(document).ready(function() {
     });
 
 
-    $('.product_image a').on('click', function(event) {
-        event.preventDefault();
-        var href = [];
-        $('.product_image img').each(function(index, el){
-          href.push($(this).attr('src'));
-        });
-        var imgVal = $(this).attr('src');
-        var imgTitle = $(this).parents('.page_product_block').find('h1').text();
-        var imgPic = $(this).parents('.product_image').children('img');
-        $.fancybox(href, {
+    $('.product_image a').fancybox({
             closeBtn: true,
             mouseWheel: true,
             arrows: true,
@@ -535,14 +526,16 @@ $(document).ready(function() {
             },
             autoHeight: true,
             autoSize: true,
-            title: imgTitle,
+            title: "New",
             helpers: {
                 title: {
                     type: 'inside',
                     position: 'top'
                 }
+            },
+            beforeLoad: function(){
+              this.title = $(this.element).find('img').attr('alt');
             }
-        });
     });
 
     // Similar Product Slider
