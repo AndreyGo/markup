@@ -612,16 +612,18 @@ button:focus {
   background: #e2e8ef;
 }
 .dropdown_block li > a {
-  width: 100%;
-  line-height: 1 !important;
   display: block;
-  height: 45px;
   padding: 0px 20px;
 }
 .dropdown_block li > a:before {
-  display: inline-block;
   content: "";
+  display: inline-block;
   height: 100%;
+  vertical-align: middle;
+}
+.dropdown_block li > a .link-title {
+  display: inline-block;
+  line-height: 15px;
   vertical-align: middle;
 }
 .dropdown_block li > a:hover {
@@ -2014,7 +2016,7 @@ button:focus {
   color: #bbb;
 }
 .footer_devart a {
-  color: #da4500;
+  color: #bbb;
   font-weight: 700;
 }
 .page_header {
@@ -2417,12 +2419,8 @@ a.header_pass_forgot > span:hover {
 .header_dropdown a:hover {
   color: #1c60ab;
 }
-.header_dropdown .dropdown_menu li {
-  height: 45px;
-  line-height: 45px;
-}
 .header_dropdown .dropdown_menu li a {
-  line-height: 15px;
+  height: 45px;
 }
 .header_dropdown .dropdown_title {
   background: #f4f4f4;
