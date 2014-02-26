@@ -613,9 +613,16 @@ button:focus {
 }
 .dropdown_block li > a {
   width: 100%;
+  line-height: 1 !important;
   display: block;
+  height: 45px;
+  padding: 0px 20px;
+}
+.dropdown_block li > a:before {
+  display: inline-block;
+  content: "";
+  height: 100%;
   vertical-align: middle;
-  padding: 15px 20px;
 }
 .dropdown_block li > a:hover {
   background: #e2e8ef;
@@ -3811,6 +3818,20 @@ input.has-error {
 }
 .order-table_date {
   width: 90px;
+}
+.page_error {
+  text-align: center;
+}
+.page_error h1.h1 {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.page-error_message {
+  font-size: 15px;
+  color: #555;
+  margin: 0 0 20px 0;
+  line-height: 30px;
 }
 @font-face {
   font-family: 'kelson_sans_ruregular';
