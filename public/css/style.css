@@ -975,6 +975,7 @@ button:focus {
   width: 170px;
   height: 112px;
   margin: 0 auto 10px auto;
+  position: relative;
 }
 .product_item .item_image a {
   display: block;
@@ -982,6 +983,12 @@ button:focus {
 .product_item .item_image a img {
   max-width: 100%;
   display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
 }
 .product_item .item_price {
   font-size: 14px;
@@ -4836,7 +4843,7 @@ input.has-error {
   margin-bottom: 10px;
 }
 .delivery_item_price {
-  width: 60px;
+  width: 160px;
   float: right;
 }
 .delivery_item_price .price_value {

@@ -749,7 +749,7 @@ function ready() {
       container.masonry({
         columnWidth: 214,
         itemSelector: '.interior_item',
-        gutter: 32
+        gutter: 30
       });
     });
 
