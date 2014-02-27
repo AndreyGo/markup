@@ -612,7 +612,7 @@ button:focus {
   background: #e2e8ef;
 }
 .dropdown_block li > a {
-  display: block;
+  display: inline-block;
   padding: 0px 20px;
 }
 .dropdown_block li > a:before {
@@ -3292,15 +3292,18 @@ input.has-error {
   vertical-align: middle;
   margin: 0 14px 0 0;
 }
-.sidebar_block_menu li {
-  height: 45px;
-  line-height: 45px;
-}
 .sidebar_block_menu a {
-  display: inline-block;
-  padding: 10px 20px;
+  display: block;
+  padding: 0px 20px;
   line-height: 15px;
+  height: 45px;
   vertical-align: middle;
+}
+.sidebar_block_menu a:before {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  content: "";
 }
 .sidebar_block_menu a:hover {
   color: #1c60ab;
