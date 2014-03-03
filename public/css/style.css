@@ -5344,7 +5344,7 @@ input.has-error {
 .video_item:hover .mask {
   opacity: 1;
 }
-.video_item:nth-child(3n) {
+.video_item:nth-child(3n+1) {
   float: right;
   margin-right: 0;
 }
@@ -5448,6 +5448,42 @@ input.has-error {
   font-weight: 700;
   line-height: 45px;
   cursor: pointer;
+}
+.page-video_header {
+  margin-bottom: 20px;
+}
+.page-video_header h1.h1 {
+  display: block;
+  margin-bottom: 10px;
+}
+.page-video_header .icon-video-eye {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.page-video_header .video-header_item {
+  display: inline-block;
+  margin-right: 20px;
+}
+.page-video_header .icon-time {
+  margin-right: 5px;
+}
+.page-video_block {
+  color: #555;
+  margin-bottom: 50px;
+}
+.page-video_block .video-block_wrapper {
+  margin-bottom: 30px;
+}
+.page-video_block .video-block_info .title {
+  color: #bbb;
+  font: 700 15px/1 Arial, Helvetica, sans-serif;
+  display: block;
+  margin-bottom: 20px;
+}
+.page-video_similar h2.h2 {
+  display: block;
+  margin-bottom: 20px;
 }
 /* jQuery UI - v1.10.4 - 2014-02-13
 * http://jqueryui.com
