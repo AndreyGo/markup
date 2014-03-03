@@ -20,49 +20,49 @@
 }
 .icon-basket-header_checkbox-checked {
   background-image: url("../img/sprite2.png");
-  background-position: -68px -62px;
+  background-position: -51px -62px;
   width: 21px;
   height: 23px;
 }
 .icon-basket-header_checkbox {
   background-image: url("../img/sprite2.png");
-  background-position: 0px -87px;
+  background-position: -25px -87px;
   width: 21px;
   height: 23px;
 }
 .icon-basket-item-count-down {
   background-image: url("../img/sprite2.png");
-  background-position: -47px -111px;
+  background-position: -53px -42px;
   width: 9px;
   height: 6px;
 }
 .icon-basket-item-count-up {
   background-image: url("../img/sprite2.png");
-  background-position: -111px -105px;
+  background-position: -53px -49px;
   width: 9px;
   height: 5px;
 }
 .icon-basket-item-delete {
   background-image: url("../img/sprite2.png");
-  background-position: -65px -50px;
+  background-position: -53px -31px;
   width: 10px;
   height: 10px;
 }
 .icon-basket-item-flag {
   background-image: url("../img/sprite2.png");
-  background-position: -90px 0px;
+  background-position: -73px -62px;
   width: 20px;
   height: 23px;
 }
 .icon-basket-item-refresh {
   background-image: url("../img/sprite2.png");
-  background-position: -111px -73px;
+  background-position: -65px -42px;
   width: 14px;
   height: 15px;
 }
 .icon-contacts-geo {
   background-image: url("../img/sprite2.png");
-  background-position: -32px -31px;
+  background-position: -65px 0px;
   width: 16px;
   height: 25px;
 }
@@ -75,19 +75,19 @@
 }
 .icon-exclamation-orange {
   background-image: url("../img/sprite2.png");
-  background-position: -111px -38px;
+  background-position: -128px -21px;
   width: 16px;
   height: 18px;
 }
 .icon-faq-answer-corner {
   background-image: url("../img/sprite2.png");
-  background-position: -111px -57px;
+  background-position: -107px -71px;
   width: 15px;
   height: 15px;
 }
 .icon-faq-question-corner {
   background-image: url("../img/sprite2.png");
-  background-position: -111px -89px;
+  background-position: -65px -26px;
   width: 15px;
   height: 15px;
 }
@@ -101,14 +101,14 @@
 .icon-footer-social-tw-hover,
 .footer_social .tw:hover {
   background-image: url("../img/sprite2.png");
-  background-position: -65px -25px;
+  background-position: -82px -25px;
   width: 24px;
   height: 24px;
 }
 .icon-footer-social-vk-hover,
 .footer_social .vk:hover {
   background-image: url("../img/sprite2.png");
-  background-position: -65px 0px;
+  background-position: -26px -62px;
   width: 24px;
   height: 24px;
 }
@@ -120,13 +120,13 @@
 }
 .icon-header-login-tw {
   background-image: url("../img/sprite2.png");
-  background-position: 0px 0px;
+  background-position: -32px 0px;
   width: 32px;
   height: 30px;
 }
 .icon-header-login-vk {
   background-image: url("../img/sprite2.png");
-  background-position: -33px 0px;
+  background-position: 0px 0px;
   width: 31px;
   height: 30px;
 }
@@ -144,13 +144,13 @@
 }
 .icon-header-user-flag {
   background-image: url("../img/sprite2.png");
-  background-position: -47px -62px;
+  background-position: -107px 0px;
   width: 20px;
   height: 23px;
 }
 .icon-header-user-settings {
   background-image: url("../img/sprite2.png");
-  background-position: -90px -47px;
+  background-position: -128px 0px;
   width: 20px;
   height: 20px;
 }
@@ -162,13 +162,13 @@
 }
 .icon-product-flag-check {
   background-image: url("../img/sprite2.png");
-  background-position: -26px -62px;
+  background-position: -107px -24px;
   width: 20px;
   height: 23px;
 }
 .icon-product-item-flag {
   background-image: url("../img/sprite2.png");
-  background-position: -49px -31px;
+  background-position: -128px -97px;
   width: 13px;
   height: 13px;
 }
@@ -180,45 +180,63 @@
 }
 .icon-profile-check {
   background-image: url("../img/sprite2.png");
-  background-position: -90px -68px;
+  background-position: -128px -78px;
   width: 20px;
   height: 18px;
 }
 .icon-profile-lock {
   background-image: url("../img/sprite2.png");
-  background-position: -90px -24px;
+  background-position: -107px -48px;
   width: 18px;
   height: 22px;
 }
 .icon-profile-question-dark {
   background-image: url("../img/sprite2.png");
-  background-position: -111px 0px;
+  background-position: -128px -59px;
   width: 18px;
   height: 18px;
 }
 .icon-profile-question {
   background-image: url("../img/sprite2.png");
-  background-position: -111px -19px;
+  background-position: -128px -40px;
   width: 18px;
   height: 18px;
 }
 .icon-user-arrow-down,
 .header_login_user + .icon {
   background-image: url("../img/sprite2.png");
-  background-position: -76px -50px;
+  background-position: -111px -96px;
   width: 13px;
   height: 8px;
 }
 .icon-user-arrow-up,
 .header_login_user.active + .icon {
   background-image: url("../img/sprite2.png");
-  background-position: -49px -45px;
+  background-position: -111px -87px;
   width: 13px;
   height: 8px;
 }
+.icon-video-eye {
+  background-image: url("../img/sprite2.png");
+  background-position: -82px -50px;
+  width: 20px;
+  height: 11px;
+}
+.icon-video-lock {
+  background-image: url("../img/sprite2.png");
+  background-position: -32px -31px;
+  width: 20px;
+  height: 25px;
+}
+.icon-video-play {
+  background-image: url("../img/sprite2.png");
+  background-position: -82px 0px;
+  width: 24px;
+  height: 24px;
+}
 .icon-zoom-white {
   background-image: url("../img/sprite2.png");
-  background-position: -22px -87px;
+  background-position: 0px -87px;
   width: 24px;
   height: 23px;
 }
@@ -501,6 +519,9 @@ button:focus {
   box-shadow: 0 0 0 3px #c2e9ff;
   border: 1px solid #aadae6;
   color: #000 !important;
+}
+.text-gray {
+  color: #bbb;
 }
 .page a {
   color: #1c60ab;
@@ -5298,6 +5319,135 @@ input.has-error {
   color: #da4500;
   display: inline-block;
   margin: 0;
+}
+.video_item {
+  width: 30.31161473087819%;
+  margin-right: 4.53257790368272%;
+  float: left;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #d9e1ea;
+  padding: 20px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  position: relative;
+  height: 225px;
+  max-height: 225px;
+  -webkit-transition: -webkit-box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
+  overflow: hidden;
+}
+.video_item:hover {
+  -webkit-box-shadow: 0 5px 10px rgba(37,61,85,0.5);
+  box-shadow: 0 5px 10px rgba(37,61,85,0.5);
+}
+.video_item:hover .mask {
+  opacity: 1;
+}
+.video_item:nth-child(3n) {
+  float: right;
+  margin-right: 0;
+}
+.video_item .video-item_title {
+  font: 400 15px Arial, Helvetica, sans-serif;
+  line-height: 15px;
+  height: 35px;
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.video_item .video-item_title:before {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(rgba(255,255,255,0)));
+  background: -webkit-linear-gradient(bottom, #fff, rgba(255,255,255,0));
+  background: linear-gradient(to top, #fff, rgba(255,255,255,0));
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+}
+.video-item_image {
+  width: 170px;
+  height: 85px;
+  overflow: hidden;
+  margin-bottom: 25px;
+  position: relative;
+}
+.video-item_image .mask {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  opacity: 0;
+  -webkit-transition: opacity 0.6 ease-in-out;
+  transition: opacity 0.6 ease-in-out;
+}
+.video-item_image .icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.video-item_image img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+.video-item_views {
+  color: #555;
+}
+.video-item_views .icon {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.page-video_filter {
+  width: 198px;
+}
+.filter-right {
+  float: right;
+}
+.sidebar-video_load {
+  padding: 20px;
+  color: #555;
+  line-height: 18px;
+  background: #e7fae1;
+}
+.sidebar-video_load .icon {
+  vertical-align: middle;
+  float: none;
+}
+.sidebar-video_load .sidebar_block_header {
+  padding: 0;
+}
+.sidebar-video_load .sidebar_block_header .title {
+  color: #555;
+}
+.video_upload {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: block;
+}
+.video_upload input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+.video_upload .btn-green {
+  text-align: center;
+  font-weight: 700;
+  line-height: 45px;
+  cursor: pointer;
 }
 /* jQuery UI - v1.10.4 - 2014-02-13
 * http://jqueryui.com

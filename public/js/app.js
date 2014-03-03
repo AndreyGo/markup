@@ -32,6 +32,10 @@ function initProductItem() {
         document.location = $('a', o).attr('href');
     });
 
+    var videoFilterType = new dropdownList($('.page-video_filter'), function(o) {
+        document.location = $('a', o).attr('href');
+    });
+
     var pageFilterPrice = new dropdownList($('.page_filter_price'), function(o) {
         if ( $('#pageOrder').size()  == 1) {
             $('#pageOrder').val( $('a', o).attr('data-value') );
