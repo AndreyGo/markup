@@ -778,4 +778,13 @@ function ready() {
         }
       }
     });
+
+    // Product page interactive
+
+    $('.size-table_block tr').each(function(index, el) {
+       $(this).on('click', function(event) {
+        $('.page_product_price-i .price-bold').text($('td:last-child', this).text());
+        $(window).scrollTop(0);
+       });
+    });
 }
