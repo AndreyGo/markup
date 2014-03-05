@@ -549,7 +549,10 @@ button:focus {
   font-size: 14px;
 }
 .size-table_block tr:first-child td {
-  padding: 20px 10px;
+  padding: 20px 0px;
+}
+.size-table_block tr:first-child td:first-child {
+  padding-left: 20px;
 }
 .size-table_block tr:hover {
   background: #e2e8ef;
@@ -2793,7 +2796,6 @@ input.has-error {
   color: #555;
 }
 .page_product_price .price-bold {
-  color: #33251b;
   font: 700 24px Arial, Helvetica, sans-serif;
   margin: 0 5px;
 }
@@ -3127,6 +3129,12 @@ input.has-error {
 }
 .size-table_header {
   margin-bottom: 30px;
+}
+.size-table_header h1.h1 {
+  display: block;
+}
+.size-table_header > span {
+  color: #333;
 }
 .size-table_buy {
   height: 45px;
