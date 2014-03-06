@@ -3871,18 +3871,18 @@ input.has-error {
   line-height: 30px;
 }
 .ocb-form-field input {
-  padding: 10px;
+  padding: 10px !important;
 }
 .ocb-form-field label {
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
 }
 .ocb-form {
-  border: none;
+  border: none !important;
 }
 .intaro-modules-button {
-  background: -webkit-gradient(linear, left bottom, left top, from(#1b5c00), to(#1b7f00));
-  background: -webkit-linear-gradient(bottom, #1b5c00, #1b7f00);
-  background: linear-gradient(to top, #1b5c00, #1b7f00);
+  background: -webkit-gradient(linear, left bottom, left top, from(#1b5c00), to(#1b7f00)) !important;
+  background: -webkit-linear-gradient(bottom, #1b5c00, #1b7f00) !important;
+  background: linear-gradient(to top, #1b5c00, #1b7f00) !important;
 }
 @font-face {
   font-family: 'kelson_sans_ruregular';
