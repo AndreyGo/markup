@@ -3884,6 +3884,18 @@ input.has-error {
   background: -webkit-linear-gradient(bottom, #1b5c00, #1b7f00) !important;
   background: linear-gradient(to top, #1b5c00, #1b7f00) !important;
 }
+.intaro-modules-button input {
+  color: #fff !important;
+  text-shaodw: none !important;
+}
+.ocb-form-header {
+  background: -webkit-gradient(linear, left bottom, left top, from(#e6e6e6), to(#fff)) !important;
+  background: -webkit-linear-gradient(bottom, #e6e6e6, #fff) !important;
+  background: linear-gradient(to top, #e6e6e6, #fff) !important;
+  width: 100% !important;
+  margin: 0 0 20px 0 !important;
+  color: #1c60ab !important;
+}
 @font-face {
   font-family: 'kelson_sans_ruregular';
   src: url("../fonts/kelson_sans_regular_ru-webfont.eot");
