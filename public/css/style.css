@@ -56,7 +56,7 @@
 }
 .icon-basket-item-refresh {
   background-image: url("../img/sprite2.png");
-  background-position: -65px -42px;
+  background-position: -65px -26px;
   width: 14px;
   height: 15px;
 }
@@ -69,25 +69,25 @@
 .icon-delivery-corner,
 .order_delivery:before {
   background-image: url("../img/sprite2.png");
-  background-position: -21px -111px;
+  background-position: -63px -111px;
   width: 25px;
   height: 12px;
 }
 .icon-exclamation-orange {
   background-image: url("../img/sprite2.png");
-  background-position: -128px -21px;
+  background-position: -128px -40px;
   width: 16px;
   height: 18px;
 }
 .icon-faq-answer-corner {
   background-image: url("../img/sprite2.png");
-  background-position: -107px -71px;
+  background-position: -65px -42px;
   width: 15px;
   height: 15px;
 }
 .icon-faq-question-corner {
   background-image: url("../img/sprite2.png");
-  background-position: -65px -26px;
+  background-position: -107px -71px;
   width: 15px;
   height: 15px;
 }
@@ -136,6 +136,12 @@
   width: 20px;
   height: 20px;
 }
+.icon-header-user-compare {
+  background-image: url("../img/sprite2.png");
+  background-position: -42px -111px;
+  width: 20px;
+  height: 16px;
+}
 .icon-header-user-exit {
   background-image: url("../img/sprite2.png");
   background-position: -90px -87px;
@@ -159,6 +165,12 @@
   background-position: -47px -87px;
   width: 21px;
   height: 21px;
+}
+.icon-product-compare {
+  background-image: url("../img/sprite2.png");
+  background-position: -21px -111px;
+  width: 20px;
+  height: 16px;
 }
 .icon-product-flag-check {
   background-image: url("../img/sprite2.png");
@@ -198,21 +210,21 @@
 }
 .icon-profile-question {
   background-image: url("../img/sprite2.png");
-  background-position: -128px -40px;
+  background-position: -128px -21px;
   width: 18px;
   height: 18px;
 }
 .icon-user-arrow-down,
 .header_login_user + .icon {
   background-image: url("../img/sprite2.png");
-  background-position: -111px -96px;
+  background-position: -111px -87px;
   width: 13px;
   height: 8px;
 }
 .icon-user-arrow-up,
 .header_login_user.active + .icon {
   background-image: url("../img/sprite2.png");
-  background-position: -111px -87px;
+  background-position: -111px -96px;
   width: 13px;
   height: 8px;
 }
@@ -4308,6 +4320,139 @@ input.has-error {
   display: inline-block;
   height: 100%;
   vertical-align: middle;
+}
+.page-compare_header {
+  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+}
+.page-compare_header > a {
+  display: block;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  border-bottom: 1px dotted #1c60ab;
+  line-height: 1;
+}
+.page-compare_header > a:hover {
+  border-bottom-color: #da4500;
+}
+.page-compare_header h1.h1 {
+  display: block;
+  margin-bottom: 15px;
+}
+.page-compare_header .icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-compare_header .user-order_status {
+  margin: 0 0 0 5px;
+  position: relative;
+  top: -3px;
+}
+.page-compare_header .user-order_status .value {
+  border: none;
+}
+.page-compare_header .compare-item_delete {
+  border-bottom: 1px dotted #1c60ab;
+  margin-left: 10px;
+  color: #1c60ab;
+  cursor: pointer;
+}
+.page-compare_header .compare-item_delete:hover {
+  border-bottom-color: #da4500;
+}
+.page-compare_header .compare-item_delete:hover {
+  color: #da4500;
+}
+.page-compare_header .subtitle {
+  position: relative;
+  color: #555;
+}
+.page-compare_header .subtitle .clear-table {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  border-bottom: 1px dotted #1c60ab;
+  line-height: 1;
+}
+.page-compare_header .subtitle .clear-table:hover {
+  border-bottom-color: #da4500;
+}
+.page-compare_table table {
+  background: #fff;
+  border-radius: 4px;
+}
+.page-compare_table tbody {
+  color: #555;
+  font: 400 13px Arial, Helvetica, sans-serif;
+}
+.page-compare_table tbody td {
+  padding: 15px 0 15px 20px;
+  line-height: 1;
+}
+.page-compare_table td {
+  border: 1px solid #d9e1ea;
+}
+.page-compare_table .compare-table_label {
+  width: 215px;
+  padding: 25px;
+  color: #555;
+  vertical-align: top;
+}
+.page-compare_table .compare-table_item-cell {
+  width: 244px;
+}
+.page-compare_table .compare_item {
+  padding: 20px;
+  max-height: 190px;
+  height: 190px;
+  overflow: hidden;
+}
+.page-compare_table .compare-item_image {
+  width: 195px;
+  height: 105px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+.page-compare_table .compare-item_image img {
+  display: block;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  max-width: 100%;
+}
+.page-compare_table .compare-item_header {
+  font: 400 13px Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  display: block;
+  height: 40px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.page-compare_table .compare-item_header .title {
+  display: block;
+  padding-left: 25px;
+}
+.compare-item-header_checkbox {
+  float: left;
+  margin: 0 5px 0 0;
+  top: -1px;
+  background-image: url("../img/sprite.png");
+  background-position: -237px -68px;
+  width: 18px;
+  height: 20px;
+  position: relative;
+}
+.compare-item-header_checkbox.checked {
+  background-image: url("../img/sprite.png");
+  background-position: -256px -68px;
+  width: 18px;
+  height: 20px;
 }
 .page_simple_body:before,
 .page_simple_body:after {

@@ -11,7 +11,6 @@ function initProductItem() {
         this.onchange = ch;
 
         el.on('click', function(event) {
-            event.preventDefault();
             el.toggleClass('active');
             return false;
         });
@@ -37,8 +36,8 @@ function initProductItem() {
     });
 
     var pageFilterPrice = new dropdownList($('.page_filter_price'), function(o) {
-        if ( $('#pageOrder').size()  == 1) {
-            $('#pageOrder').val( $('a', o).attr('data-value') );
+        if ($('#pageOrder').size() == 1) {
+            $('#pageOrder').val($('a', o).attr('data-value'));
             $('#mainFilter').submit();
             return false;
         }
@@ -46,8 +45,8 @@ function initProductItem() {
     });
 
     var pageFilterQuan = new dropdownList($('.page_filter_quan'), function(o) {
-        if ( $('#pageSize').size()  == 1) {
-            $('#pageSize').val( $('a', o).attr('data-value') );
+        if ($('#pageSize').size() == 1) {
+            $('#pageSize').val($('a', o).attr('data-value'));
             $('#mainFilter').submit();
             return false;
         }
@@ -71,36 +70,38 @@ function initProductItem() {
     });
 
     // Add to bookmark AJAX
-    $('.product_item_hover_favorite, .product_sidebar_favorite').on('click', function(){
-      var self = this,
-      id = $(self).attr('data-id');
+    $('.product_item_hover_favorite, .product_sidebar_favorite').on('click', function() {
+        var self = this,
+            id = $(self).attr('data-id');
 
-      $.ajax({
-        type: "GET",
-        url: '/bitrix/templates/.default/inc/bookmarks.php',
-        dataType: 'text',
-        data: { id : id },
-        success: function(data) {
-          if (data == 'add') {
-            $(self).find('.title').text('Удалить');
+        $.ajax({
+            type: "GET",
+            url: '/bitrix/templates/.default/inc/bookmarks.php',
+            dataType: 'text',
+            data: {
+                id: id
+            },
+            success: function(data) {
+                if (data == 'add') {
+                    $(self).find('.title').text('Удалить');
 
-            if ($(self).attr('class') == 'product_sidebar_favorite') {
-              $(self).find('.icon').addClass('icon-product-flag-check');
-              $(self).find('.icon').removeClass('icon-product-flag');
+                    if ($(self).attr('class') == 'product_sidebar_favorite') {
+                        $(self).find('.icon').addClass('icon-product-flag-check');
+                        $(self).find('.icon').removeClass('icon-product-flag');
+                    }
+
+                } else if (data == 'remove') {
+                    $(self).find('.title').text('В закладки');
+
+                    if ($(self).attr('class') == 'product_sidebar_favorite') {
+                        $(self).find('.icon').addClass('icon-product-flag');
+                        $(self).find('.icon').removeClass('icon-product-flag-check');
+                    }
+                }
             }
+        });
 
-          } else if (data == 'remove') {
-            $(self).find('.title').text('В закладки');
-
-            if ($(self).attr('class') == 'product_sidebar_favorite') {
-              $(self).find('.icon').addClass('icon-product-flag');
-              $(self).find('.icon').removeClass('icon-product-flag-check');
-            }
-          }
-        }
-      });
-
-      return false;
+        return false;
     });
 }
 
@@ -191,7 +192,7 @@ function ready() {
             statusCode: {
                 200: function() {
                     goodsQuantity -= 1;
-                    totalPrice -=price;
+                    totalPrice -= price;
                     $('.header_busket_items_sum .text-bold').text(totalPrice);
                     $(self).parent('.header_busket_item').fadeOut(100).remove();
                     $('.header_busket_items_num span.value').html(goodsQuantity);
@@ -247,6 +248,11 @@ function ready() {
         checkboxClass: 'sidebar_filter_checkbox'
     });
 
+    $('.page-compare_table').iCheck({
+        handle: 'checkbox',
+        checkboxClass: 'compare-item-header_checkbox'
+    });
+
     $('#page_basket').iCheck({
         handle: 'checkbox',
         checkboxClass: 'page_basket_checkbox'
@@ -292,15 +298,15 @@ function ready() {
             console.log(total);
         });
 
-        function checkBook (num) {
+        function checkBook(num) {
             if (num < 1) {
                 $('.page_faq_header_subtitle .message').text('Вы ничего не выбрали');
-            } else if (num == 1){
-                $('.page_faq_header_subtitle .message').html('<span class="message">Выбран <span class="bookmark_num">'+ total +'</span> продукт</span>');
+            } else if (num == 1) {
+                $('.page_faq_header_subtitle .message').html('<span class="message">Выбран <span class="bookmark_num">' + total + '</span> продукт</span>');
             } else if (num > 4) {
-                $('.page_faq_header_subtitle .message').html('<span class="message">Выбрано <span class="bookmark_num">'+ total +'</span> продуктов</span>');
+                $('.page_faq_header_subtitle .message').html('<span class="message">Выбрано <span class="bookmark_num">' + total + '</span> продуктов</span>');
             } else {
-                $('.page_faq_header_subtitle .message').html('<span class="message">Выбрано <span class="bookmark_num">'+ total +'</span> продукта</span>');
+                $('.page_faq_header_subtitle .message').html('<span class="message">Выбрано <span class="bookmark_num">' + total + '</span> продукта</span>');
             }
             $('.bookmark_num').text(total);
         }
@@ -352,20 +358,20 @@ function ready() {
 
 
     // Images
-    $('.news_item_image').imagesLoaded(function(){
-      $('.news_item_image img').each(function() {
-          var maxWidth = 214;
-          var maxHeight = 214;
-          var ratio = 1;
-          var width = $(this).width();
-          var height = $(this).height();
-          if (width > height) {
-              $(this).css('max-height', '100%');
-          }
-          if (width < height) {
-              $(this).css('max-width', '100%');
-          }
-      });
+    $('.news_item_image').imagesLoaded(function() {
+        $('.news_item_image img').each(function() {
+            var maxWidth = 214;
+            var maxHeight = 214;
+            var ratio = 1;
+            var width = $(this).width();
+            var height = $(this).height();
+            if (width > height) {
+                $(this).css('max-height', '100%');
+            }
+            if (width < height) {
+                $(this).css('max-width', '100%');
+            }
+        });
     })
 
     $('.news_article_header_thumb img').load(function() {
@@ -442,8 +448,8 @@ function ready() {
             success: function(responseText) {
                 $('.recall_ask').hide();
                 $('.recall_thanks').show();
-                setTimeout(function(){
-                  $.fancybox.close();
+                setTimeout(function() {
+                    $.fancybox.close();
                 }, 5000);
             }
         };
@@ -534,28 +540,28 @@ function ready() {
 
 
     $('.product_image a').fancybox({
-            closeBtn: true,
-            mouseWheel: true,
-            arrows: true,
-            padding: 0,
-            wrapCSS: "page_modal map_modal product",
-            minWidth: '600px',
-            tpl: {
-                image    : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>',
-                closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>'
-            },
-            autoHeight: true,
-            autoSize: true,
-            title: "New",
-            helpers: {
-                title: {
-                    type: 'inside',
-                    position: 'top'
-                }
-            },
-            beforeLoad: function(){
-              this.title = $(this.element).find('img').attr('alt');
+        closeBtn: true,
+        mouseWheel: true,
+        arrows: true,
+        padding: 0,
+        wrapCSS: "page_modal map_modal product",
+        minWidth: '600px',
+        tpl: {
+            image: '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>',
+            closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>'
+        },
+        autoHeight: true,
+        autoSize: true,
+        title: "New",
+        helpers: {
+            title: {
+                type: 'inside',
+                position: 'top'
             }
+        },
+        beforeLoad: function() {
+            this.title = $(this.element).find('img').attr('alt');
+        }
     });
 
     // Similar Product Slider
@@ -616,33 +622,33 @@ function ready() {
             mySliders[i].goToSlide(index);
         });
 
-        $('.contacts_modal', self).on('click', function(event){
-          var href = [];
-          $('.page_address_block_map_img img', self).each(function(el){
-            href.push($(this).attr('src'));
-          });
-          $.fancybox(href, {
-            closeBtn: true,
-            padding: 0,
-            wrapCSS: "page_modal map_modal",
-            aspectRatio: true,
-            height: '800px',
-            tpl: {
-              closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
-              image    : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
-            },
-            autoHeight: false,
-            autoSize: false,
-            maxHeight: 600,
-            title: "NEW",
-            fitToView: true,
-            helpers: {
-              title: {
-                type: 'inside',
-                position: 'top'
-              }
-            }
-          });
+        $('.contacts_modal', self).on('click', function(event) {
+            var href = [];
+            $('.page_address_block_map_img img', self).each(function(el) {
+                href.push($(this).attr('src'));
+            });
+            $.fancybox(href, {
+                closeBtn: true,
+                padding: 0,
+                wrapCSS: "page_modal map_modal",
+                aspectRatio: true,
+                height: '800px',
+                tpl: {
+                    closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
+                    image: '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
+                },
+                autoHeight: false,
+                autoSize: false,
+                maxHeight: 600,
+                title: "NEW",
+                fitToView: true,
+                helpers: {
+                    title: {
+                        type: 'inside',
+                        position: 'top'
+                    }
+                }
+            });
 
         });
     });
@@ -737,54 +743,84 @@ function ready() {
 
         $(this).ajaxSubmit(options);
     });
-    $('input, textarea').focusin(function(){
-      $(this).addClass('page_input-active');
+    $('input, textarea').focusin(function() {
+        $(this).addClass('page_input-active');
     });
-    $('input, textarea').focusout(function(){
-      if (!$(this).val() == '') {
-        $(this).css('color', '#000');
-      }
-      $(this).removeClass('page_input-active');
+    $('input, textarea').focusout(function() {
+        if (!$(this).val() == '') {
+            $(this).css('color', '#000');
+        }
+        $(this).removeClass('page_input-active');
     });
 
     // Masonry Interior
     var container = $('.page-interior_grid');
-    container.imagesLoaded(function(){
-      container.masonry({
-        columnWidth: 214,
-        itemSelector: '.interior_item',
-        gutter: 30
-      });
+    container.imagesLoaded(function() {
+        container.masonry({
+            columnWidth: 214,
+            itemSelector: '.interior_item',
+            gutter: 30
+        });
     });
 
     $('.interior_item a').fancybox({
-      closeBtn: true,
-      padding: 0,
-      wrapCSS: "page_modal map_modal product interior_modal",
-      minWidth: '400px',
-      tpl: {
-        closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
-        image : '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
-      },
-      autoHeight: true,
-      autoSize: true,
-      beforeLoad: function(){
-        this.title = $(this.element).find('img').attr('alt');
-      },
-      helpers: {
-        title: {
-          type: 'inside',
-          position: 'top'
+        closeBtn: true,
+        padding: 0,
+        wrapCSS: "page_modal map_modal product interior_modal",
+        minWidth: '400px',
+        tpl: {
+            closeBtn: '<div class="modal_close"><a title="Close" href="javascript:;" class="icon-modal-close"></span></div>',
+            image: '<div class="product-image_wrap"><img class="fancybox-image" src="{href}" alt="" /></div>'
+        },
+        autoHeight: true,
+        autoSize: true,
+        beforeLoad: function() {
+            this.title = $(this.element).find('img').attr('alt');
+        },
+        helpers: {
+            title: {
+                type: 'inside',
+                position: 'top'
+            }
         }
-      }
     });
 
     // Product page interactive
 
     $('.size-table_block .size-table_block_item').each(function(index, el) {
-       $(this).on('click', function(event) {
-        $('.page_product_price-i .price-bold').text($(this).find('td.price').text());
-        $(window).scrollTop(0);
-       });
+        $(this).on('click', function(event) {
+            $('.page_product_price-i .price-bold').text($(this).find('td.price').text());
+            $(window).scrollTop(0);
+        });
     });
+
+    // Compare value
+    $('.compare-value').text($('.compare_item').length);
+
+    (function() {
+        var total = 0;
+        $('.compare-item-header_checkbox').on('ifChecked', function(event) {
+            total++;
+            checkCompare(total);
+        });
+        $('.compare-item-header_checkbox').on('ifUnchecked', function(event) {
+            total--;
+            checkCompare(total);
+        });
+
+        function checkCompare(num) {
+            if (num < 1) {
+                $('.page-compare_header .message').text('');
+            } else if (num == 1) {
+                $('.page-compare_header .message').html('<span class="message">Выбран <span class="bookmark_num">' + total + '</span> товар</span><span onclick="compareDelete()" class="compare-item_delete">Удалить из таблицы</span>');
+            } else if (num > 4) {
+                $('.page-compare_header .message').html('<span class="message">Выбрано <span class="bookmark_num">' + total + '</span> товаров</span><span class="compare-item_delete">Удалить из таблицы</span>');
+            } else {
+                $('.page-compare_header .message').html('<span class="message">Выбрано <span class="bookmark_num">' + total + '</span> товара</span><span class="compare-item_delete">Удалить из таблицы</span>');
+            }
+            $('.bookmark_num').text(total);
+        }
+
+    }());
+
 }
