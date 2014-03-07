@@ -269,7 +269,7 @@
                         <a href="#">← В Личный кабинет</a>
                         <div class="subtitle">
                             Вы добавили <span class="compare-value">3</span> заказа для сравнения. <span class="message"></span>
-                            <a href="#" class="clear-table">Очистить таблицу</a>
+                            <a href="#" data-type="modal" data-target="#compare" class="clear-table">Очистить таблицу</a>
                         </div>
                     </div>
 
@@ -465,6 +465,39 @@
             <div class="modal_footer">
                 <div class="modal_footer_i">
                     <button type="submit" class="modal_footer_btn btn">Перезвоните мне</button>
+                </div>
+            </div>
+        </div>
+        <div id="compare" class="page_recall">
+            <form>
+                <div class="compare_question">
+                    <div class="modal_header">
+                        <div class="modal_close">
+                            <span class="icon-modal-close"></span>
+                        </div>
+                        <h2>Отмена заказа</h2>
+                    </div>
+                    <div class="modal_body">
+                        <div class="modal_body_i">Вы уверены, что хотите удалить все содержимое таблицы?<br><span class="text-bold">Обращаем внимание, что удаление товаров необратимо!</span></div>
+                    </div>
+                    <div class="modal_footer">
+                        <div class="modal_footer_i">
+                            <a href="#" class="compare-modal_close">Я передумал</a>
+                            <button type="submit" class="modal_footer_btn btn">Удалить все закладки</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="compare_answer">
+                <div class="modal_header">
+                    <div class="modal_close">
+                        <span class="icon-modal-close"></span>
+                    </div>
+                    <h2>Готово!</h2>
+                </div>
+                <div class="modal_body">
+                    <div class="recall_thanks_message">Ваша таблица пуста и вы можете снова наполнить ее!</div>
+                    <div class="cl">Окно автоматически закроется через 5 секунд...</div>
                 </div>
             </div>
         </div>

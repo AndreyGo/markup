@@ -236,7 +236,10 @@ function ready() {
     });
 
     $('.modal_close').on('click', function(event) {
-        event.preventDefault();
+        $.fancybox.close();
+    });
+
+    $('.compare-modal_close').on('click', function(event) {
         $.fancybox.close();
     });
 
@@ -448,6 +451,22 @@ function ready() {
             success: function(responseText) {
                 $('.recall_ask').hide();
                 $('.recall_thanks').show();
+                setTimeout(function() {
+                    $.fancybox.close();
+                }, 5000);
+            }
+        };
+
+        $(this).ajaxSubmit(options);
+        return false;
+    });
+
+    // Call Me AJAX
+    $('#compare form').on('submit', function() {
+        var options = {
+            success: function(responseText) {
+                $('.compare_question').hide();
+                $('.compare_answer').show();
                 setTimeout(function() {
                     $.fancybox.close();
                 }, 5000);

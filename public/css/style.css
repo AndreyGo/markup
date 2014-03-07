@@ -4454,6 +4454,31 @@ input.has-error {
   width: 18px;
   height: 20px;
 }
+#compare .modal_footer_btn {
+  width: 244px;
+  float: right;
+}
+#compare .compare-modal_close {
+  font-size: 16px;
+  border-bottom: 1px dotted #fff;
+  color: #fff;
+  position: relative;
+  top: 11px;
+  margin-left: 70px;
+  text-decoration: none;
+}
+.compare_answer {
+  display: none;
+}
+.compare_answer .modal_body {
+  text-align: center;
+}
+.compare_answer .modal_body .recall_thanks_message {
+  margin-bottom: 20px;
+}
+.compare_answer .modal_body .cl {
+  color: #bbb;
+}
 .page_simple_body:before,
 .page_simple_body:after {
   content: '';
