@@ -3891,6 +3891,10 @@ input.has-error {
 .ocb-form {
   border: none !important;
 }
+input#ocb-form-button {
+  color: #fff !important;
+  text-shaodw: none !important;
+}
 .intaro-modules-button {
   background: -webkit-gradient(linear, left bottom, left top, from(#1b5c00), to(#1b7f00)) !important;
   background: -webkit-linear-gradient(bottom, #1b5c00, #1b7f00) !important;
