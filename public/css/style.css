@@ -3895,10 +3895,16 @@ input.has-error {
   background: -webkit-gradient(linear, left bottom, left top, from(#1b5c00), to(#1b7f00)) !important;
   background: -webkit-linear-gradient(bottom, #1b5c00, #1b7f00) !important;
   background: linear-gradient(to top, #1b5c00, #1b7f00) !important;
+  border-radius: 4px;
 }
-.intaro-modules-button input {
+.intaro-modules-button > input {
   color: #fff !important;
   text-shaodw: none !important;
+}
+.intaro-modules-button > input.page_input-active {
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  border: none !important;
 }
 .ocb-form-header {
   background: -webkit-gradient(linear, left bottom, left top, from(#e6e6e6), to(#fff)) !important;
@@ -3906,6 +3912,10 @@ input.has-error {
   background: linear-gradient(to top, #e6e6e6, #fff) !important;
   width: 100% !important;
   margin: 0 0 20px 0 !important;
+  color: #1c60ab !important;
+}
+.ocb-form-header-caption {
+  text-shadow: none !important;
   color: #1c60ab !important;
 }
 @font-face {
