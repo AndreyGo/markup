@@ -1026,7 +1026,7 @@ button:focus {
   left: 0;
   bottom: 0;
   right: 0;
-  margin: 0;
+  margin: auto;
 }
 .product_item .item_price {
   font-size: 14px;
@@ -4516,6 +4516,17 @@ input#ocb-form-button {
 }
 .compare_answer .modal_body .cl {
   color: #bbb;
+}
+.page-compare_empty {
+  width: 705px;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  color: #555;
 }
 .page_simple_body:before,
 .page_simple_body:after {
