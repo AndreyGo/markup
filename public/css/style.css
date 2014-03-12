@@ -4410,6 +4410,13 @@ input#ocb-form-button {
 .page-compare_header .subtitle .clear-table:hover {
   border-bottom-color: #da4500;
 }
+.page-compare_table {
+  max-width: 952px;
+  width: 952px;
+  overflow-x: scroll;
+  background: #fff;
+  padding: 10px;
+}
 .page-compare_table table {
   background: #fff;
   border-radius: 4px;
