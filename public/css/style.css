@@ -3936,6 +3936,9 @@ input#ocb-form-button {
   text-shadow: none !important;
   color: #1c60ab !important;
 }
+.intaro-modules-button input {
+  text-shadow: none !important;
+}
 @font-face {
   font-family: 'kelson_sans_ruregular';
   src: url("../fonts/kelson_sans_regular_ru-webfont.eot");
