@@ -808,6 +808,7 @@ function ready() {
 
     $('.size-table_block .size-table_block_item').each(function(index, el) {
         $(this).on('click', function(event) {
+            $(this).addClass('active');
             $('.page_product_price-i .price-bold').text($(this).find('td.price').text());
             $(window).scrollTop(0);
         });

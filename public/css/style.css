@@ -572,6 +572,9 @@ button:focus {
 .size-table_block tr:hover .size-table_buy {
   visibility: visible;
 }
+.size-table_block_item.active {
+  background: #e2e8ef;
+}
 .size-table_block .new-price {
   display: block;
   color: #ec9212;
