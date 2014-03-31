@@ -1178,6 +1178,8 @@ button:focus {
   background: linear-gradient(to bottom, #1b5c00, #1b7f00);
 }
 .product_item_hover_meta {
+  position: absolute;
+  bottom: 50px;
   width: 190px;
 }
 .product_item_hover_meta:before,
@@ -1190,6 +1192,8 @@ button:focus {
 }
 .product_item_hover_block_link {
   display: block;
+  width: 100%;
+  min-height: 100%;
 }
 .product_item_hover_favorite {
   margin-right: 5px;
