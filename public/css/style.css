@@ -1977,7 +1977,7 @@ button:focus {
 .page_footer {
   background: #fff;
   clear: both;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
   -webkit-box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
   box-shadow: 0 -5px 10px rgba(0,0,0,0.1);
 }
@@ -3945,6 +3945,31 @@ input#ocb-form-button {
 }
 .intaro-modules-button input {
   text-shadow: none !important;
+}
+.footer_payment {
+  background: #fafafa;
+  height: 60px;
+  color: #bbb;
+  font-size: 14px;
+  margin: 30px 0 0 0;
+  line-height: 60px;
+}
+.footer_payment .container {
+  text-align: center;
+}
+.footer-payment_logos {
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer-payment_logos img {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+}
+a.footer_law {
+  color: #bbb;
+  display: inline-block;
+  margin: 0 30px 0 0;
 }
 @font-face {
   font-family: 'kelson_sans_ruregular';
